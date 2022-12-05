@@ -1,4 +1,5 @@
 ---
+import Kanji from "../components/Kanji .svelte";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const title = "Rex's Tools";
@@ -11,6 +12,13 @@ const permalink = Astro.site.href;
     <div class="home-copy">
       <h1>Rex's Tools</h1>
       <h2>Let's get our hands dirty</h2>
+      <p>
+        And here's a paragraph of text including some <Kanji
+          client:load
+          furigana="かんじ"
+          romaji="kanji">漢字</Kanji
+        >.
+      </p>
     </div>
 
     <div class="hero-image-container">

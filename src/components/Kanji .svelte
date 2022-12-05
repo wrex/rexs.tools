@@ -2,16 +2,10 @@
   export let furigana = "";
   export let romaji = "";
 
-  let furiganaType = ''
-
-  if (typeof localStorage !== 'undefined' && localStorage.getItem('furiganaType')) {
-    furiganaType = localStorage.getItem('furiganaType');
-  } else {
-    furiganaType = 'romaji'; // Default to romaji
-  }
+  import { furiganaType } from "../stores/furiganaType";
 </script>
 
-<span class="kanji" data-furigana={furiganaType === "kana" ? furigana : romaji}>
+<span class="kanji" data-furigana={$furiganaType === "kana" ? furigana : romaji}>
   <slot />
 </span>
 
