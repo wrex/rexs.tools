@@ -7,6 +7,8 @@
     theme = localStorage.getItem('theme');
   } else if (typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     theme = 'dark';
+  } else {
+    theme = 'dark'; // Shouldn't get here
   }
 
   function handleChange(event) {
@@ -14,10 +16,12 @@
     localStorage.setItem('theme', theme);
   }
 
-  $: if (rootEl && theme === 'light') {
-    rootEl.classList.remove('theme-dark');
-  } else if (rootEl && theme === 'dark') {
-    rootEl.classList.add('theme-dark');
+  // Invert logic (flash of black with light theme less annoying than flash of
+  // white with dark theme)
+  $: if (rootEl && theme === 'dark') {
+    rootEl.classList.remove('theme-light');
+  } else if (rootEl && theme === 'light') {
+    rootEl.classList.add('theme-light');
   }
 
   const icons = [

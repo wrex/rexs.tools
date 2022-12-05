@@ -1,6 +1,8 @@
 ---
-import ThemeToggleButton from './ThemeToggleButton.svelte';
-const { current = '' } = Astro.props;
+import ThemeToggleButton from "./ThemeToggleButton.svelte";
+import FuriToggle from "./FuriToggle.svelte";
+
+const { current = "" } = Astro.props;
 ---
 
 <style>
@@ -30,9 +32,9 @@ const { current = '' } = Astro.props;
   }
 
   a::before {
-    content: '';
+    content: "";
     position: absolute;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -56,10 +58,13 @@ const { current = '' } = Astro.props;
 </style>
 
 <nav>
-  <a class={current === "" ? "selected" : ""} href='/'>home</a>
-  <a class={current === "about" ? "selected" : ""} href='/about'>about</a>
-  <a class={current === "blog" ? "selected" : ""} href='/blog'>blog</a>
+  <a class={current === "" ? "selected" : ""} href="/">home</a>
+  <a class={current === "about" ? "selected" : ""} href="/about">about</a>
+  <a class={current === "blog" ? "selected" : ""} href="/blog">blog</a>
   <div class="theme-toggle-container">
     <ThemeToggleButton client:load />
+  </div>
+  <div class="theme-toggle-container">
+    <FuriToggle client:load />
   </div>
 </nav>
