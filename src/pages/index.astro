@@ -11,13 +11,19 @@ const permalink = Astro.site.href;
   <div class="home-container">
     <div class="home-copy">
       <h1>Rex's Tools</h1>
-      <h2>Let's get our hands dirty</h2>
       <p>
-        And here's a paragraph of text including some <Kanji
-          client:load
-          furigana="かんじ"
-          romaji="kanji">漢字</Kanji
-        >.
+        Collected thoughts from a lifetime of collecting and using all sorts of
+        woodworking and metalworking tools and machines.
+      </p>
+      <p>Let's get our hands dirty!</p>
+      <p class="note">
+        This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
+          romaji="kanji"
+          furigana="かんじ">漢字</Kanji
+        >
+        charactoers to reveal the readings for the characters (readings are always
+        visible on mobile devices). There's a toggle in the upper right to display
+        the readings in Japanese (kana) or roman/alphabetic characters (romaji).
       </p>
     </div>
 
@@ -59,6 +65,14 @@ const permalink = Astro.site.href;
 
   .home-copy p {
     font-size: 1.4em;
+    line-height: 2em;
+  }
+
+  p.note {
+    margin-top: 3rem;
+    font-size: 0.7em;
+    font-style: italic;
+    color: var(--text-secondary);
   }
 
   .hero-image-container {
