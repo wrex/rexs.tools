@@ -1,6 +1,6 @@
 ---
-import '../styles/fonts.css'
-import '../styles/global.css'
+import "../styles/fonts.css";
+import "../styles/global.css";
 
 export interface Props {
   title: string;
@@ -9,14 +9,16 @@ export interface Props {
 }
 
 const { title, description, permalink } = Astro.props;
-const socialUrl = Astro.site.href + 'assets/social.png'
+const socialUrl = Astro.site.href + "assets/social.png";
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
@@ -40,10 +42,13 @@ const socialUrl = Astro.site.href + 'assets/social.png'
 <!-- This is intentionally inlined to avoid FOUC -->
 <script>
   const root = document.documentElement;
-  const theme = localStorage.getItem('theme');
-  if (theme === 'dark' || (!theme) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    root.classList.add('theme-dark');
+  const theme = localStorage.getItem("theme");
+  if (
+    theme === "dark" ||
+    (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    root.classList.remove("theme-light");
   } else {
-    root.classList.remove('theme-dark');
+    root.classList.add("theme-light");
   }
 </script>
