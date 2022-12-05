@@ -15,7 +15,7 @@
     display: inline-block;
   }
 
-  @media only screen and (min-width: 601px) {
+  @media (hover: hover) {
   .kanji:hover::before {
     content: attr(data-furigana);
     color: var(--secondary-color);
@@ -29,7 +29,7 @@
 }
 
   /* always display furigana on mobile */
-  @media only screen and (max-width: 600px) {
+  @media (hover: none) {
     .kanji::before {
     content: attr(data-furigana);
     color: var(--secondary-color);
