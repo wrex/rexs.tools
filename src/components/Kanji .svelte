@@ -5,40 +5,38 @@
   import { furiganaType } from "../stores/furiganaType";
 </script>
 
-<span class="kanji" data-furigana={$furiganaType === "kana" ? furigana : romaji}>
-  <slot />
+<span class="container">
+  <span class="furigana">
+    {$furiganaType === "kana" ? furigana : romaji}
+  </span>
+  <span class="kanji">
+    <slot />
+  </span>
 </span>
 
 <style>
-  .kanji {
+  .container {
     position: relative;
     display: inline-block;
+    width: auto;
   }
 
+  .furigana {
+    font-size: 50%;
+    line-height: 1;
+    position: absolute;
+    top: -0.5em;
+    width: 100%;
+    min-width: max-content;
+    text-align: center;
+  }
+  
   @media (hover: hover) {
-  .kanji:hover::before {
-    content: attr(data-furigana);
-    color: var(--secondary-color);
-    font-size: 60%;
-    line-height: 1;
-    position: absolute;
-    top: -0.5em;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-  /* always display furigana on mobile */
-  @media (hover: none) {
-    .kanji::before {
-    content: attr(data-furigana);
-    color: var(--secondary-color);
-    font-size: 60%;
-    line-height: 1;
-    position: absolute;
-    top: -0.5em;
-    width: 100%;
-    text-align: center;
+    .furigana {
+      visibility: hidden;
+    }
+    .container:hover .furigana {
+      visibility: visible;
     }
   }
 
