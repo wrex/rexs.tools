@@ -16,7 +16,7 @@
   // 	"description": "Log output to console"
   // }
   "Kanji component": {
-    "scope": "javascript,typescript,astro,svelte,markdown",
+    "scope": "javascript,typescript,astro,svelte,mdx",
     "prefix": "kkanji",
     "body": ["<Kanji client:load furigana=\"$2\" romaji=\"$3\">$1</Kanji>"],
     "description": "Kanji component including furigana"
