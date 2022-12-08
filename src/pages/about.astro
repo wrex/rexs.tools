@@ -16,19 +16,19 @@ const permalink = `${Astro.site.href}about`;
   <div class="container">
     <h1>About</h1>
     <figure class="about-image"></figure>
-    <p>My name is Rex. This is my personal blog. I like making things.</p>
+    <p>Hello! My name is Rex. Welcome to my personal blog.</p>
     <p>
-      When people ask me <em>what</em> I like to make, I usually answer "sawdust"
-      or "chips" depending on what tool I'm using at the time. Other valid answers
-      include:
+      I like making things. When people ask me <em>what</em> I like to make, I usually
+      answer "sawdust" or "chips" depending on what tool I'm using at the time. Other
+      valid answers include:
     </p>
     <ul>
       <li>Tools</li>
       <li>Machines</li>
       <li>Parts for tools or machines</li>
       <li>
-        Jigs/fixtures to <em>hold</em> tools or parts to make or repair tools or
-        machines
+        Jigs/fixtures to <em>hold</em> tools or parts to make or repair various tools
+        and machines
       </li>
     </ul>
     <p>It's a very <em>meta</em> hobby ...</p>
@@ -42,7 +42,7 @@ const permalink = `${Astro.site.href}about`;
         >(大工道具)
       </Kanji>. Embarassingly, it took me a few decades to actually learn how to <em
         >use</em
-      > them.
+      > the the Japanese tools I'd acquired.
     </p>
     <p>
       At some point I also started to dabble in instrument making (though I've
@@ -50,15 +50,25 @@ const permalink = `${Astro.site.href}about`;
       I'll finish a matched pair of Weissborn lap guitars before I die.)
     </p>
     <p>
-      Eventually, I became interested in metalworking: machining and metrology
-      in particular. I'm now a proud owner of a 1947 Montgomery Wards (Logan)
-      Lathe, an offshore benchtop vertical mill, and a sixties era Gorton P1-2
-      pantograph engraver. That last has become my favorite machine of all.
+      Eventually, I started making a few tools to assist with making
+      instruments. This led to my interest in metalworking: machining,
+      metrology, and machine rebuilding in particular. I'm now a proud owner of
+      a 1947 Montgomery Wards (Logan) Lathe, an offshore benchtop vertical mill,
+      and a sixties era Gorton P1-2 pantograph engraver. That last has become my
+      favorite machine of all.
     </p>
     <p>
       More recently, I've become re-interested in Japanese woodworking tools and
-      techniques after a friend finally taught me how to tune up my Japanese
-      planes (<Kanji client:load furigana="かんな" romaji="kanna">鉋</Kanji>).
+      especially layout techniques (<Kanji
+        client:load
+        furigana="きくじゅつ"
+        romaji="kikujutu">規矩術</Kanji
+      > or the art of measurement) after a friend finally taught me how to tune up
+      my Japanese handplanes (<Kanji
+        client:load
+        furigana="かんな"
+        romaji="kanna">鉋</Kanji
+      >).
     </p>
     <p>
       This site was built with <a href="https://astro.build">Astro</a>, and
@@ -68,7 +78,7 @@ const permalink = `${Astro.site.href}about`;
         >Pico CSS Framework</a
       >.
       <p>
-        I'm not much for social media. I can be reached at <a
+        I'm not much for social media, but I can be reached at <a
           href="mailto:rw@pobox.com">rw@pobox.com</a
         >.
       </p>
@@ -82,7 +92,7 @@ const permalink = `${Astro.site.href}about`;
     width: 300px;
     height: 300px;
     margin: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     -webkit-mask: url(/assets/factory-worker.svg) no-repeat center;
     mask: url(/assets/factory-worker.svg) no-repeat center;
     -webkit-mask-size: contain;

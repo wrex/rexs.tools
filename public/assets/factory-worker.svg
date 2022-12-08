@@ -1,8 +1,3 @@
-<style>
-  :path {
-    fill: var(--primary);
-  }
-</style>
 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48
 48"><g fill="currentColor"><path d="M15.319 13.215c.683-2.152 2.41-3.932
 4.681-4.907V11a1 1 0 1 0 2 0V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 1 0 2

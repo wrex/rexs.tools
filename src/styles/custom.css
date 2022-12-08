@@ -36,4 +36,5 @@
   --switch-checked-background-color: var(--primary);
   /* --font-family: serif; */
   --line-height: 2;
+  --spacing: 0.5rem;
 }

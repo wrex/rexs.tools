@@ -32,11 +32,14 @@ const permalink = Astro.site.href;
         the readings in Japanese (kana) or roman/alphabetic characters (romaji).
       </p>
     </section>
-    <img alt="Hand holding a wrench" src="/assets/wrench.png" />
+    <img class="hero" alt="Hand holding a wrench" src="/assets/wrench.png" />
   </div>
 </BaseLayout>
 
 <style>
+  .hero {
+    max-height: 60vh;
+  }
   .note {
     margin-top: 5rem;
     font-style: italic;
