@@ -5,6 +5,12 @@ import Nav from "./Nav.astro";
 const { current = "" } = Astro.props;
 ---
 
-<header>
+<header class="container topmenu">
   <Nav current={current} />
 </header>
+
+<style>
+  .topmenu {
+    padding-top: 0rem;
+  }
+</style>

@@ -13,33 +13,33 @@ const permalink = Astro.site.href;
   permalink={permalink}
   current="home"
 >
-  <h1>Rex's Tools</h1>
-  <p>
-    Collected thoughts from a lifetime of collecting and using all sorts of
-    woodworking and metalworking tools and machines.
-  </p>
-  <p>Let's get our hands dirty!</p>
-  <p class="note">
-    This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
-      client:load
-      romaji="kanji"
-      furigana="かんじ">漢字</Kanji
-    >
-    characters to reveal the readings for the characters (readings are always visible
-    on mobile devices). There's a toggle in the upper right to display the readings
-    in Japanese (kana) or roman/alphabetic characters (romaji).
-  </p>
-
-  <picture>
-    <source srcset="/assets/wrench.png" media="(min-width: 600px)" />
-    <img
-      class="hero-image"
-      alt="Hand holding a wrench"
-      src="/assets/wrench.png"
-      width="550"
-      height="466"
-    />
-  </picture>
+  <div class="grid">
+    <section>
+      <h1>Rex's Tools</h1>
+      <p>
+        Collected thoughts from a lifetime of collecting and using all sorts of
+        woodworking and metalworking tools and machines.
+      </p>
+      <p>Let's get our hands dirty!</p>
+      <p class="note">
+        This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
+          client:load
+          romaji="kanji"
+          furigana="かんじ">漢字</Kanji
+        >
+        characters to reveal the readings for the characters (readings are always
+        visible on mobile devices). There's a toggle in the upper right to display
+        the readings in Japanese (kana) or roman/alphabetic characters (romaji).
+      </p>
+    </section>
+    <img alt="Hand holding a wrench" src="/assets/wrench.png" />
+  </div>
 </BaseLayout>
 
-<style></style>
+<style>
+  .note {
+    margin-top: 5rem;
+    font-style: italic;
+    font-size: small;
+  }
+</style>
