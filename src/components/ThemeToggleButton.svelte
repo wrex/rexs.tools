@@ -36,6 +36,9 @@
 <style>
 .toggle {
   cursor: pointer;
+  
+  /* I hate this, but don't know how else to fix it */
+  margin-top: -2px; 
 }
 
 .selected path {

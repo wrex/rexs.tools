@@ -12,13 +12,28 @@ const { current = "" } = Astro.props;
   </ul>
   <ul>
     <li>
-      <a href="/" aria-selected="true">home</a>
+      <a
+        href="/"
+        aria-selected={current === "home"}
+        class={current === "home" ? "primary" : "secondary"}>home</a
+      >
     </li>
     <li>
-      <a href="/about">about</a>
+      <a
+        href="/about"
+        aria-selected={current === "about"}
+        class={current === "about" ? "primary" : "secondary"}>about</a
+      >
     </li>
-    <li><a href="/blog">blog</a></li>
+    <li>
+      <a
+        href="/blog"
+        aria-selected={current === "blog"}
+        class={current === "blog" ? "primary" : "secondary"}>blog</a
+      >
+    </li>
   </ul>
+
   <ul>
     <li>
       <ThemeToggleButton client:load />
@@ -28,3 +43,9 @@ const { current = "" } = Astro.props;
     </li>
   </ul>
 </nav>
+
+<style>
+  .secondary {
+    color: var(--secondary);
+  }
+</style>

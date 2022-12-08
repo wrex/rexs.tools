@@ -7,7 +7,12 @@ const description = "Let's get our hand's dirty";
 const permalink = Astro.site.href;
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink}>
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="home"
+>
   <h1>Rex's Tools</h1>
   <p>
     Collected thoughts from a lifetime of collecting and using all sorts of
@@ -36,3 +41,5 @@ const permalink = Astro.site.href;
     />
   </picture>
 </BaseLayout>
+
+<style></style>
