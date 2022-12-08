@@ -1,6 +1,8 @@
 ---
-import "../styles/fonts.css";
-import "../styles/global.css";
+// import "../styles/fonts.css";
+// import "../styles/global.css";
+import "@picocss/pico/css/pico.classless.min.css";
+import "../styles/custom.css";
 
 export interface Props {
   title: string;
@@ -14,7 +16,7 @@ const socialUrl = Astro.site.href + "assets/icon.png";
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -41,14 +43,14 @@ const socialUrl = Astro.site.href + "assets/icon.png";
 
 <!-- This is intentionally inlined to avoid FOUC -->
 <script>
-  const root = document.documentElement;
-  const theme = localStorage.getItem("theme");
-  if (
-    theme === "dark" ||
-    (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
-  ) {
-    root.classList.remove("theme-light");
-  } else {
-    root.classList.add("theme-light");
-  }
+  // const root = document.documentElement;
+  // const theme = localStorage.getItem("theme");
+  // if (
+  //   theme === "dark" ||
+  //   (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  // ) {
+  //   root.classList.remove("theme-light");
+  // } else {
+  //   root.classList.add("theme-light");
+  // }
 </script>
