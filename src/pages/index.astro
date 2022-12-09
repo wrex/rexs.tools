@@ -18,9 +18,15 @@ const permalink = Astro.site.href;
       <h1>Rex's Tools</h1>
       <p>
         Collected thoughts from a lifetime of collecting and using all sorts of
-        woodworking and metalworking tools and machines.
+        tools and machines for wood, metal, and even plastic.
       </p>
-      <p>Let's get our hands dirty!</p>
+      <blockquote>
+        Man is a tool-using animal. Without tools he is nothing, with tools he
+        is all.
+        <footer>
+          <cite>&mdash; Thomas Carlyle</cite>
+        </footer>
+      </blockquote>
       <p class="note">
         This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
           client:load
@@ -29,20 +35,29 @@ const permalink = Astro.site.href;
         >
         characters to reveal the readings for the characters (readings are always
         visible on mobile devices). There's a toggle in the upper right to display
-        the readings in Japanese (kana) or roman/alphabetic characters (romaji).
+        the readings in Japanese (あ) or roman/alphabetic characters (A).
       </p>
     </section>
-    <img class="hero" alt="Hand holding a wrench" src="/assets/wrench.png" />
+    <img
+      class="heroImage"
+      alt="Hand holding a wrench"
+      src="/assets/wrench.png"
+    />
   </div>
 </BaseLayout>
 
 <style>
-  .hero {
-    max-height: 60vh;
+  .heroQuote {
+    padding-block: 0;
+  }
+  .heroImage {
+    max-height: 80%;
+    padding: 1rem 4rem;
   }
   .note {
     margin-top: 5rem;
     font-style: italic;
     font-size: small;
+    color: var(--secondary);
   }
 </style>

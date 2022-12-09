@@ -8,28 +8,28 @@ const { current = "" } = Astro.props;
 
 <nav>
   <ul>
-    <li><Logo /></li>
+    <li><a href="/"><Logo /></a></li>
   </ul>
   <ul>
     <li>
       <a
-        href="/"
-        aria-selected={current === "home"}
-        class={current === "home" ? "primary" : "secondary"}>home</a
+        href="/blog"
+        aria-selected={current === "blog"}
+        class={current === "blog" ? "contrast" : "secondary"}>blog</a
+      >
+    </li>
+    <li>
+      <a
+        href="/articles"
+        aria-selected={current === "articles"}
+        class={current === "articles" ? "contrast" : "secondary"}>articles</a
       >
     </li>
     <li>
       <a
         href="/about"
         aria-selected={current === "about"}
-        class={current === "about" ? "primary" : "secondary"}>about</a
-      >
-    </li>
-    <li>
-      <a
-        href="/blog"
-        aria-selected={current === "blog"}
-        class={current === "blog" ? "primary" : "secondary"}>blog</a
+        class={current === "about" ? "contrast" : "secondary"}>about</a
       >
     </li>
   </ul>
@@ -47,5 +47,8 @@ const { current = "" } = Astro.props;
 <style>
   .secondary {
     color: var(--secondary);
+  }
+  nav {
+    padding: 0 2rem;
   }
 </style>
