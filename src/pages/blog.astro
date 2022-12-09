@@ -11,10 +11,10 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
 
 <BaseLayout
   title="Blog"
-  description="Blog post index"
+  description="Recent posts"
   permalink="/blog"
   current="blog"
-  ><h1>Blog index</h1>
+  ><h1>Recent posts</h1>
   <section class="grid">
     {
       posts.map((post) => (

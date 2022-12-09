@@ -27,16 +27,6 @@ const permalink = Astro.site.href;
           <cite>&mdash; Thomas Carlyle</cite>
         </footer>
       </blockquote>
-      <p class="note">
-        This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
-          client:load
-          romaji="kanji"
-          furigana="かんじ">漢字</Kanji
-        >
-        characters to reveal the readings for the characters (readings are always
-        visible on mobile devices). There's a toggle in the upper right to display
-        the readings in Japanese (あ) or roman/alphabetic characters (A).
-      </p>
     </section>
     <img
       class="heroImage"
@@ -44,20 +34,29 @@ const permalink = Astro.site.href;
       src="/assets/wrench.png"
     />
   </div>
+  <p class="note">
+    <strong>NOTE:</strong>
+    <em
+      >This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
+        client:load
+        romaji="kanji"
+        furigana="かんじ">漢字</Kanji
+      >
+      characters to reveal the readings. There's a toggle in the upper right to display
+      the readings in Japanese (あ) or roman/alphabetic characters (A).Readings are
+      always visible on mobile devices.</em
+    >
+  </p>
 </BaseLayout>
 
 <style>
-  .heroQuote {
-    padding-block: 0;
-  }
   .heroImage {
     max-height: 80%;
     padding: 1rem 4rem;
   }
   .note {
-    margin-top: 5rem;
-    font-style: italic;
     font-size: small;
     color: var(--secondary);
+    width: 70ch;
   }
 </style>
