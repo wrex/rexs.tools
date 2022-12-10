@@ -6,7 +6,7 @@ import Logo from "./Logo.astro";
 const { current = "" } = Astro.props;
 ---
 
-<nav class="container-fluid">
+<nav class="container-fluid sticky">
   <ul>
     <li><a href="/"><Logo /></a></li>
   </ul>
@@ -45,7 +45,10 @@ const { current = "" } = Astro.props;
 </nav>
 
 <style>
-  .secondary {
-    color: var(--secondary);
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-inverse);
   }
 </style>

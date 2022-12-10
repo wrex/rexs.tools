@@ -40,6 +40,13 @@
   /* I hate this, but don't know how else to fix it */
   margin-top: -2px; 
 }
+.toggle:hover .unselected path {
+  fill: var(--secondary-hover);
+}
+
+.toggle:hover .selected path {
+  fill: var(--primary-hover);
+}
 
 .selected path {
   fill: var(--primary);
@@ -48,6 +55,8 @@
 .unselected path {
   fill: var(--secondary);
 }
+
+
 </style>
 
 

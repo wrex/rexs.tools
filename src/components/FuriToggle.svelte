@@ -24,6 +24,15 @@
 .toggle {
   cursor: pointer;
 }
+
+.toggle:hover .unselected {
+  color: var(--secondary-hover);
+}
+
+.toggle:hover .selected {
+  color: var(--primary-hover);
+}
+
 .selected  {
   color: var(--primary);
 }
