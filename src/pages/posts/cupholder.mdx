@@ -11,7 +11,11 @@ image:
 tags: ["3DP", "repair"]
 ---
 
-import { Img } from "astro-imagetools/components";
+import { Picture } from "@astrojs/image/components";
+
+import assemblyImage from "../../images/cupholder-assembly.jpeg";
+import originalImage from "../../images/cupholder-original.jpeg";
+import brokenImage from "../../images/cupholder-broken.jpeg";
 
 My wife came to me a few days ago asking if I could repair the cupholder in her
 car.
@@ -20,14 +24,26 @@ The cupholder is a two piece assembly. The top piece is spring loaded and hinges
 on two little nubs on the sides. Here's a view of the assembly with the original
 parts:
 
-<Img src="/src/images/cupholder-assembly.jpeg" alt="Cupholder assembly" />
+<Picture
+  src={assemblyImage}
+  widths={[400, 800, 1200]}
+  alt="Cupholder assembly"
+/>
 
 The nub on one end was broken. Here's a view of
 the original injection-molded part:
 
 <div class="grid">
-  <Img src="/src/images/cupholder-original.jpeg" alt="Original cupholder" />
-  <Img src="/src/images/cupholder-broken.jpeg" alt="View of broken end" />
+  <Picture
+    widths={[400, 800, 1200]}
+    src={originalImage}
+    alt="Original cupholder"
+  />
+  <Picture
+    widths={[400, 800, 1200]}
+    src={brokenImage}
+    alt="View of broken end"
+  />
 </div>
 
 A normal person would have just drilled a hole in the end and inserted a little
