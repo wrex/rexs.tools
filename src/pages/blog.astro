@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import BlogPost from "../components/BlogPost.astro";
+// import BlogPost from "../components/BlogPost.astro";
+import BlogList from "../components/BlogList.svelte";
 
 const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   (a, b) =>
@@ -15,8 +16,10 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   permalink="/blog"
   current="blog"
   ><h1>Recent posts</h1>
-  <section class="grid">
-    {
+  <BlogList posts={posts} />
+</BaseLayout>
+
+<!-- {
       posts.map((post) => (
         <article>
           <BlogPost
@@ -27,6 +30,4 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
           />
         </article>
       ))
-    }
-  </section>
-</BaseLayout>
+    } -->
