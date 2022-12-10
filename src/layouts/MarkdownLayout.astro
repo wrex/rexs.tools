@@ -10,20 +10,20 @@ const { frontmatter } = Astro.props;
   current="blog"
 >
   <article>
+    <h1>{frontmatter.title}</h1>
     <p>Written by: {frontmatter.author}</p>
     <p>{frontmatter.pubDate.slice(0, 10)}</p>
-    <div class="grid">
+    <p>Tags:</p>
+    <ul>
       {
         frontmatter.tags.map((tag) => (
-          <p class="tag">
+          <li class="tag">
             <a href={`/tags/${tag}`}>{tag}</a>
-          </p>
+          </li>
         ))
       }
-    </div>
+    </ul>
   </article>
 
   <slot />
 </BaseLayout>
-
-<style></style>
