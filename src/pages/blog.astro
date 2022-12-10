@@ -23,6 +23,7 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
             url={post.url}
             title={post.frontmatter.title}
             pubDate={post.frontmatter.pubDate}
+            image={post.frontmatter.image}
           />
         </article>
       ))

@@ -1,0 +1,60 @@
+---
+layout: ../../layouts/MarkdownLayout.astro
+title: "3D printed cupholder"
+pubDate: 2022-12-09
+description: "Replacing a car cupholder part."
+author: "Rex Walters"
+permalink: "/posts/cupholder"
+image:
+  url: "/assets/cupholder.png"
+  alt: "Cupholder (3D model)"
+tags: ["3DP", "repair"]
+---
+
+import { YouTube } from "@astro-community/astro-embed-youtube";
+import { Img } from "astro-imagetools/components";
+
+# Repairing a cupholder
+
+My wife came to me a few days ago asking if I could repair the cupholder in her
+car.
+
+The cupholder is a two piece assembly. The top piece is spring loaded and hinges
+on two little nubs on the sides. Here's a view of the assembly with the original
+parts:
+
+<Img src="/src/images/cupholder-assembly.jpeg" alt="Cupholder assembly" />
+
+The nub on one end was broken. Here's a view of
+the original injection-molded part:
+
+<div class="grid">
+  <Img src="/src/images/cupholder-original.jpeg" alt="Original cupholder" />
+  <Img src="/src/images/cupholder-broken.jpeg" alt="View of broken end" />
+</div>
+
+A normal person would have just drilled a hole in the end and inserted a little
+pin to act as a hinge.
+
+Instead, I designed [a whole new part in fusion 360](https://a360.co/3VNdqAe).
+That link should take you to a viewer for the 3D model, but here's a static
+image:
+
+<img src="/assets/cupholder.png" alt="cupholder model" />
+
+Notes:
+
+- The nubs create "overhangs" where the 3D printer would need to print over
+  empty air (causing droops and ugliness). To work around the problem I added
+  some integral supports. After printing, I just broke off those supports with
+  my fingers and cleaned it up a bit with a file.
+
+- The spring is held in place between two little nubs between the center ribs.
+  Rather than dealing with supports, I just printed a complete cylinder that
+  goes all the way from one rib to the other. After printing, I just took a pair
+  of nippers and cut out most of the center portion so I could put the spring in
+  place.
+
+Here's a short video of the final results:
+
+<YouTube id="rH7g6PRv0-0" params="modestbranding&loop=1&playlist=rH7g6PRv0-0" />
