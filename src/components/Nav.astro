@@ -13,6 +13,13 @@ const { current = "" } = Astro.props;
   <ul>
     <li>
       <a
+        href="/"
+        aria-selected={current === "home"}
+        class={current === "home" ? "contrast" : "secondary"}>home</a
+      >
+    </li>
+    <li>
+      <a
         href="/blog"
         aria-selected={current === "blog"}
         class={current === "blog" ? "contrast" : "secondary"}>blog</a
