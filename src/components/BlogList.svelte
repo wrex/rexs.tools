@@ -1,6 +1,4 @@
 <script type="ts">
-  import { A } from "../../dist/chunks/index.efdc18a3";
-
   export let posts = [];
   const rowSize = 3;
   
@@ -35,10 +33,8 @@
     {#each rowPosts as post}
     <article>
       <div class="imageContainer"><img src={post.frontmatter.image.url} alt={post.frontmatter.image.alt} /></div>
-      <hgroup>
-        <h4><a href={post.url}>{post.frontmatter.title}</a></h4>
-        <p class="description">{post.frontmatter.description}</p>
-      </hgroup>
+      <h4><a href={post.url}>{post.frontmatter.title}</a></h4>
+      <p class="description">{post.frontmatter.description}</p>
       <ul class="tags">
         {#each post.frontmatter.tags as tag}
           <li><a href="#">{tag}</a></li>
@@ -70,6 +66,7 @@
 
   .description {
     font-size: small;
+    color: var(--secondary);
   }
 
   .tags li {
