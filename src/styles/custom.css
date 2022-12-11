@@ -34,4 +34,5 @@
   --form-element-focus-color: var(--primary-focus);
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
+  --font-family: "EB Garamond", serif;
 }
