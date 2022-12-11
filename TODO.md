@@ -1,0 +1,2 @@
+- Fix broken links on bloglist
+- figure out why removebg images not appearing on published site

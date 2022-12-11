@@ -1,13 +1,37 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-// import BlogPost from "../components/BlogPost.astro";
-import BlogList from "../components/BlogList.svelte";
+// import { Image, Picture } from "@astrojs/image/components";
 
 const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   (a, b) =>
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
 );
+
+let rows = [];
+let rowSize = 3;
+for (let i = 0; i < posts.length; i += rowSize) {
+  rows.push(posts.slice(i, i + rowSize));
+}
+
+const lastRowLength = rows[rows.length - 1].length;
+const emptyPostCount = rowSize - lastRowLength;
+const emptyPost = {
+  frontmatter: {
+    image: {
+      url: "",
+      alt: "",
+    },
+    title: "",
+    description: "",
+    pubDate: "",
+    tags: [],
+  },
+  url: "",
+};
+for (let i = 0; i < emptyPostCount; i += 1) {
+  rows[rows.length - 1].push(emptyPost);
+}
 ---
 
 <BaseLayout
@@ -15,19 +39,75 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   description="Recent posts"
   permalink="/blog"
   current="blog"
-  ><h1>Recent posts</h1>
-  <BlogList posts={posts} />
+>
+  <h1>Recent posts</h1>
+  {
+    rows.map((rowPosts) => (
+      <div class="grid">
+        {rowPosts.map((post) => (
+          <article>
+            <div class="imageContainer">
+              <img
+                src={post.frontmatter.image.url}
+                alt={post.frontmatter.image.alt}
+              />
+            </div>
+            <h4>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </h4>
+            <p class="description">{post.frontmatter.description}</p>
+            <ul class="tags">
+              {post.frontmatter.tags.map((tag) => (
+                <li>
+                  <a href="#">{tag}</a>
+                </li>
+              ))}
+            </ul>
+            <date>{post.frontmatter.pubDate.slice(0, 10)}</date>
+          </article>
+        ))}
+      </div>
+    ))
+  }
 </BaseLayout>
 
-<!-- {
-      posts.map((post) => (
-        <article>
-          <BlogPost
-            url={post.url}
-            title={post.frontmatter.title}
-            pubDate={post.frontmatter.pubDate}
-            image={post.frontmatter.image}
-          />
-        </article>
-      ))
-    } -->
+<style>
+  article {
+    position: relative;
+    padding-block: 1rem;
+    z-index: -1;
+  }
+
+  article date {
+    position: absolute;
+    right: var(--block-spacing-horizontal);
+  }
+
+  .tags {
+    font-size: small;
+    padding: 0;
+    width: 90%;
+  }
+
+  .description {
+    font-size: small;
+    color: var(--secondary);
+  }
+
+  .tags li {
+    list-style-type: none;
+    float: left;
+    margin-right: 1em;
+  }
+
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    margin-block: 1rem;
+  }
+  date {
+    color: var(--secondary);
+    font-size: small;
+  }
+</style>
