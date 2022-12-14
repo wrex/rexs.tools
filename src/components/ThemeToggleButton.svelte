@@ -4,7 +4,7 @@
     let newTheme = $theme === "light" ? "dark" : "light";
     theme.set(newTheme);
     localStorage.setItem('theme', $theme);
-    document.documentElement.setAttribute("color-scheme", $theme);
+    document.documentElement.setAttribute("data-theme", $theme);
   }
 </script>
 
