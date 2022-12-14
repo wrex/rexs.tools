@@ -35,4 +35,16 @@
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
   --font-family: "EB Garamond", serif;
+  --alt-font-family: "Nunito Sans", sans-serif;
+}
+
+.maincontent {
+  width: 70%;
+}
+
+.sidebar {
+  margin-left: 10px;
+  width: 30%;
+  float: right;
+  font-family: var(--alt-font-family);
 }
