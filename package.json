@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.12.1",
+    "open-props": "^1.5.1",
+    "postcss-jit-props": "^1.0.8",
     "reading-time": "^1.5.0",
     "sharp": "^0.31.2"
   }
