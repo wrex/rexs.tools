@@ -26,18 +26,18 @@
 }
 
 .toggle:hover .unselected {
-  color: var(--secondary-hover);
+  color: var(--text-2);
 }
 
 .toggle:hover .selected {
-  color: var(--primary-hover);
+  color: var(--brand);
 }
 
 .selected  {
-  color: var(--primary);
+  color: var(--brand);
 }
 
 .unselected {
-  color: var(--secondary);
+  color: var(--text-2);
 }
 </style>

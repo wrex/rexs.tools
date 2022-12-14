@@ -4,7 +4,7 @@
     let newTheme = $theme === "light" ? "dark" : "light";
     theme.set(newTheme);
     localStorage.setItem('theme', $theme);
-    document.documentElement.setAttribute("data-theme", $theme);
+    document.documentElement.setAttribute("color-scheme", $theme);
   }
 </script>
 
@@ -41,19 +41,19 @@
   margin-top: -2px; 
 }
 .toggle:hover .unselected path {
-  fill: var(--secondary-hover);
+  fill: var(--text-2);
 }
 
 .toggle:hover .selected path {
-  fill: var(--primary-hover);
+  fill: var(--brand);
 }
 
 .selected path {
-  fill: var(--primary);
+  fill: var(--brand);
 }
 
 .unselected path {
-  fill: var(--secondary);
+  fill: var(--text-2);
 }
 
 
