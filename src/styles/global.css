@@ -1,0 +1,6 @@
+/* the props */
+@import "open-props/postcss/style";
+
+body {
+  background-color: var(--purple-10);
+}

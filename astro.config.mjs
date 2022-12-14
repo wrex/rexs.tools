@@ -7,7 +7,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-blog-template.netlify.app",
+  site: "https://rexs.tools",
   integrations: [
     mdx(),
     svelte(),
