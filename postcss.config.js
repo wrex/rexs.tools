@@ -1,7 +1,9 @@
 // postcss.config.js
 const postcssJitProps = require("postcss-jit-props");
+const postcssPresetEnv = require("postcss-preset-env");
+
 const OpenProps = require("open-props");
 
 module.exports = {
-  plugins: [postcssJitProps(OpenProps)],
+  plugins: [postcssPresetEnv(), postcssJitProps(OpenProps)],
 };

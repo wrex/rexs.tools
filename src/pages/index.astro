@@ -13,36 +13,35 @@ const permalink = Astro.site.href;
   permalink={permalink}
   current="home"
 >
-  <div class="grid">
-    <section>
-      <h1>Rex's Tools</h1>
-      <p>
-        Thoughts from a lifetime of collecting and using all sorts of tools and
-        machines for wood, metal, and even plastic.
-      </p>
-      <blockquote>
-        Man is a tool-using animal. Without tools he is nothing, with tools he
-        is all.
-        <cite>&mdash; Thomas Carlyle</cite>
-      </blockquote>
-    </section>
+  <section class="flow">
+    <h1>Rex's Tools</h1>
+    <p>
+      Thoughts from a lifetime of collecting and using all sorts of <span
+        class="red-squiggly">tools</span
+      > and machines for wood, metal, and even plastic.
+    </p>
+    <blockquote>
+      Man is a tool-using animal. Without tools he is nothing, with tools he is
+      all.
+      <cite>&mdash; Thomas Carlyle</cite>
+    </blockquote>
     <img
       class="heroImage"
       alt="Hand holding a wrench"
       src="/assets/wrench.png"
     />
-  </div>
-  <p class="note">
-    <strong>NOTE:</strong>
-    <em
-      >This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
-        client:load
-        romaji="kanji"
-        furigana="かんじ">漢字</Kanji
+    <p class="note">
+      <strong>NOTE:</strong>
+      <em
+        >This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
+          client:load
+          romaji="kanji"
+          furigana="かんじ">漢字</Kanji
+        >
+        characters to reveal the readings. There's a toggle in the upper right to
+        display the readings in Japanese (あ) or roman/alphabetic characters (A).Readings
+        are always visible on mobile devices.</em
       >
-      characters to reveal the readings. There's a toggle in the upper right to display
-      the readings in Japanese (あ) or roman/alphabetic characters (A).Readings are
-      always visible on mobile devices.</em
-    >
-  </p>
+    </p>
+  </section>
 </BaseLayout>

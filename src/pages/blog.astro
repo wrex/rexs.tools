@@ -7,31 +7,6 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
     new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf()
 );
-
-let rows = [];
-let rowSize = 3;
-for (let i = 0; i < posts.length; i += rowSize) {
-  rows.push(posts.slice(i, i + rowSize));
-}
-
-const lastRowLength = rows[rows.length - 1].length;
-const emptyPostCount = rowSize - lastRowLength;
-const emptyPost = {
-  frontmatter: {
-    image: {
-      url: "",
-      alt: "",
-    },
-    title: "",
-    description: "",
-    pubDate: "",
-    tags: [],
-  },
-  url: "",
-};
-for (let i = 0; i < emptyPostCount; i += 1) {
-  rows[rows.length - 1].push(emptyPost);
-}
 ---
 
 <BaseLayout
@@ -39,36 +14,33 @@ for (let i = 0; i < emptyPostCount; i += 1) {
   description="Recent posts"
   permalink="/blog"
   current="blog"
->
-  <h1>Recent posts</h1>
-  {
-    rows.map((rowPosts) => (
-      <div class="grid">
-        {rowPosts.map((post) => (
-          <article>
-            <a href={post.url}>
-              <div class="imageContainer">
-                <img
-                  src={post.frontmatter.image.url}
-                  alt={post.frontmatter.image.alt}
-                />
-              </div>
-            </a>
-            <h4>
-              <a href={post.url}>{post.frontmatter.title}</a>
-            </h4>
-            <p class="description">{post.frontmatter.description}</p>
-            <ul class="tags">
-              {post.frontmatter.tags.map((tag) => (
-                <li>
-                  <a href="#">{tag}</a>
-                </li>
-              ))}
-            </ul>
-            <date>{post.frontmatter.pubDate.slice(0, 10)}</date>
-          </article>
-        ))}
-      </div>
-    ))
-  }
+  ><div class="flow">
+    <h1>Recent posts</h1>
+    {
+      posts.map((post) => (
+        <article>
+          <a href={post.url}>
+            <div class="imageContainer">
+              <img
+                src={post.frontmatter.image.url}
+                alt={post.frontmatter.image.alt}
+              />
+            </div>
+          </a>
+          <h4>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </h4>
+          <p class="description">{post.frontmatter.description}</p>
+          <ul class="tags">
+            {post.frontmatter.tags.map((tag) => (
+              <li>
+                <a href="#">{tag}</a>
+              </li>
+            ))}
+          </ul>
+          <date>{post.frontmatter.pubDate.slice(0, 10)}</date>
+        </article>
+      ))
+    }
+  </div>
 </BaseLayout>

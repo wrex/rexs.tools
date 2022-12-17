@@ -6,9 +6,9 @@ import Logo from "./Logo.astro";
 const { current = "" } = Astro.props;
 ---
 
-<nav class="container-fluid sticky">
+<nav>
   <a href="/"><Logo /></a>
-  <ul>
+  <ul class="nav-links">
     <li>
       <a
         href="/"
@@ -39,12 +39,16 @@ const { current = "" } = Astro.props;
     </li>
   </ul>
 
-  <ul>
-    <li>
-      <ThemeToggleButton client:load />
-    </li>
-    <li>
-      <FuriToggle client:load />
-    </li>
-  </ul>
+  <div class="toggles">
+    <ThemeToggleButton client:load />
+    <FuriToggle client:load />
+  </div>
 </nav>
+
+<style>
+  .toggles {
+    display: flex;
+    align-items: center;
+    gap: var(--size-3);
+  }
+</style>
