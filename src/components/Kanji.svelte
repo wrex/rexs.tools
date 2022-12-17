@@ -12,7 +12,7 @@
 <style>
   [data-tooltip] {
     position: relative;
-    font-family: var(--ff-ui);
+    font-family: var(--font-sans);
   }
 
   [data-tooltip]:not(a, button, input) {
@@ -23,6 +23,7 @@
 
   [data-tooltip]::after,
   [data-tooltip]::before {
+    --tooltip-bg: var(--surface-3);
     display: block;
     z-index: 99;
     position: absolute;
@@ -32,28 +33,27 @@
     overflow: hidden;
     transform: translate(-50%, -0.25rem);
     border-radius: 0.5em;
-    background: var(--surface-4);
+    background: var(--tooltip-bg);
     content: attr(data-tooltip);
     color: var(--text-1);
-    font-style: normal;
-    font-size: 0.875rem;
-    text-decoration: none;
+    font-size: var(--font-size-1);
     text-overflow: ellipsis;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
+    box-shadow: var(--shadow-6);
   }
 
   [data-tooltip]::after {
     padding: 0;
     transform: translate(-50%, 0);
-    border-top: 0.3rem solid;
-    border-right: 0.3rem solid transparent;
-    border-left: 0.3rem solid transparent;
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
     border-radius: 0;
     background-color: transparent;
     content: "";
-    color: var(--tooltip-background-color, white);
+    color: var(--tooltip-bg);
   }
 
   [data-tooltip]:focus::after,
