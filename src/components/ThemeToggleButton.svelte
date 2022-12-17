@@ -8,9 +8,6 @@
   }
 </script>
 
-
-
-<!-- <select bind:value="{$theme}"> -->
 <div class="toggle" on:click={toggleTheme} on:keypress={toggleTheme}>
   <svg
     class = {$theme === "light" ? "selected" : "unselected"}
