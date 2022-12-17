@@ -13,51 +13,56 @@ const permalink = Astro.site.href;
   permalink={permalink}
   current="home"
 >
-  <section class="flow">
+  <section>
     <h1>Rex's Tools</h1>
-    <img
-      class="heroImage"
-      src="/assets/wrench-600.png"
-      alt="Image of a wrench"
-    />
-    <p>
-      Thoughts from a lifetime of collecting and using tools and machines for
-      wood, metal, and even plastic.
-    </p>
-    <blockquote>
-      Man is a tool-using animal. Without tools he is nothing, with tools he is
-      all.
-      <cite>&mdash; Thomas Carlyle</cite>
-    </blockquote>
-    <p class="note">
-      <strong>NOTE:</strong>
-      <em
-        >This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
-          client:load
-          romaji="kanji"
-          furigana="かんじ">漢字</Kanji
-        >
-        characters to reveal the readings. There's a toggle in the upper right to
-        display the readings in Japanese (あ) or roman/alphabetic characters (A).Readings
-        are always visible on mobile devices.</em
-      >
-    </p>
+    <div class="hero">
+      <img
+        class="heroImage"
+        src="/assets/wrench-600.png"
+        alt="Image of a wrench"
+      />
+      <div class="heroContent flow">
+        <p>
+          Thoughts from a lifetime of collecting and using tools and machines
+          for wood, metal, and even plastic.
+        </p>
+        <blockquote>
+          Man is a tool-using animal. Without tools he is nothing, with tools he
+          is all.
+          <cite>&mdash; Thomas Carlyle</cite>
+        </blockquote>
+        <p class="note">
+          <strong>NOTE:</strong>
+          <em
+            >This site occasionally uses Japanese characters (kanji). Hover over
+            any <Kanji client:load romaji="kanji" furigana="かんじ">漢字</Kanji>
+            characters to reveal the readings. There's a toggle in the upper right
+            to display the readings in Japanese (あ) or roman/alphabetic characters
+            (A).Readings are always visible on mobile devices.</em
+          >
+        </p>
+      </div>
+    </div>
   </section>
 </BaseLayout>
 
 <style>
   h1 {
-    padding-block: var(--size-9);
     text-align: center;
-    font-size: var(--font-size-8);
+    padding-block: var(--size-4);
+    font-size: var(--font-size-6);
   }
 
   .note {
     color: var(--text-2);
     font-size: var(--font-size-1);
   }
+
+  .hero {
+    display: flex;
+    align-items: start;
+  }
   .heroImage {
-    float: left;
     max-height: 12vh;
     padding-right: var(--size-4);
     padding-block: var(--size-4);
@@ -68,16 +73,20 @@ const permalink = Astro.site.href;
   }
 
   @media (--sm-n-above) {
+    h1 {
+      padding-block: var(--size-9);
+      font-size: var(--font-size-8);
+    }
     .heroImage {
-      max-height: 25vh;
-      padding: var(--size-6);
+      max-height: 33vh;
+      padding-right: 0;
+      align-self: center;
     }
 
     blockquote {
       font-size: var(--font-size-3);
-      clear: none;
       display: inline-block;
-      width: 18ch;
+      margin-left: var(--size-8);
     }
   }
 </style>
