@@ -24,7 +24,7 @@ body {
   font-family: var(--font-serif);
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-4);
-  line-height: var(--font-lineheight-3);
+  line-height: var(--font-lineheight-4);
 }
 
 @media (--sm-n-above) {
@@ -34,7 +34,6 @@ body {
 }
 
 blockquote {
-  --flow-space: var(--size-6);
   padding-inline: var(--size-3);
   font-weight: var(--font-weight-7);
   border-left: var(--border-size-2) solid var(--brand);
@@ -56,5 +55,5 @@ blockquote cite {
 }
 
 .flow > * + * {
-  margin-block: var(--flow-space, 1rem);
+  margin-top: var(--flow-space, 1.6rem);
 }
