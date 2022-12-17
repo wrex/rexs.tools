@@ -23,19 +23,27 @@
 body {
   font-family: var(--font-serif);
   font-size: var(--font-size-2);
+  font-weight: var(--font-weight-4);
   line-height: var(--font-lineheight-3);
+}
+
+@media (--sm-n-above) {
+  body {
+    font-size: var(--font-size-4);
+  }
 }
 
 blockquote {
   --flow-space: var(--size-6);
-  /* font-size: var(--font-size-3); */
   padding-inline: var(--size-3);
+  font-weight: var(--font-weight-7);
   border-left: var(--border-size-2) solid var(--brand);
 }
 
 blockquote cite {
   display: block;
   font-size: var(--font-size-3);
+  padding-top: var(--size-4);
   color: var(--text-2);
 }
 

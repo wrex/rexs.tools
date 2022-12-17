@@ -13,19 +13,17 @@ const permalink = Astro.site.href;
   permalink={permalink}
   current="home"
 >
-  <section class="hero flow">
+  <section class="flow">
     <h1>Rex's Tools</h1>
-    <imageText class="flow">
-      <img
-        class="heroImage"
-        src="/assets/wrench-600.png"
-        alt="Image of a wrench"
-      />
-      <p>
-        Thoughts from a lifetime of collecting and using all sorts of tools and
-        machines for wood, metal, and even plastic.
-      </p>
-    </imageText>
+    <img
+      class="heroImage"
+      src="/assets/wrench-600.png"
+      alt="Image of a wrench"
+    />
+    <p>
+      Thoughts from a lifetime of collecting and using tools and machines for
+      wood, metal, and even plastic.
+    </p>
     <blockquote>
       Man is a tool-using animal. Without tools he is nothing, with tools he is
       all.
@@ -49,7 +47,9 @@ const permalink = Astro.site.href;
 
 <style>
   h1 {
-    margin-top: 1em;
+    padding-block: var(--size-9);
+    text-align: center;
+    font-size: var(--font-size-8);
   }
 
   .note {
@@ -58,13 +58,26 @@ const permalink = Astro.site.href;
   }
   .heroImage {
     float: left;
-    max-width: 20em;
     max-height: 12vh;
     padding-right: var(--size-4);
-    padding-top: var(--size-4);
+    padding-block: var(--size-4);
   }
 
   blockquote {
     clear: left;
+  }
+
+  @media (--sm-n-above) {
+    .heroImage {
+      max-height: 25vh;
+      padding: var(--size-6);
+    }
+
+    blockquote {
+      font-size: var(--font-size-3);
+      clear: none;
+      display: inline-block;
+      width: 18ch;
+    }
   }
 </style>
