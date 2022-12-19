@@ -36,6 +36,8 @@ svg {
 .toggle {
   cursor: pointer;
   line-height: 1;
+  display: flex;
+  flex-direction: column;
 }
 .toggle:hover .unselected path {
   fill: var(--text-2);

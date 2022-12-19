@@ -23,6 +23,13 @@
 <style>
 .toggle {
   cursor: pointer;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-4);
+  line-height: 1;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .toggle:hover .unselected {

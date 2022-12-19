@@ -30,6 +30,7 @@ body {
 @media (--sm-n-above) {
   body {
     font-size: var(--font-size-4);
+    line-height: var(--font-lineheight-3);
   }
 }
 
