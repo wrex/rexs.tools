@@ -1,13 +1,20 @@
 <script type="ts">
   import { theme } from '../stores/theme';
+  import { onMount } from 'svelte';
+
   function toggleTheme() {
     let newTheme = $theme === "light" ? "dark" : "light";
     theme.set(newTheme);
     localStorage.setItem('theme', $theme);
     document.documentElement.setAttribute("data-theme", $theme);
   }
+
+  onMount(async () => {
+    document.documentElement.setAttribute("data-theme", $theme);
+  });
 </script>
 
+<span>{$theme}</span>
 <div class="toggle" on:click={toggleTheme} on:keypress={toggleTheme}>
   {#if ($theme === "light")}
   <svg

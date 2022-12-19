@@ -21,7 +21,7 @@
 /* typography */
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-4);
   line-height: var(--font-lineheight-4);
@@ -45,6 +45,12 @@ blockquote cite {
   font-size: var(--font-size-3);
   padding-top: var(--size-4);
   color: var(--text-2);
+}
+
+p,
+ul,
+ol {
+  font-family: var(--font-serif);
 }
 
 /* Utility */
