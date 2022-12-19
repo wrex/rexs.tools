@@ -53,7 +53,7 @@ const { current = "" } = Astro.props;
     grid-auto-rows: min-content;
     grid-template-areas:
       " logo  logo  logo  logo  logo  logo"
-      " nlink nlink nlink nlink nlink nlink";
+      " nlink nlink nlink nlink nlink toggle";
 
     background-color: var(--surface-2);
 
@@ -101,14 +101,10 @@ const { current = "" } = Astro.props;
   }
 
   .toggles {
+    grid-area: toggle;
     display: flex;
-    gap: var(--size-3);
-    padding-inline: var(--size-3);
-    height: var(--size-8);
-    padding-block: var(--size-4);
-
-    position: absolute;
-    top: 0;
-    right: 0;
+    flex-direction: column;
+    padding-inline: var(--size-4);
+    padding-block: var(--size-2);
   }
 </style>
