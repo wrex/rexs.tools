@@ -12,12 +12,15 @@
 
 <!-- <select bind:value="{$theme}"> -->
 <div class="toggle" on:click={toggleType} on:keypress={toggleType}>
+  {#if $furiganaType === "kana"}
   <span
     class = {$furiganaType === "kana" ? "selected" : "unselected"}
     >あ</span>
+  {:else}
   <span
     class = {$furiganaType === "romaji" ? "selected" : "unselected"}
     >A</span>
+  {/if}
 </div>
 
 <style>
@@ -27,24 +30,11 @@
   font-weight: var(--font-weight-4);
   line-height: 1;
   text-align: center;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.toggle:hover .unselected {
   color: var(--text-2);
+  width: 1em;
 }
 
-.toggle:hover .selected {
-  color: var(--brand);
-}
-
-.selected  {
-  color: var(--brand);
-}
-
-.unselected {
-  color: var(--text-2);
+.toggle:hover {
+  color: var(--text-1);
 }
 </style>
