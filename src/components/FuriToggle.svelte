@@ -26,7 +26,7 @@
 <style>
 .toggle {
   cursor: pointer;
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-1);
   font-weight: var(--font-weight-4);
   line-height: 1;
   text-align: center;

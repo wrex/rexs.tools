@@ -34,6 +34,7 @@
 <style>
 svg {
   display: inline-block;
+  width: 1rem;
 }
 .toggle {
   cursor: pointer;
