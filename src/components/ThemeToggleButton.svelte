@@ -14,7 +14,6 @@
   });
 </script>
 
-<span>{$theme}</span>
 <div class="toggle" on:click={toggleTheme} on:keypress={toggleTheme}>
   {#if ($theme === "light")}
   <svg
