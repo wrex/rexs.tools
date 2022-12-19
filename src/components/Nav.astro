@@ -86,6 +86,10 @@ const { current = "" } = Astro.props;
     align-items: center;
   }
 
+  .nav-links a[aria-selected="true"] {
+    text-decoration: underline;
+  }
+
   .nav-links a {
     text-decoration: none;
     color: var(--brand);
