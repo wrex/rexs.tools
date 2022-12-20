@@ -128,7 +128,6 @@ const { current = "" } = Astro.props;
       height: var(--size-8);
     }
     .toggles {
-      gap: var(--size-2);
       padding-block: 0;
     }
   }
@@ -138,6 +137,9 @@ const { current = "" } = Astro.props;
     nav {
       font-size: var(--font-size-5);
       grid-template-columns: 1fr repeat(6, 10rem) 1fr;
+    }
+    .toggles {
+      gap: var(--size-3);
     }
     .logo {
       padding-block: var(--size-3);

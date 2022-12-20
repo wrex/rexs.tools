@@ -37,4 +37,16 @@
 .toggle:hover {
   color: var(--text-1);
 }
+
+@media (--sm-n-above) {
+  .toggle {
+    font-size: var(--font-size-3);
+  }
+}
+
+@media (--lg-n-above) {
+  .toggle {
+    font-size: var(--font-size-4);
+  }
+}
 </style>

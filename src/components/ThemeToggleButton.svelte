@@ -40,7 +40,7 @@
 <style>
 svg {
   display: inline-block;
-  width: 1rem;
+  width: var(--size-3);
 }
 .toggle {
   cursor: pointer;
@@ -53,6 +53,19 @@ path {
 .toggle:hover path {
   fill: var(--text-1);
 }
+
+@media (--sm-n-above) {
+  svg {
+    width: var(--size-4);
+  }
+}
+
+@media (--lg-n-above) {
+  svg {
+    width: var(--size-5)
+  }
+}
+
 </style>
 
 
