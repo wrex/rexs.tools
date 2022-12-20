@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
   permalink={frontmatter.permalink}
   current="articles"
 >
-  <article class="flow">
+  <article class="article flow">
     <h1>{frontmatter.title}</h1>
     <slot />
   </article>
