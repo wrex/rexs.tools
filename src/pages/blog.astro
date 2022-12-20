@@ -14,7 +14,7 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   description="Blog index"
   permalink="/blog"
   current="blog"
-  ><div class="flow">
+  ><section class="flow">
     <h1>Blog index</h1>
     {
       posts.map((post) => (
@@ -48,5 +48,5 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
         </article>
       ))
     }
-  </div>
+  </section>
 </BaseLayout>

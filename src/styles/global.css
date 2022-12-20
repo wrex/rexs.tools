@@ -168,6 +168,8 @@ a:visited {
   font-size: var(--font-size-1);
 }
 
+/* hero */
+
 .hero {
   display: block;
 }

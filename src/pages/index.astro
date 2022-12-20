@@ -13,35 +13,33 @@ const permalink = Astro.site.href;
   permalink={permalink}
   current="home"
 >
-  <section>
+  <section class="flow flow">
     <h1>Rex's Tools</h1>
-    <div class="hero">
-      <img
-        class="heroImage"
-        src="/assets/wrench-600.png"
-        alt="Image of a wrench"
-      />
-      <div class="flow">
-        <p>
-          Thoughts from a lifetime of collecting and <em>using</em> tools and machines
-          for wood, metal, and even plastic.
-        </p>
-        <blockquote>
-          Man is a tool-using animal. Without tools he is nothing, with tools he
-          is all.
-          <cite>&mdash; Thomas Carlyle</cite>
-        </blockquote>
-        <p class="note">
-          <strong>NOTE:</strong>
-          <em
-            >This site occasionally uses Japanese characters (kanji). Hover over
-            any <Kanji client:load romaji="kanji" furigana="かんじ">漢字</Kanji>
-            characters to reveal the readings. There's a toggle in the upper right
-            to display the readings in Japanese (あ) or roman/alphabetic characters
-            (A).</em
-          >
-        </p>
-      </div>
-    </div>
+    <img
+      class="heroImage"
+      src="/assets/wrench-600.png"
+      alt="Image of a wrench"
+    />
+    <p>
+      Thoughts from a lifetime of collecting and <em>using</em> tools and machines
+      for wood, metal, and even plastic.
+    </p>
+    <blockquote>
+      Man is a tool-using animal. Without tools he is nothing, with tools he is
+      all.
+      <cite>&mdash; Thomas Carlyle</cite>
+    </blockquote>
+    <p class="note">
+      <strong>NOTE:</strong>
+      <em
+        >This site occasionally uses Japanese characters (kanji). Hover over any <Kanji
+          client:load
+          romaji="kanji"
+          furigana="かんじ">漢字</Kanji
+        >
+        characters to reveal the readings. There's a toggle in the upper right to
+        display the readings in Japanese (あ) or roman/alphabetic characters (A).</em
+      >
+    </p>
   </section>
 </BaseLayout>
