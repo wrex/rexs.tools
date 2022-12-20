@@ -11,14 +11,14 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
 
 <BaseLayout
   title="Blog"
-  description="Recent posts"
+  description="Blog index"
   permalink="/blog"
   current="blog"
   ><div class="flow">
-    <h1>Recent posts</h1>
+    <h1>Blog index</h1>
     {
       posts.map((post) => (
-        <article>
+        <article class="blog-card">
           <a href={post.url}>
             <div class="imageContainer">
               <img
@@ -27,17 +27,19 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
               />
             </div>
           </a>
-          <h4>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </h4>
-          <p class="description">{post.frontmatter.description}</p>
           <ul class="tags">
             {post.frontmatter.tags.map((tag) => (
               <li>
-                <a href="#">{tag}</a>
+                <a class="tag" href="#">
+                  {tag}
+                </a>
               </li>
             ))}
           </ul>
+          <h2>
+            <a href={post.url}>{post.frontmatter.title}</a>
+          </h2>
+          <p class="description">{post.frontmatter.description}</p>
           <date>{post.frontmatter.pubDate.slice(0, 10)}</date>
         </article>
       ))
