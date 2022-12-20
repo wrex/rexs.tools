@@ -135,14 +135,14 @@ const { current = "" } = Astro.props;
   /* Desktop */
   @media (--lg-n-above) {
     nav {
-      font-size: var(--font-size-5);
-      grid-template-columns: 1fr repeat(6, 10rem) 1fr;
+      font-size: var(--font-size-4);
+      grid-template-columns: 1fr repeat(6, var(--size-11)) 1fr;
     }
     .toggles {
       gap: var(--size-3);
     }
     .logo {
-      padding-block: var(--size-3);
+      padding-block: var(--size-2);
     }
     .logo :global(*) {
       height: var(--size-10);

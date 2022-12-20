@@ -16,37 +16,39 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   current="blog"
   ><section class="flow">
     <h1>Blog index</h1>
-    {
-      posts.map((post) => (
-        <article class="blog-card">
-          <a href={post.url}>
-            <div class="imageContainer">
-              <img
-                src={post.frontmatter.image.url}
-                alt={post.frontmatter.image.alt}
-              />
+    <div class="card-grid">
+      {
+        posts.map((post) => (
+          <article class="blog-card">
+            <a href={post.url}>
+              <div class="imageContainer">
+                <img
+                  src={post.frontmatter.image.url}
+                  alt={post.frontmatter.image.alt}
+                />
+              </div>
+            </a>
+            <div class="tag-bar">
+              <ul class="tags">
+                {post.frontmatter.tags.map((tag) => (
+                  <li>
+                    <a class="tag" href="#">
+                      {tag}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <date class="datestamp">
+                {post.frontmatter.pubDate.slice(0, 10)}
+              </date>
             </div>
-          </a>
-          <div class="tag-bar">
-            <ul class="tags">
-              {post.frontmatter.tags.map((tag) => (
-                <li>
-                  <a class="tag" href="#">
-                    {tag}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <date class="datestamp">
-              {post.frontmatter.pubDate.slice(0, 10)}
-            </date>
-          </div>
-          <h2>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </h2>
-          <p class="description">{post.frontmatter.description}</p>
-        </article>
-      ))
-    }
+            <h2>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </h2>
+            <p class="description">{post.frontmatter.description}</p>
+          </article>
+        ))
+      }
+    </div>
   </section>
 </BaseLayout>

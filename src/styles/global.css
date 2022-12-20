@@ -97,10 +97,16 @@ a:visited {
 
 /* Components */
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-6);
+}
+
 .blog-card {
   --card-radius: var(--radius-3);
   background-color: var(--surface-2);
-  width: 15rem;
+  width: var(--size-14);
   margin-inline: auto;
   border-radius: var(--radius-3);
   padding-bottom: var(--size-1);
