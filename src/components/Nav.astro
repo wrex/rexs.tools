@@ -54,10 +54,13 @@ const { current = "" } = Astro.props;
     grid-template-areas:
       " logo  logo  logo  logo  logo  logo"
       " nlink nlink nlink nlink nlink toggle";
+    justify-content: center;
+    align-items: center;
     background-color: var(--surface-2);
     position: sticky;
     top: 0;
     box-shadow: var(--shadow-2);
+    padding-block: var(--size-2);
   }
 
   .logo {
@@ -65,9 +68,9 @@ const { current = "" } = Astro.props;
     text-align: center;
     line-height: 1;
     cursor: pointer;
-    padding: 1rem 0 0.5rem;
     border-bottom: 0.25px solid var(--surface-3);
     position: relative;
+    padding-block: var(--size-3);
   }
 
   .logo :global(*) {
@@ -80,15 +83,16 @@ const { current = "" } = Astro.props;
     justify-content: space-evenly;
     gap: var(--size-4);
     align-items: center;
+    justify-content: center;
   }
 
   .nav-links a[aria-selected="true"] {
-    text-decoration: underline;
+    color: var(--brand);
   }
 
   .nav-links a {
     text-decoration: none;
-    color: var(--brand);
+    color: var(--text-2);
     cursor: pointer;
     font-family: var(--font-sans);
   }
@@ -102,7 +106,44 @@ const { current = "" } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: var(--size-1);
-    padding-block: var(--size-2);
     justify-self: center;
+    padding-block: var(--size-1);
+  }
+
+  /* iPad size devices */
+  @media (--sm-n-above) {
+    nav {
+      font-size: var(--font-size-3);
+      grid-template-columns: 1fr repeat(6, 6rem) 1fr;
+      grid-template-areas: ". logo  nlink  nlink  nlink  nlink  toggle .";
+      padding-block: var(--size-2);
+    }
+
+    .logo {
+      border: none;
+      padding-block: var(--size-1);
+    }
+
+    .logo :global(*) {
+      height: var(--size-8);
+    }
+    .toggles {
+      gap: var(--size-2);
+      padding-block: 0;
+    }
+  }
+
+  /* Desktop */
+  @media (--lg-n-above) {
+    nav {
+      font-size: var(--font-size-5);
+      grid-template-columns: 1fr repeat(6, 10rem) 1fr;
+    }
+    .logo {
+      padding-block: var(--size-3);
+    }
+    .logo :global(*) {
+      height: var(--size-10);
+    }
   }
 </style>
