@@ -104,6 +104,7 @@ a:visited {
   margin-inline: auto;
   border-radius: var(--radius-3);
   padding-bottom: var(--size-1);
+  line-height: var(--font-lineheight-2);
 }
 
 .blog-card .tags,
@@ -120,16 +121,24 @@ a:visited {
   overflow: hidden;
 }
 
-.blog-card .tags {
-  margin-top: var(--size-3);
+.tag-bar {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--surface-4);
+  border-top: 1px dashed var(--surface-4);
+  padding-block: var(--size-3);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--size-1);
   font-size: var(--font-size-0);
   line-height: 1;
-  align-self: start;
 }
 
-.blog-card .tag {
+.tag {
   color: black; /* TODO */
   background-color: pink; /* TODO */
   border-radius: 100vw;
@@ -137,20 +146,21 @@ a:visited {
   display: inline-block;
 }
 
-.blog-card .description,
+.description,
 .blog-card date {
   color: var(--text-2);
+  font-style: italic;
 }
 
-.blog-card .description {
+.description {
   color: var(--text-2);
   font-size: var(--font-size-1);
 }
 
-.blog-card date {
+.datestamp {
+  --flow-space: var(--size-3);
   display: block;
   font-size: var(--font-size-00);
-  text-align: right;
 }
 
 .note {

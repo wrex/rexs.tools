@@ -9,27 +9,21 @@ const { frontmatter } = Astro.props;
   permalink={frontmatter.permalink}
   current="blog"
 >
-  <div class="two-col">
-    <aside class="sidebar">
-      <article>
-        <p>Written by: {frontmatter.author}</p>
-        <p>{frontmatter.pubDate.slice(0, 10)}</p>
-        <p>Tags:</p>
-        <ul>
-          {
-            frontmatter.tags.map((tag) => (
-              <li class="tag">
-                <a href={`/tags/${tag}`}>{tag}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </article>
-    </aside>
-  </div>
-
-  <article class="maincontent">
+  <article class="flow">
     <h1>{frontmatter.title}</h1>
+    <p class="description">{frontmatter.description}</p>
+    <div class="tag-bar">
+      <ul class="tags">
+        {
+          frontmatter.tags.map((tag) => (
+            <li class="tag">
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </li>
+          ))
+        }
+      </ul>
+      <date class="datestamp">{frontmatter.pubDate.slice(0, 10)}</date>
+    </div>
     <slot />
   </article>
 </BaseLayout>

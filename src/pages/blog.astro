@@ -27,20 +27,24 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
               />
             </div>
           </a>
-          <ul class="tags">
-            {post.frontmatter.tags.map((tag) => (
-              <li>
-                <a class="tag" href="#">
-                  {tag}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div class="tag-bar">
+            <ul class="tags">
+              {post.frontmatter.tags.map((tag) => (
+                <li>
+                  <a class="tag" href="#">
+                    {tag}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <date class="datestamp">
+              {post.frontmatter.pubDate.slice(0, 10)}
+            </date>
+          </div>
           <h2>
             <a href={post.url}>{post.frontmatter.title}</a>
           </h2>
           <p class="description">{post.frontmatter.description}</p>
-          <date>{post.frontmatter.pubDate.slice(0, 10)}</date>
         </article>
       ))
     }
