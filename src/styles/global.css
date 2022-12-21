@@ -120,6 +120,10 @@ a:visited {
   padding-inline: var(--size-3);
 }
 
+.blog-card a:visited {
+  color: var(--text-1);
+}
+
 .blog-card .imageContainer {
   background-color: var(--surface-3);
   box-shadow: var(--shadow-2);
@@ -147,19 +151,6 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   gap: var(--size-1);
-  font-size: var(--font-size-0);
-}
-
-.tag {
-  background-color: pink; /* TODO */
-  border-radius: 100vw;
-  padding-inline: var(--size-2);
-  display: inline-block;
-}
-
-.tag a,
-.tag a:hover {
-  color: black;
 }
 
 .description,

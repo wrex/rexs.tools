@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 // import { Image, Picture } from "@astrojs/image/components";
+import TagPill from "../components/TagPill.astro";
 
 const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
   (a, b) =>
@@ -32,9 +33,7 @@ const posts = (await Astro.glob("./posts/*.{md,mdx}")).sort(
               <ul class="tags">
                 {post.frontmatter.tags.map((tag) => (
                   <li>
-                    <a class="tag" href="#">
-                      {tag}
-                    </a>
+                    <TagPill tagName={tag} />
                   </li>
                 ))}
               </ul>
