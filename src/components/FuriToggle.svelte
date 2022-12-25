@@ -26,7 +26,7 @@
 <style>
 .toggle {
   cursor: pointer;
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-3);
   font-weight: var(--font-weight-4);
   line-height: 1;
   text-align: center;
@@ -36,17 +36,5 @@
 
 .toggle:hover {
   color: var(--text-1);
-}
-
-@media (--sm-n-above) {
-  .toggle {
-    font-size: var(--font-size-3);
-  }
-}
-
-@media (--lg-n-above) {
-  .toggle {
-    font-size: var(--font-size-4);
-  }
 }
 </style>
