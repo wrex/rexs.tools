@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+layout: ../../../layouts/MarkdownLayout.astro
 title: "Sashigane"
 pubDate: 2022-12-07
 description: "More than a square: an incredible calculating device."
@@ -12,7 +12,7 @@ tags: ["wood", "daiku"]
 ---
 
 import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../components/Kanji.svelte";
+import Kanji from "../../../components/Kanji.svelte";
 
 I've recently learned a bit about a mind-blowing but ancient tool: the humble
 Japanese carpenter's square. This amazing device has evolved over centuries to
@@ -22,7 +22,7 @@ Unfortunately, it will take more words to describe than will fit in a single
 blog post. Everything that follows (and more) will eventually be moved to the "articles"
 section of this site.
 
-import sashigane from "../../images/sashigane-removebg.png";
+import sashigane from "./sashigane-removebg.png";
 
 <figure>
   <Image src={sashigane} format="avif" alt="Sashigane" />
@@ -63,7 +63,7 @@ out primarily with three extremely modest tools:
 These simple tools were used not just for modest homes and simple furniture, but
 also for astonishingly beautiful and complex temples and castles.
 
-import himejiJou from "../../images/redd-f-wPMvPMD9KBI-unsplash.jpeg";
+import himejiJou from "./redd-f-wPMvPMD9KBI-unsplash.jpeg";
 
 <figure>
   <Image src={himejiJou} format="avif" alt="Himeji castle" />
@@ -151,7 +151,7 @@ obvious.
 First is that it's _intentionally flexible_. It's normally held with the long
 arm held in the left hand, far from the short arm:
 
-import sashiHold from "../../images/sashigane-holding.png";
+import sashiHold from "./sashigane-holding.png";
 
 <figure>
   <Image src={sashiHold} alt="Holding the sashigane" />
@@ -168,7 +168,7 @@ cross section is intentionally designed to raise the edges above the surface
 of the material being measured. This gap above the surface prevents the ink from
 smearing when striking a line:
 
-import sashiCross from "../../images/sashigane-cross-section.jpeg";
+import sashiCross from "./sashigane-cross-section.jpeg";
 
 <figure>
   <Image src={sashiCross} format="avif" alt="Sashigane cross-ection" />
@@ -208,7 +208,7 @@ even in Japan. Some carpenters call these bottom-side units _kakume_ (<Kanji
 client:load furigana="かくめ" romaji="kakume">角目</Kanji>) instead of _urame_
 (or "angle units" instead of "bottom units").]
 
-import sashiGrads from "../../images/sashigane-graduations.jpeg";
+import sashiGrads from "./sashigane-graduations.jpeg";
 
 <figure>
   <Image src={sashiGrads} format="avif" alt="Sashigane graduations" />
@@ -291,7 +291,7 @@ The three sides of a right triangle are named as follows:
 - The hypotenuse is called the _gen_ (<Kanji client:load furigana="げん"
   romaji="gen">玄</Kanji>).
 
-import kouKoGen from "../../images/koukogen.jpeg";
+import kouKoGen from "./koukogen.jpeg";
 
 <figure>
   <Image src={kouKoGen} format="avif" alt="Right triangle parts" />
@@ -313,7 +313,7 @@ timber you can extract from a round log. Simply use the _urame_ graduations to
 measure the diameter of the log. That measurement is the "real" _sun_ measurement
 (_hyoume_) of each side:
 
-import timberLog from "../../images/timber-from-log.jpeg";
+import timberLog from "./timber-from-log.jpeg";
 
 <figure>
   <Image src={timberLog} format="avif" alt="Timber from log" />
@@ -332,7 +332,7 @@ or _hyoume_). Call this measurement `A`.
 Now turn over the _sashigane_, and make a mark `A/2` in from each side using the bottom
 graduations (_urame_):
 
-import Octagon from "../../images/octagon-layout.jpeg";
+import Octagon from "./octagon-layout.jpeg";
 
 <figure>
   <Image src={Octagon} format="avif" alt="Octagon layout" />
@@ -347,7 +347,7 @@ The inside edge of the _tsumate_ on the underside is often marked with _marume_
 (<Kanji client:load furigana="まるめ" romaji="marume">丸目</Kanji>) graduations.
 Each graduation is 1/&pi; &times; the length of the _hyoume_ graduations:
 
-import Marume from "../../images/marume.jpeg";
+import Marume from "./marume.jpeg";
 
 <figure>
   <Image src={Marume} format="avif" alt="Marume graduations" />
@@ -370,7 +370,7 @@ the columns from above). It shows the raw stock for the sill butted
 agains the vertical pillars at the top. At the bottom is the completed sill-plate after
 cutting. The middle section shows the markup stock before cutting.
 
-import Sill from "../../images/sill-plate.jpeg";
+import Sill from "./sill-plate.jpeg";
 
 <figure>
   <Image src={Sill} format="avif" alt="Laying out a sill-plate" />
@@ -536,7 +536,7 @@ The first is a sort of scoop or tray with four splayed sides. Believe it or not,
 all of the compound angles required can be easily drawn using nothing more than
 a _sashigane_:
 
-import Tray from "../../images/splayed-tray.jpeg";
+import Tray from "./splayed-tray.jpeg";
 
 <figure>
   <Image src={Tray} format="avif" alt="Splay-sided tray" />
@@ -545,7 +545,7 @@ import Tray from "../../images/splayed-tray.jpeg";
 
 Next I plan to construct a simple splay-legged stool:
 
-import Stool from "../../images/splayed-stool.jpeg";
+import Stool from "./splayed-stool.jpeg";
 
 <figure>
   <Image src={Stool} format="avif" alt="Splay-legged stool" />

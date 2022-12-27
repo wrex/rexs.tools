@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+layout: ../../../layouts/MarkdownLayout.astro
 title: "Collet closer pt. 1"
 pubDate: 2022-12-04
 description: "Making a lever-actuated collet closer"
@@ -23,9 +23,9 @@ The lathe spindle has a 3MT morse-taper at the nose. For years I've used 3C coll
 with an adapter and drawbar. I've acquired a full set of 3C collets from 1/16"
 to 1/2" in 1/64" increments.
 
-import assyImage from "../../images/3c-collet-assy.jpeg";
-import drawbarImage from "../../images/drawbar.jpeg";
-import inSitu from "../../images/3c-in-situ.jpeg";
+import assyImage from "./3c-collet-assy.jpeg";
+import drawbarImage from "./drawbar.jpeg";
+import inSitu from "./3c-in-situ.jpeg";
 
 <figure>
   <Image src={assyImage} format="avif" alt="3C collet Assembly" />
@@ -54,7 +54,7 @@ blocks and indexers, etc.). Unfortunately, there are a couple disadvantages:
 - The scroll takes about a million turns of the chuck key to tighten down on
   parts.
 
-import colletChuck from "../../images/5c-chuck.jpeg";
+import colletChuck from "./5c-chuck.jpeg";
 
 <figure>
   <Image src={colletChuck} format="avif" alt="5C collet chuck" />
@@ -70,7 +70,7 @@ I've also started using ER-32 collets with an adapter. This lets me hold onto
 - While not as bad as the 5C chuck, the work still sticks out far enough to
   cause problems with chatter.
 
-import erChuck from "../../images/ER-collet-chuck.jpeg";
+import erChuck from "./ER-collet-chuck.jpeg";
 
 <figure>
   <Image src={erChuck} format="avif" alt="ER-32 collet chuck" />
@@ -86,7 +86,7 @@ collet closer like you find on a big-boy lathe for production work.
 
 My friend Jim S. had an idea for a "ghetto" version of a lever-actuated drawbar:
 
-import closerImage from "../../images/collet-closer-alt.jpeg";
+import closerImage from "./collet-closer-alt.jpeg";
 
 <figure>
   <Image src={closerImage} format="avif" alt="Jim's 'ghetto' collet-closer" />
