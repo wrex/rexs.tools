@@ -1,8 +1,13 @@
 ---
-const { tagName } = Astro.props;
+const { tagName, large = false } = Astro.props;
+const classList = large ? "tag large" : "tag";
 ---
 
-<a href={`/tags/${tagName}`} class="tag" data-tagType={tagName || "default"}>
+<a
+  href={`/tags/${tagName}`}
+  class={classList}
+  data-tagType={tagName || "default"}
+>
   {tagName}
 </a>
 
@@ -18,6 +23,10 @@ const { tagName } = Astro.props;
     display: inline-block;
     padding-inline: var(--size-2);
     line-height: 1.6;
+  }
+
+  a.large {
+    font-size: var(--font-size-1);
   }
 
   .tag:hover,
