@@ -2,7 +2,7 @@
 const { tagName } = Astro.props;
 ---
 
-<a class="tag" data-tagType={tagName || "default"}>
+<a href={`/tags/${tagName}`} class="tag" data-tagType={tagName || "default"}>
   {tagName}
 </a>
 
