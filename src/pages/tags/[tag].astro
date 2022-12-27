@@ -30,7 +30,7 @@ const { posts } = Astro.props;
 >
   <section class="flow">
     <h1>Tag: {tag}</h1>
-    <ul>
+    <div class="card-grid">
       {
         posts.map((post) => (
           <article class="blog-card">
@@ -61,6 +61,6 @@ const { posts } = Astro.props;
           </article>
         ))
       }
-    </ul>
+    </div>
   </section>
 </BaseLayout>
