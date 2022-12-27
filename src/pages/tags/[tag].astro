@@ -23,9 +23,9 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout
-  title="Tags"
-  description="Tag index"
-  permalink="/tags"
+  title={`${tag} posts`}
+  description={`Posts tagged {tag}`}
+  permalink={`/tags/{tag}`}
   current="blog"
 >
   <section class="flow">
