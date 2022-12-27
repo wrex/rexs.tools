@@ -27,7 +27,7 @@
     display: block;
     position: absolute;
     content: attr(data-tooltip);
-    z-index: 99;
+    z-index: 9;
     bottom: 120%;
     left: 50%;
     padding: 0.25rem 0.5rem;

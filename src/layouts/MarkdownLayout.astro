@@ -26,6 +26,8 @@ const { frontmatter } = Astro.props;
       </ul>
       <date class="datestamp">{frontmatter.pubDate.slice(0, 10)}</date>
     </div>
-    <slot />
+    <div class="flow">
+      <slot />
+    </div>
   </article>
 </BaseLayout>
