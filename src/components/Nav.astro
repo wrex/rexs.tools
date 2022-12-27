@@ -11,16 +11,16 @@ const { current = "" } = Astro.props;
   <ul class="nav-links">
     <li>
       <a
-        href="/"
-        aria-selected={current === "home"}
-        class={current === "home" ? "contrast" : "secondary"}>home</a
+        href="/blog"
+        aria-selected={current === "blog"}
+        class={current === "blog" ? "contrast" : "secondary"}>blog</a
       >
     </li>
     <li>
       <a
-        href="/blog"
-        aria-selected={current === "blog"}
-        class={current === "blog" ? "contrast" : "secondary"}>blog</a
+        href="/tags"
+        aria-selected={current === "tags"}
+        class={current === "tags" ? "contrast" : "secondary"}>tags</a
       >
     </li>
     <li>
