@@ -2,18 +2,18 @@
 <script>
   import '../app.postcss';
   import "../styles/global.css";
+
+  import Nav from './Nav.svelte';
+  import Footer from './Footer.svelte';
 </script>
 
 <!-- <Nav current={current} /> -->
-<header class="container">
-  <nav>top nav goes here</nav>
+<header>
+  <Nav />
 </header>
 
 <main class="container">
   <slot />
 </main>
 
-<!-- <Footer /> -->
-<footer class="container">
-  <p>footer goes here</p>
-</footer>
+<Footer />
