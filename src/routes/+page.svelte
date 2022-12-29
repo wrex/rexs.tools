@@ -2,7 +2,7 @@
   <section class="hero flow">
     <img
       class="heroImage"
-      src="/assets/wrench-600.png"
+      src="/wrench-600.png"
       alt="A hand holding a wrench"
     />
     <div class="heroText flow">
