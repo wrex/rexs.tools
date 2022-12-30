@@ -3,9 +3,9 @@
 /* @import "open-props/postcss/normalize"; */
 @import 'open-props/colors-hsl';
 /* @import "open-props/postcss/buttons"; */
-@import './reset.css';
-@import './theme.css';
-@import './fonts.css';
+@import '$lib/styles/reset.css';
+@import '$lib/styles/theme.css';
+@import '$lib/styles/fonts.css';
 
 @use postcss-preset-env {
 	stage: 0;
