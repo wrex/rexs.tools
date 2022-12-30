@@ -2,7 +2,7 @@
   export let furigana = "";
   export let romaji = "";
 
-  import { furiganaType } from "../lib/stores/furiganaType";
+  import { furiganaType } from "$lib/stores/furiganaType";
 </script>
 
 <span data-tooltip={$furiganaType === "kana" ? furigana: romaji}>
