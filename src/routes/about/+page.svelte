@@ -1,5 +1,5 @@
 <script>
-  import Kanji from "../Kanji.svelte";
+  import Kanji from "$lib/components/Kanji.svelte";
 </script>
 <section class="flow">
   <h1>About</h1>
