@@ -7,6 +7,10 @@ const config = defineConfig({
 		dashes: 'oldschool'
 	},
 
+	layout: {
+		blog: 'src/routes/blog/postLayout.svelte'
+	},
+
 	remarkPlugins: [],
 	rehypePlugins: []
 });
