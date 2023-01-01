@@ -4,6 +4,11 @@ date: 2022-12-09
 description: 'Replacing a car cupholder part.'
 ---
 
+<script>
+  import Image from "$lib/components/Image.svelte";
+  import Assembly from "./cupholder-assembly.jpeg";
+</script>
+
 My wife came to me a few days ago asking if I could repair the cupholder in her
 car.
 
@@ -12,8 +17,8 @@ on two little nubs on the sides. Here's a view of the assembly with the original
 parts:
 
 <figure>
-  <img
-    src="broken"
+  <Image
+    src={Assembly}
     alt="Cupholder assembly"
   />
   <figcaption>Original cupholder assembly (precariously perched)</figcaption>
@@ -22,7 +27,7 @@ parts:
 The nub on one end was broken. Here's a view of
 the original injection-molded part:
 
-<figure>
+<!-- <figure>
   <img
     widths={[400, 800, 1200]}
     src="broken"
@@ -38,7 +43,7 @@ the original injection-molded part:
     alt="View of broken end"
   />
   <figcaption>View of broken end</figcaption>
-</figure>
+</figure> -->
 
 A normal person would have just drilled a hole in the end and inserted a little
 pin to act as a hinge.
@@ -47,10 +52,10 @@ Instead, I designed [a whole new part in fusion 360](https://a360.co/3VNdqAe).
 That link should take you to a viewer for the 3D model, but here's a static
 image:
 
-<figure>
+<!-- <figure>
   <img src="/assets/cupholder.png" alt="cupholder model" />
   <figcaption>3D model of replacement part</figcaption>
-</figure>
+</figure> -->
 
 Notes:
 

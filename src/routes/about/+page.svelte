@@ -1,6 +1,7 @@
 <script>
   import Kanji from "$lib/components/Kanji.svelte";
 </script>
+
 <section class="flow">
   <h1>About</h1>
   <p>Hello! My name is Rex. I like making things.</p>
