@@ -1,17 +1,23 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Collet closer pt. 1"
-pubDate: 2022-12-04
-description: "Making a lever-actuated collet closer"
-author: "Rex Walters"
-permalink: "/posts/collet-closer"
+title: 'Collet closer pt. 1'
+date: 2022-12-04
+description: 'Making a lever-actuated collet closer'
 image:
-  url: "/blog-images/collet-closer-nobg-300.png"
-  alt: "Collet closer"
-tags: ["metal", "machining"]
+  url: '/blog-images/collet-closer-nobg-300.png'
+  alt: 'Collet closer'
+tags: ['metal', 'machining']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
+<script>
+  import Figure from "$lib/components/Figure.svelte";
+
+  import assyImage from "./3c-collet-assy.jpeg";
+  import drawbarImage from "./drawbar.jpeg";
+  import inSitu from "./3c-in-situ.jpeg";
+  import colletChuck from "./5c-chuck.jpeg";
+  import erChuck from "./ER-collet-chuck.jpeg";
+  import closerImage from "./collet-closer-alt.jpeg";
+</script>
 
 I've got a 10" 1947 Montgomery Wards (Logan) metal lathe. Like many, I enjoy
 the convenience and precision of collets. A four-jaw chuck is much more tedious to align,
@@ -23,24 +29,9 @@ The lathe spindle has a 3MT morse-taper at the nose. For years I've used 3C coll
 with an adapter and drawbar. I've acquired a full set of 3C collets from 1/16"
 to 1/2" in 1/64" increments.
 
-import assyImage from "./3c-collet-assy.jpeg";
-import drawbarImage from "./drawbar.jpeg";
-import inSitu from "./3c-in-situ.jpeg";
-
-<figure>
-  <Image src={assyImage} format="avif" alt="3C collet Assembly" />
-  <figcaption>3C collet assembly</figcaption>
-</figure>
-
-<figure>
-  <Image src={inSitu} format="avif" alt="3C collet in situ" />
-  <figcaption>3C collet in situ (forgive the filthy lathe)</figcaption>
-</figure>
-
-<figure>
-  <Image src={drawbarImage} format="avif" alt="Drawbar inserted" />
-  <figcaption>Drawbar inserted</figcaption>
-</figure>
+<Figure src={assyImage} caption="3C collet assembly" />
+<Figure src={inSitu} caption="3C collet in situ (forgive the filthy lathe)" />
+<Figure src={drawbarImage} caption="Drawbar inserted" />
 
 The main drawback of the 3C collets is the maximum diameter of 1/2", but the
 drawbar is also a little slow and tedious to use.
@@ -54,12 +45,7 @@ blocks and indexers, etc.). Unfortunately, there are a couple disadvantages:
 - The scroll takes about a million turns of the chuck key to tighten down on
   parts.
 
-import colletChuck from "./5c-chuck.jpeg";
-
-<figure>
-  <Image src={colletChuck} format="avif" alt="5C collet chuck" />
-  <figcaption>5C collet chuck</figcaption>
-</figure>
+<Figure src={colletChuck} caption="5C collet chuck" />
 
 I've also started using ER-32 collets with an adapter. This lets me hold onto
 "between" size stock, which is nice, but it also has a few problems:
@@ -70,12 +56,7 @@ I've also started using ER-32 collets with an adapter. This lets me hold onto
 - While not as bad as the 5C chuck, the work still sticks out far enough to
   cause problems with chatter.
 
-import erChuck from "./ER-collet-chuck.jpeg";
-
-<figure>
-  <Image src={erChuck} format="avif" alt="ER-32 collet chuck" />
-  <figcaption>ER-32 collet chuck</figcaption>
-</figure>
+<Figure src={erChuck} caption="ER-32 collet chuck" />
 
 ## A lever-actuator for 3MT collets
 
@@ -86,12 +67,7 @@ collet closer like you find on a big-boy lathe for production work.
 
 My friend Jim S. had an idea for a "ghetto" version of a lever-actuated drawbar:
 
-import closerImage from "./collet-closer-alt.jpeg";
-
-<figure>
-  <Image src={closerImage} format="avif" alt="Jim's 'ghetto' collet-closer" />
-  <figcaption>Jim's "ghetto" collet-closer</figcaption>
-</figure>
+<Figure src={closerImage} caption="Jim's 'ghetto' collet-closer" />
 
 The idea is to use a length of all thread as a drawbar, with a cam-actuated
 assembly that revolves with the spindle at the far left of the lathe. This isn't

@@ -1,5 +1,7 @@
 <script>
   import Logo from "$lib/components/Logo.svelte";
+  import ThemeToggleButton from "$lib/components/ThemeToggleButton.svelte";
+  import FuriToggle from "$lib/components/FuriToggle.svelte";
   
   export let current = "";
 </script>
@@ -37,22 +39,23 @@
     </li>
   </ul>
 
-  <!-- <div class="toggles">
-    <ThemeToggleButton client:load />
-    <FuriToggle client:load />
-  </div> -->
+  <div class="toggles">
+    <ThemeToggleButton />
+    <FuriToggle />
+  </div>
 </nav>
 
 <style>
   nav {
+    --nav-inline-padding: var(--size-8);
     display: grid;
     z-index: 999;
     gap: 0 1rem;
     grid-template-columns: repeat(6, minmax(40px, 1fr));
     grid-auto-rows: min-content;
     grid-template-areas:
-      " ..... ..... logo  logo  toggle  toggle"
-      " ..... nlink nlink nlink  nlink  .....";
+      " ..... ..... logo  logo   .....  toggle"
+      " ..... nlink nlink nlink  nlink  toggle";
     justify-content: center;
     align-items: center;
     background-color: var(--surface-2);
@@ -103,9 +106,12 @@
   .toggles {
     grid-area: toggle;
     display: flex;
-    /* flex-direction: column; */
+    align-items: center;
+    flex-direction: column;
     gap: var(--size-2);
-    justify-self: center;
+    justify-self: right;
+    align-self: end;
+    padding-right: var(--size-3);
     padding-block: var(--size-1);
   }
 
@@ -114,14 +120,14 @@
     nav {
       font-size: var(--font-size-3);
       grid-template-columns: 1fr repeat(6, 6rem) 1fr;
-      grid-template-areas: "logo logo  nlink  nlink  nlink  nlink  toggle .";
+      grid-template-areas: "logo logo  nlink  nlink  nlink  nlink  toggle toggle";
       padding-block: var(--size-2);
     }
 
     .logo {
       border: none;
       justify-self: left;
-      padding-left: var(--size-8);
+      padding-left: var(--nav-inline-padding);
       padding-block: var(--size-1);
     }
 
@@ -129,6 +135,9 @@
       height: var(--size-8);
     }
     .toggles {
+      flex-direction: row;
+      align-self: center;
+      padding-right: var(--nav-inline-padding);
       padding-block: 0;
     }
   }
@@ -136,7 +145,7 @@
   /* Desktop */
   @media (min-width: 1024px) {
     nav {
-      font-size: var(--font-size-4);
+      font-size: var(--font-size-5);
       grid-template-columns: 1fr repeat(6, var(--size-11)) 1fr;
     }
     .toggles {
