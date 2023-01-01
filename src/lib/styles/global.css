@@ -178,6 +178,10 @@ a:visited {
 	font-size: var(--font-size-1);
 }
 
+.full-post .description {
+	font-size: var(--font-size-4);
+}
+
 .datestamp {
 	--flow-space: var(--size-3);
 	display: block;

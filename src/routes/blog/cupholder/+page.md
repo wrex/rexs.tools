@@ -2,11 +2,17 @@
 title: 'Repairing a cupholder'
 date: 2022-12-09
 description: 'Replacing a car cupholder part.'
+tags: ['plastic', '3DP', 'repair']
 ---
 
 <script>
-  import Image from "$lib/components/Image.svelte";
+  import Figure from "$lib/components/Figure.svelte";
+  
+  // images
   import Assembly from "./cupholder-assembly.jpeg";
+  import Original from "./cupholder-original.jpeg";
+  import Broken from "./cupholder-broken.jpeg";
+  import Model from "./cupholder.png";
 </script>
 
 My wife came to me a few days ago asking if I could repair the cupholder in her
@@ -16,34 +22,23 @@ The cupholder is a two piece assembly. The top piece is spring loaded and hinges
 on two little nubs on the sides. Here's a view of the assembly with the original
 parts:
 
-<figure>
-  <Image
-    src={Assembly}
-    alt="Cupholder assembly"
-  />
-  <figcaption>Original cupholder assembly (precariously perched)</figcaption>
-</figure>
+<Figure
+  src={Assembly}
+  caption="Original cupholder assembly (precariously perched)"
+/>
 
 The nub on one end was broken. Here's a view of
 the original injection-molded part:
 
-<!-- <figure>
-  <img
-    widths={[400, 800, 1200]}
-    src="broken"
-    alt="Original cupholder"
-  />
-  <figcaption>Original cupholder part (broken nub on left)</figcaption>
-</figure>
+<Figure
+  src={Original}
+  caption="Original cupholder part (broken nub on left))"
+/>
 
-<figure>
-  <img
-    widths={[400, 800, 1200]}
-    src="broken"
-    alt="View of broken end"
-  />
-  <figcaption>View of broken end</figcaption>
-</figure> -->
+<Figure
+  src={Broken}
+  caption="View of broken end"
+/>
 
 A normal person would have just drilled a hole in the end and inserted a little
 pin to act as a hinge.
@@ -51,6 +46,11 @@ pin to act as a hinge.
 Instead, I designed [a whole new part in fusion 360](https://a360.co/3VNdqAe).
 That link should take you to a viewer for the 3D model, but here's a static
 image:
+
+<Figure
+  src={Model}
+  caption="View of broken end"
+/>
 
 <!-- <figure>
   <img src="/assets/cupholder.png" alt="cupholder model" />

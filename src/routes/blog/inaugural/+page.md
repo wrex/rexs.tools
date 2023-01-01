@@ -1,5 +1,6 @@
 ---
 title: 'The site is live!'
+description: 'Inaugural post'
 date: 2022-12-02
 ---
 
@@ -16,10 +17,16 @@ I tend to make a new website every few years just to explore the latest web
 tooling (heh). This time I got to play with [Svelte](https://svelte.dev),
 [Astro](https://astro.build), and [Open Props](https://open-props.style). All
 are truly amazing. While creating the site, [Svelte Kit
-1.0](https://kit.svelte.dev) was released. I'll probably convert the site over
-at some point. There's absolutely nothing wrong with Astro and the "island architecture",
-but I really like what I've seen so far about SvelteKit (and I'm starting to
-confuse myself with Astro component syntax vs. svelte syntax).
+1.0](https://kit.svelte.dev) was released. I launched the site with Astro, but
+I've since converted to Svelte Kit.
+
+There's absolutely nothing wrong with Astro and the "island architecture",
+but I really like what I've seen so far about SvelteKit (and I started to
+confuse myself with Astro component syntax vs. svelte syntax). I was trained by
+[hugo](https://gohugo.io/) to keep all my assets (images and stuff) in the same
+directory as my content (markdown files). This ended up being pretty tricky to
+accomplish, but I figured it out with the help of [this sample
+repository](https://github.com/rdela/sveltekit-imagetools).
 
 Web design is definitely not my strong suit, but Open Props prevented me from
 making things to horrible and ugly. The logo is my own design but will likely

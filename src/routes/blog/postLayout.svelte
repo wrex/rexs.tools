@@ -1,14 +1,32 @@
 <script>
   /** @type {string} */
   export let title;
-  /** @type {Date} */
+  /** @type {string} */
   export let date;
+  /** @type {string} */
+  export let description;
+
+  /** @type {string[]}*/
+  export let tags = [];
+
+  import TagPill from "$lib/components/TagPill.svelte";
 </script>
   
-<article>
+<article class="blog-article flow">
   <h1>{title}</h1>
+  <p class="description">{description}</p>
+  <div class="tag-bar">
+    <ul class="tags">
+      {#each tags as tag}
+        <li class="tag">
+          <TagPill tagName={tag} large />
+        </li>
+      {/each}
 
-  <p>Published: {date}</p>
-
-  <slot />
+    </ul>
+    <date class="datestamp">{new Date(date).toDateString()}</date>
+  </div>
+    <div class="flow">
+      <slot />
+    </div>
 </article>
