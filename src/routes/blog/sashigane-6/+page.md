@@ -1,18 +1,24 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Sashigane (part 6)"
-pubDate: 2022-12-12
-description: "Basic uses for a sashigane"
-author: "Rex Walters"
-permalink: "/posts/sashigane-6"
+title: 'Sashigane (part 6)'
+date: 2022-12-12
+description: 'Basic uses for a sashigane'
 image:
-  url: "/blog-images/sashigane-nobg-300.png"
-  alt: "sashigane"
-tags: ["wood", "daiku"]
+  url: '/blog-images/sashigane-nobg-300.png'
+  alt: 'sashigane'
+tags: ['wood', 'daiku']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../../components/Kanji.svelte";
+<script>
+  import Kanji from "$lib/components/Kanji.svelte";
+  import Figure from "$lib/components/Figure.svelte";
+
+  import timberLog from "./timber-from-log.jpeg";
+  import Octagon from "./octagon-layout.jpeg";
+  import Marume from "./marume.jpeg";
+  import Sill from "./sill-plate.jpeg";
+  import Tray from "./splayed-tray.jpeg";
+  import Stool from "./splayed-stool.jpeg";
+</script>
 
 This is part six in a series of posts:
 
@@ -36,12 +42,7 @@ timber you can extract from a round log. Simply use the _urame_ graduations to
 measure the diameter of the log. That measurement is the "real" _sun_ measurement
 (_hyoume_) of each side:
 
-import timberLog from "./timber-from-log.jpeg";
-
-<figure>
-  <Image src={timberLog} format="avif" alt="Timber from log" />
-  <figcaption>Timber from log</figcaption>
-</figure>
+<Figure src={timberLog} caption="Timber from log" />
 
 ### 2. Octagons from square Timbers
 
@@ -55,12 +56,7 @@ or _hyoume_). Call this measurement `A`.
 Now turn over the _sashigane_, and make a mark `A/2` in from each side using the bottom
 graduations (_urame_):
 
-import Octagon from "./octagon-layout.jpeg";
-
-<figure>
-  <Image src={Octagon} format="avif" alt="Octagon layout" />
-  <figcaption>Octagon layout</figcaption>
-</figure>
+<Figure src={Octagon} caption="Octagon layout" />
 
 (Why this works is left as an exercise for the reader!)
 
@@ -70,12 +66,7 @@ The inside edge of the _tsumate_ on the underside is often marked with _marume_
 (<Kanji client:load furigana="まるめ" romaji="marume">丸目</Kanji>) graduations.
 Each graduation is 1/&pi; &times; the length of the _hyoume_ graduations:
 
-import Marume from "./marume.jpeg";
-
-<figure>
-  <Image src={Marume} format="avif" alt="Marume graduations" />
-  <figcaption>Marume graduations</figcaption>
-</figure>
+<Figure src={Marume} caption="Marume graduations" />
 
 Since the circumference of a circle is just &pi; times the diameter, measuring
 the diameter using _marume_ graduations gives you the circumference directly (it's
@@ -93,12 +84,7 @@ the columns from above). It shows the raw stock for the sill butted
 agains the vertical pillars at the top. At the bottom is the completed sill-plate after
 cutting. The middle section shows the markup stock before cutting.
 
-import Sill from "./sill-plate.jpeg";
-
-<figure>
-  <Image src={Sill} format="avif" alt="Laying out a sill-plate" />
-  <figcaption>Laying out a sill plate</figcaption>
-</figure>
+<Figure src={Sill} caption="Laying out a sill plate" />
 
 First, butt the raw stock for the sill against the two columns. This is shown at
 the top of the diagram.
@@ -259,20 +245,10 @@ The first is a sort of scoop or tray with four splayed sides. Believe it or not,
 all of the compound angles required can be easily drawn using nothing more than
 a _sashigane_:
 
-import Tray from "./splayed-tray.jpeg";
-
-<figure>
-  <Image src={Tray} format="avif" alt="Splay-sided tray" />
-  <figcaption>Splay-sided tray</figcaption>
-</figure>
+<Figure src={Tray} caption="Splay-sided, or battered tray" />
 
 Next I plan to construct a simple splay-legged stool:
 
-import Stool from "./splayed-stool.jpeg";
-
-<figure>
-  <Image src={Stool} format="avif" alt="Splay-legged stool" />
-  <figcaption>Splay-legged stool</figcaption>
-</figure>
+<Figure src={Stool} caption="Splay-legged stool" />
 
 Stay tuned!

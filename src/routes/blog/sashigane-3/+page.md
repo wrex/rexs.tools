@@ -1,18 +1,20 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Sashigane (part 3)"
-pubDate: 2022-12-09
-description: "Physical design of the sashigane"
-author: "Rex Walters"
-permalink: "/posts/sashigane-3"
+title: 'Sashigane (part 3)'
+date: 2022-12-09
+description: 'Physical design of the sashigane'
 image:
-  url: "/blog-images/sashigane-nobg-300.png"
-  alt: "Sashigane"
-tags: ["wood", "daiku"]
+  url: '/blog-images/sashigane-nobg-300.png'
+  alt: 'Sashigane'
+tags: ['wood', 'daiku']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../../components/Kanji.svelte";
+<script>
+   import Kanji from "$lib/components/Kanji.svelte";
+   import Figure from "$lib/components/Figure.svelte";
+
+   import sashiHold from "./sashigane-holding.png";
+   import sashiCross from "./sashigane-cross-section.jpeg";
+</script>
 
 This is part three in a series of posts:
 
@@ -57,12 +59,7 @@ obvious.
 First is that it's _intentionally flexible_. It's normally held with the long
 arm held in the left hand, far from the short arm:
 
-import sashiHold from "./sashigane-holding.png";
-
-<figure>
-  <Image src={sashiHold} alt="Holding the sashigane" />
-  <figcaption>Holding the sashigane</figcaption>
-</figure>
+<Figure src={sashiHold} caption="Holding the sashigane" />
 
 Bending the long arm this way makes it easy to register along the edge of a
 board you are marking. Note that you want to grab the end of the long arm to
@@ -74,12 +71,7 @@ cross section is intentionally designed to raise the edges above the surface
 of the material being measured. This gap above the surface prevents the ink from
 smearing when striking a line:
 
-import sashiCross from "./sashigane-cross-section.jpeg";
-
-<figure>
-  <Image src={sashiCross} format="avif" alt="Sashigane cross-ection" />
-  <figcaption>Sashigane cross-section</figcaption>
-</figure>
+<Figure src={sashiCross} caption="Sashigane cross-section" />
 
 Even the little hollow (marked 「えぐり」 in the diagram) is cleverly
 designed: in addition to providing a comfortable spot for your thumb and fingers

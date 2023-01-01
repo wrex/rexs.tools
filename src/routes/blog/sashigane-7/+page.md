@@ -1,18 +1,25 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Sashigane (part 7)"
-pubDate: 2022-12-28
-description: "Right triangle magic"
-author: "Rex Walters"
-permalink: "/posts/sashigane-7"
+title: 'Sashigane (part 7)'
+date: 2022-12-28
+description: 'Right triangle magic'
 image:
-  url: "/blog-images/sashigane-nobg-300.png"
-  alt: "sashigane"
-tags: ["wood", "daiku", "kikujutsu"]
+  url: '/blog-images/sashigane-nobg-300.png'
+  alt: 'sashigane'
+tags: ['wood', 'daiku', 'kikujutsu']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../../components/Kanji.svelte";
+<script>
+  import Kanji from "$lib/components/Kanji.svelte";
+  import Figure from "$lib/components/Figure.svelte";
+
+  import Model from "./model.jpeg";
+  import Koukogen from "./koukogen.jpg";
+  import Gosun from "./gosunkoubai.png";
+  import ThreeSix from "./three-six.png";
+  import FiveTen from "./five-ten.png";
+  import Chuukou from "./chuukou.png";
+  import ChuukouParts from "./chuukou-parts.png";
+</script>
 
 This is part seven in a series of posts:
 
@@ -31,12 +38,7 @@ preview of where we are heading.
 
 Here's a model of the corner of a "simple" temple roof:
 
-import Model from "./model.jpeg";
-
-<figure>
-  <Image src={Model} format="avif" alt="Joinery Model" />
-  <figcaption>Where we are headed: a "simple" joinery model</figcaption>
-</figure>
+<Figure src={Model} caption="Where we are headed: a 'simple' joinery model" />
 
 Take a closer look at those images on the left: every one of those rafters seat
 in a mortice that holds the part at _exactly_ the correct angle to hold the roof
@@ -58,12 +60,7 @@ client:load furigana="こうばい" romaji="koubai">勾配</Kanji>) to describe
 angles, not degrees or radians. A slope is a rise over a run, and it's helpful
 to know the names of the parts:
 
-import Koukogen from "./koukogen.jpg";
-
-<figure>
-  <Image src={Koukogen} format="avif" alt="Koukogen: basic right triangle" />
-  <figcaption>_Kou • ko • gen:_ the parts of a right triangle </figcaption>
-</figure>
+<Figure src={Koukogen} caption="Koukogen: basic right triangle" />
 
 I've labeled the _gen_ as "slope," but "hypotenuse" is probably more correct.
 Somewhat amusingly, the kanji character actually means "mysterious, occultness,
@@ -86,12 +83,7 @@ say １０寸. Then draw a vertical line from the right end that's exactly half 
 length (５寸). Then draw a "taught line" between the
 "start of the run and the top of the rise" to create the sloped line.
 
-import Gosun from "./gosunkoubai.png";
-
-<figure>
-  <Image src={Gosun} alt="Rise of 5, run of 10" />
-  <figcaption>Rise of 5, run of 10</figcaption>
-</figure>
+<Figure src={Gosun} caption="Rise of 5, run of 10" />
 
 But that's way too much work.
 
@@ -101,23 +93,13 @@ line of _any_ length, then line up his _sashigane_ so the mark on one arm
 read exactly half of what was on the other arm (say 6 and 3 rather than 10 and
 5), then strike his line:
 
-import ThreeSix from "./three-six.png";
-
-<figure>
-  <Image src={ThreeSix} alt="5 sun koubai using 3 and 6" />
-  <figcaption>5 _sun_ _koubai_ using 3 and 6</figcaption>
-</figure>
+<Figure src={ThreeSix} caption="5 sun koubai using 3 and 6" />
 
 Of course, this works for any two numbers in the same proportion. It's just as
 true with the original lengths of 5 and 10: the length of the struck line will be
 different, but the _slope_ (and angle) will be identical:
 
-import FiveTen from "./five-ten.png";
-
-<figure>
-  <Image src={FiveTen} alt="5 sun koubai using 5 and 10" />
-  <figcaption>5 _sun_ _koubai_ using 5 and 10</figcaption>
-</figure>
+<Figure src={FiveTen} caption="5 sun koubai using 5 and 10" />
 
 **This is important!**
 
@@ -133,12 +115,7 @@ If you slide the _sashigane_ along the hypotenuse of the triangle, it should be
 obvious that there is a point where the short arm will intersect the bottom
 right corner of the triangle:
 
-import Chuukou from "./chuukou.png";
-
-<figure>
-  <Image src={Chuukou} alt="The chuukou" />
-  <figcaption>The _chuukou_</figcaption>
-</figure>
+<Figure src={Chuukou} caption="The chuukou" />
 
 This line is called the _chuukou_ (<Kanji client:load furigana="ちゅうこう"
 romaji="chuukou">中勾</Kanji>, pronounced "chew koh"). It divides the larger
@@ -150,12 +127,7 @@ angle in the lower right of the smaller triangle formed by the _chuukou_ is
 exactly the same as the original in the lower left. Similarly, the larger angles
 are also the same:
 
-import ChuukouParts from "./chuukou-parts.png";
-
-<figure>
-  <Image src={ChuukouParts} alt="The triangles formed by the chuukou" />
-  <figcaption>The triangle parts created by the _chuukou_</figcaption>
-</figure>
+<Figure src={ChuukouParts} caption="The triangles formed by the chuukou" />
 
 The angles labled "a" are both the same, as are the angles labled "b".
 

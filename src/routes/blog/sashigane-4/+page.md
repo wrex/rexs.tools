@@ -1,18 +1,19 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Sashigane (part 4)"
-pubDate: 2022-12-10
-description: "Hyoume and Urame"
-author: "Rex Walters"
-permalink: "/posts/sashigane-4"
+title: 'Sashigane (part 4)'
+date: 2022-12-10
+description: 'Hyoume and Urame'
 image:
-  url: "/blog-images/sashigane-nobg-300.png"
-  alt: "sashigane"
-tags: ["wood", "daiku"]
+  url: '/blog-images/sashigane-nobg-300.png'
+  alt: 'sashigane'
+tags: ['wood', 'daiku']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../../components/Kanji.svelte";
+<script>
+   import Kanji from "$lib/components/Kanji.svelte";
+   import Figure from "$lib/components/Figure.svelte";
+
+  import sashiGrads from "./sashigane-graduations.jpeg";
+</script>
 
 This is part four (and possibly the most important!) in a series of posts:
 
@@ -51,12 +52,7 @@ even in Japan. Some carpenters call these bottom-side units _kakume_ (<Kanji
 client:load furigana="かくめ" romaji="kakume">角目</Kanji>) instead of _urame_
 (or "angle units" instead of "bottom units").]
 
-import sashiGrads from "./sashigane-graduations.jpeg";
-
-<figure>
-  <Image src={sashiGrads} format="avif" alt="Sashigane graduations" />
-  <figcaption>Sashigane graduations</figcaption>
-</figure>
+<Figure src={sashiGrads} caption="Sashigane graduations" />
 
 You probably remember the Pythagorean theorem for right triangles from high
 school:

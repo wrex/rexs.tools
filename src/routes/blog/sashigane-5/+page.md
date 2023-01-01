@@ -1,18 +1,19 @@
 ---
-layout: ../../../layouts/MarkdownLayout.astro
-title: "Sashigane (part 5)"
-pubDate: 2022-12-11
-description: "Mysteries of the right triangle"
-author: "Rex Walters"
-permalink: "/posts/sashigane-5"
+title: 'Sashigane (part 5)'
+dae: 2022-12-11
+description: 'Mysteries of the right triangle'
 image:
-  url: "/blog-images/sashigane-nobg-300.png"
-  alt: "sashigane"
-tags: ["wood", "daiku"]
+  url: '/blog-images/sashigane-nobg-300.png'
+  alt: 'sashigane'
+tags: ['wood', 'daiku']
 ---
 
-import { Image, Picture } from "@astrojs/image/components";
-import Kanji from "../../../components/Kanji.svelte";
+<script>
+  import Kanji from "$lib/components/Kanji.svelte";
+  import Figure from "$lib/components/Figure.svelte";
+
+  import kouKoGen from "./koukogen.jpeg";
+</script>
 
 This is part five in a series of posts:
 
@@ -56,12 +57,7 @@ The three sides of a right triangle are named as follows:
 - The hypotenuse is called the _gen_ (<Kanji client:load furigana="げん"
   romaji="gen">玄</Kanji>).
 
-import kouKoGen from "./koukogen.jpeg";
-
-<figure>
-  <Image src={kouKoGen} format="avif" alt="Right triangle parts" />
-  <figcaption>Right triangle parts</figcaption>
-</figure>
+<Figure src={kouKoGen} caption="Right triangle parts" />
 
 A carpenter might say that the slope of a particular roof was "4 _sun_
 _koubai_", for example, or a slope of 4/10 (equivalent to 21.8°).
