@@ -114,12 +114,14 @@
     nav {
       font-size: var(--font-size-3);
       grid-template-columns: 1fr repeat(6, 6rem) 1fr;
-      grid-template-areas: ". logo  nlink  nlink  nlink  nlink  toggle .";
+      grid-template-areas: "logo logo  nlink  nlink  nlink  nlink  toggle .";
       padding-block: var(--size-2);
     }
 
     .logo {
       border: none;
+      justify-self: left;
+      padding-left: var(--size-8);
       padding-block: var(--size-1);
     }
 
