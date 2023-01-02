@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 5)'
-dae: 2022-12-11
+title: 'Sashigane (5)'
+date: 2022-12-11
 description: 'Mysteries of the right triangle'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './koukogen.jpeg'
+  alt: 'Kou, ko, gen triangle'
 tags: ['wood', 'daiku']
 ---
 

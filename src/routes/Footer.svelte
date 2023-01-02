@@ -1,9 +1,10 @@
 <script>
   const year = new Date().getFullYear();
+  import { siteAuthor } from "$lib/config";
 </script>
 <footer>
   <span>
-    &copy; {year} Rex Robert Walters, All Rights Reserved
+    &copy; {year} {siteAuthor} (All Rights Reserved)
   </span>
 </footer>
 

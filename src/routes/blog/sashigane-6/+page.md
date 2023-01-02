@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 6)'
+title: 'Sashigane (6)'
 date: 2022-12-12
 description: 'Basic uses for a sashigane'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './timber-from-log.jpeg'
+  alt: 'Laying out a square timber from a log'
 tags: ['wood', 'daiku']
 ---
 

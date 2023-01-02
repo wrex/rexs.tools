@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 2)'
+title: 'Sashigane (2)'
 date: 2022-12-08
 description: 'Traditional measurement units'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './IMG_0755-removebg.png'
+  alt: 'Sashigane'
 tags: ['wood', 'daiku']
 ---
 

@@ -3,7 +3,7 @@ title: 'Collet closer pt. 1'
 date: 2022-12-04
 description: 'Making a lever-actuated collet closer'
 image:
-  url: '/blog-images/collet-closer-nobg-300.png'
+  url: './collet-closer-nobg-300.png'
   alt: 'Collet closer'
 tags: ['metal', 'machining']
 ---

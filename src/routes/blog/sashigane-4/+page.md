@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 4)'
+title: 'Sashigane (4)'
 date: 2022-12-10
 description: 'Hyoume and Urame'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './sashigane-graduations.jpeg'
+  alt: 'Sashigane graduations'
 tags: ['wood', 'daiku']
 ---
 

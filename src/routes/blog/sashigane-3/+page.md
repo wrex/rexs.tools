@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 3)'
+title: 'Sashigane (3)'
 date: 2022-12-09
 description: 'Physical design of the sashigane'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'Sashigane'
+  url: './sashigane-holding.png'
+  alt: 'Hand holding a sashigane'
 tags: ['wood', 'daiku']
 ---
 

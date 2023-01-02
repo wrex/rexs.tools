@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 1)'
+title: 'Sashigane (1)'
 date: 2022-12-07
 description: 'More than a square: an incredible calculating device.'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './sashigane-removebg.png'
+  alt: 'Sashigane'
 tags: ['wood', 'daiku']
 ---
 

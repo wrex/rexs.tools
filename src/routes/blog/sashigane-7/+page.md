@@ -1,10 +1,10 @@
 ---
-title: 'Sashigane (part 7)'
+title: 'Sashigane (7)'
 date: 2022-12-28
 description: 'Right triangle magic'
 image:
-  url: '/blog-images/sashigane-nobg-300.png'
-  alt: 'sashigane'
+  url: './chuukou-parts.png'
+  alt: 'Parts of the chuukou'
 tags: ['wood', 'daiku', 'kikujutsu']
 ---
 

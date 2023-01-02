@@ -1,8 +1,9 @@
 <h1>Rex's Tools</h1>
   <section class="hero flow">
+    <!-- svelte-preprocess-import-assets-ignore -->
     <img
       class="heroImage"
-      src="/wrench-600.png"
+      src="/images/wrench-600.png"
       alt="A hand holding a wrench"
     />
     <div class="heroText flow">

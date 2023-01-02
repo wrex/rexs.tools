@@ -2,41 +2,32 @@
   import Logo from "$lib/components/Logo.svelte";
   import ThemeToggleButton from "$lib/components/ThemeToggleButton.svelte";
   import FuriToggle from "$lib/components/FuriToggle.svelte";
-  
-  export let current = "";
+
+  import { page } from '$app/stores';
+  import {navItems} from '$lib/config';
+
+  /**
+   * inSection -- true if currently on a page within a section
+   * @param {string} navTitle
+   */
+  const inSection = ( navTitle ) => {
+    const currentSection = $page.route.id || "";
+    return currentSection.toLowerCase().includes(navTitle.toLowerCase());
+  }
+
 </script>
 
 <nav>
   <a href="/" class="logo"><Logo /></a>
   <ul class="nav-links">
-    <li>
-      <a
-        href="/blog"
-        aria-selected={current === "blog"}
-        class={current === "blog" ? "contrast" : "secondary"}>blog</a
-      >
-    </li>
-    <li>
-      <a
-        href="/tags"
-        aria-selected={current === "tags"}
-        class={current === "tags" ? "contrast" : "secondary"}>tags</a
-      >
-    </li>
-    <li>
-      <a
-        href="/articles"
-        aria-selected={current === "articles"}
-        class={current === "articles" ? "contrast" : "secondary"}>articles</a
-      >
-    </li>
-    <li>
-      <a
-        href="/about"
-        aria-selected={current === "about"}
-        class={current === "about" ? "contrast" : "secondary"}>about</a
-      >
-    </li>
+    {#each navItems as nav }
+      <li>
+        <a
+        href={nav.route}
+        aria-selected={inSection(nav.title)}>{nav.title}</a
+        >
+      </li>
+    {/each}
   </ul>
 
   <div class="toggles">
