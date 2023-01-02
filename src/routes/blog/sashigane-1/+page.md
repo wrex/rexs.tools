@@ -19,11 +19,11 @@ tags: ['wood', 'daiku']
 This is part one in a series of posts:
 
 - Sashigane 1: Introduction (this post)
-- [Sashigane 2: Traditional Units](/posts/sashigane-2)
-- [Sashigane 3: Physical design](/posts/sashigane-3)
-- [Sashigane 4: _Hyoume_ and _Urame_](/posts/sashigane-4)
-- [Sashigane 5: _Kou,_ _ko,_ _gen_](/posts/sashigane-5)
-- [Sashigane 6: Simple usage](/posts/sashigane-6)
+- [Sashigane 2: Traditional Units](/blog/sashigane-2)
+- [Sashigane 3: Physical design](/blog/sashigane-3)
+- [Sashigane 4: _Hyoume_ and _Urame_](/blog/sashigane-4)
+- [Sashigane 5: _Kou,_ _ko,_ _gen_](/blog/sashigane-5)
+- [Sashigane 6: Simple usage](/blog/sashigane-6)
 
 I've recently learned a bit about a mind-blowing but ancient tool: the humble
 Japanese carpenter's square. This amazing device has evolved over centuries to
@@ -62,7 +62,7 @@ out primarily with three extremely modest tools:
   I don't know for certain, but I strongly suspect that carpenters in ancient
   Japan used water with stretched _mizuito_ cords to mark out true
   horizontal and vertical references at the job site. I suspect they used
-  [water levels](https://en.wikipedia.org/wiki/Water_level_(device)) to find
+  [water levels](<https://en.wikipedia.org/wiki/Water_level_(device)>) to find
   horizontal, and carefully dropped droplets of water or ink to find vertical. They
   then stretched _mizuito_ cords between the two points to mark the
   horizontal/vertical lines.

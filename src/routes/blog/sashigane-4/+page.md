@@ -17,13 +17,13 @@ tags: ['wood', 'daiku']
 
 This is part four (and possibly the most important!) in a series of posts:
 
-- [Sashigane 1: Introduction](/posts/sashigane-1)
-- [Sashigane 2: Traditional Units](/posts/sashigane-2)
-- [Sashigane 3: Physical design](/posts/sashigane-3)
+- [Sashigane 1: Introduction](/blog/sashigane-1)
+- [Sashigane 2: Traditional Units](/blog/sashigane-2)
+- [Sashigane 3: Physical design](/blog/sashigane-3)
 - Sashigane 4: _Hyoume_ and _Urame_ (this post)
-- [Sashigane 5: _Kou,_ _ko,_ _gen_](/posts/sashigane-5)
-- [Sashigane 6: Simple usage](/posts/sashigane-6)
-- [Sashigane 7: Right triangle magic](/posts/sashigane-7)
+- [Sashigane 5: _Kou,_ _ko,_ _gen_](/blog/sashigane-5)
+- [Sashigane 6: Simple usage](/blog/sashigane-6)
+- [Sashigane 7: Right triangle magic](/blog/sashigane-7)
 
 ## _Hyoume_ and _Urame_
 
