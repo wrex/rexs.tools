@@ -5,6 +5,7 @@ date: 2022-12-02
 image:
   url: './kaitlyn-baker-vZJdYl5JVXY-unsplash-300.jpg'
   alt: 'Typing on a laptop'
+tags: ['meta', 'coding']
 ---
 
 <script>

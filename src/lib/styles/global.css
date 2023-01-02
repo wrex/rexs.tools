@@ -142,7 +142,7 @@ a:visited {
 .imageContainer picture {
 	width: 100%;
 	height: var(--size-13);
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .tag-bar {
@@ -223,9 +223,11 @@ a:visited {
 
 	h1 {
 		margin-bottom: var(--size-9);
-		font-size: calc(var(--font-size-8) * 1.5);
+		font-size: calc(var(--font-size-8));
 		text-transform: capitalize;
+		text-decoration: underline;
 	}
+
 	.heroImage {
 		float: none;
 		max-height: 33vh;
