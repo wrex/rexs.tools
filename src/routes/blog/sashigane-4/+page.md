@@ -5,7 +5,9 @@ description: 'Hyoume and Urame'
 image:
   url: '/images/sashigane-graduations.avif'
   alt: 'Sashigane graduations'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>

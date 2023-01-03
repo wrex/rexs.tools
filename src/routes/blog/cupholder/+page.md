@@ -5,7 +5,10 @@ description: 'Replacing a car cupholder part.'
 image:
   url: '/images/cupholder-removebg.avif'
   alt: 'Cupholder model'
-tags: ['plastic', '3DP', 'repair']
+tags:
+  - 'plastic'
+  - '3DP'
+  - 'repair'
 ---
 
 <script>

@@ -5,7 +5,9 @@ description: 'Making a lever-actuated collet closer'
 image:
   url: '/images/collet-closer-removebg.avif'
   alt: 'Collet closer'
-tags: ['metal', 'machining']
+tags:
+  - 'metal'
+  - 'machining'
 ---
 
 <script>

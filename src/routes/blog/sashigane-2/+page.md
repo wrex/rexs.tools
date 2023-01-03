@@ -5,7 +5,9 @@ description: 'Traditional measurement units'
 image:
   url: '/images/IMG_0755-removebg.avif'
   alt: 'Sashigane'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>

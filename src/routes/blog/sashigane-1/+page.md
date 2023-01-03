@@ -5,7 +5,9 @@ description: 'More than a square: an incredible calculating device.'
 image:
   url: '/images/sashigane-removebg.avif'
   alt: 'Sashigane'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>

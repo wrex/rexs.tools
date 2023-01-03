@@ -82,18 +82,19 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: var(--brand-em);
-}
-
 a:visited {
 	color: var(--text-2);
+}
+
+a:hover,
+a:visited:hover {
+	color: var(--brand-em);
 }
 
 /* Utility */
 
 .container {
-	max-width: 60ch;
+	max-width: 64ch;
 	margin: 0 auto;
 	padding: 0 var(--size-5);
 }

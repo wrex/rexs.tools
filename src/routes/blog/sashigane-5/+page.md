@@ -5,7 +5,9 @@ description: 'Mysteries of the right triangle'
 image:
   url: '/images/koukogen.avif'
   alt: 'Kou, ko, gen triangle'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>

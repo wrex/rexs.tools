@@ -5,7 +5,9 @@ date: 2022-12-02
 image:
   url: '/images/burst-kUqqaRjJuw0-unsplash.avif'
   alt: 'Typing on a laptop'
-tags: ['meta', 'coding']
+tags:
+  - 'meta'
+  - 'coding'
 ---
 
 <script>

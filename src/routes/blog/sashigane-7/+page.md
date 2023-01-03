@@ -5,7 +5,10 @@ description: 'Right triangle magic'
 image:
   url: '/images/chuukou-parts.avif'
   alt: 'Parts of the chuukou'
-tags: ['wood', 'daiku', 'kikujutsu']
+tags:
+  - 'wood'
+  - 'daiku'
+  - 'kikujutsu'
 ---
 
 <script>

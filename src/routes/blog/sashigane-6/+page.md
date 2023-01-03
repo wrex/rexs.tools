@@ -5,7 +5,9 @@ description: 'Basic uses for a sashigane'
 image:
   url: '/images/timber-from-log.avif'
   alt: 'Laying out a square timber from a log'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>

@@ -5,7 +5,9 @@ description: 'Physical design of the sashigane'
 image:
   url: '/images/sashigane-holding.avif'
   alt: 'Hand holding a sashigane'
-tags: ['wood', 'daiku']
+tags:
+  - 'wood'
+  - 'daiku'
 ---
 
 <script>
