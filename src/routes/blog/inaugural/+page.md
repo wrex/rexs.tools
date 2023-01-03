@@ -3,7 +3,7 @@ title: 'The site is live!'
 description: 'Inaugural post'
 date: 2022-12-02
 image:
-  url: './kaitlyn-baker-vZJdYl5JVXY-unsplash-300.jpg'
+  url: '/images/burst-kUqqaRjJuw0-unsplash.avif'
   alt: 'Typing on a laptop'
 tags: ['meta', 'coding']
 ---

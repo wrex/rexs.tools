@@ -3,7 +3,7 @@ title: 'Sashigane (1)'
 date: 2022-12-07
 description: 'More than a square: an incredible calculating device.'
 image:
-  url: './sashigane-removebg.png'
+  url: '/images/sashigane-removebg.avif'
   alt: 'Sashigane'
 tags: ['wood', 'daiku']
 ---
@@ -62,7 +62,7 @@ out primarily with three extremely modest tools:
   I don't know for certain, but I strongly suspect that carpenters in ancient
   Japan used water with stretched _mizuito_ cords to mark out true
   horizontal and vertical references at the job site. I suspect they used
-  [water levels](<https://en.wikipedia.org/wiki/Water_level_(device)>) to find
+  [water levels](https://en.wikipedia.org/wiki/Water_level_(device)) to find
   horizontal, and carefully dropped droplets of water or ink to find vertical. They
   then stretched _mizuito_ cords between the two points to mark the
   horizontal/vertical lines.

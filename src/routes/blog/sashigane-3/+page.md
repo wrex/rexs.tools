@@ -3,7 +3,7 @@ title: 'Sashigane (3)'
 date: 2022-12-09
 description: 'Physical design of the sashigane'
 image:
-  url: './sashigane-holding.png'
+  url: '/images/sashigane-holding.avif'
   alt: 'Hand holding a sashigane'
 tags: ['wood', 'daiku']
 ---

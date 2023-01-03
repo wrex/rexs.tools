@@ -3,7 +3,7 @@ title: 'Sashigane (5)'
 date: 2022-12-11
 description: 'Mysteries of the right triangle'
 image:
-  url: './koukogen.jpeg'
+  url: '/images/koukogen.avif'
   alt: 'Kou, ko, gen triangle'
 tags: ['wood', 'daiku']
 ---

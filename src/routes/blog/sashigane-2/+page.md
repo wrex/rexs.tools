@@ -3,7 +3,7 @@ title: 'Sashigane (2)'
 date: 2022-12-08
 description: 'Traditional measurement units'
 image:
-  url: './IMG_0755-removebg.png'
+  url: '/images/IMG_0755-removebg.avif'
   alt: 'Sashigane'
 tags: ['wood', 'daiku']
 ---

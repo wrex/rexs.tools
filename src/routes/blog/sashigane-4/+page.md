@@ -3,7 +3,7 @@ title: 'Sashigane (4)'
 date: 2022-12-10
 description: 'Hyoume and Urame'
 image:
-  url: './sashigane-graduations.jpeg'
+  url: '/images/sashigane-graduations.avif'
   alt: 'Sashigane graduations'
 tags: ['wood', 'daiku']
 ---

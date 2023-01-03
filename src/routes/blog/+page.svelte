@@ -12,7 +12,7 @@
         <a href={post.route}>
           <div class="imageContainer">
             <img
-              src={post.srcPath + post.meta.image.url}
+              src={post.meta.image.url}
               alt={post.meta.image.alt}
             />
           </div>

@@ -3,7 +3,7 @@ title: 'Sashigane (6)'
 date: 2022-12-12
 description: 'Basic uses for a sashigane'
 image:
-  url: './timber-from-log.jpeg'
+  url: '/images/timber-from-log.avif'
   alt: 'Laying out a square timber from a log'
 tags: ['wood', 'daiku']
 ---

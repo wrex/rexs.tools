@@ -3,7 +3,7 @@ title: 'Repairing a cupholder'
 date: 2022-12-09
 description: 'Replacing a car cupholder part.'
 image:
-  url: './cupholder.png'
+  url: '/images/cupholder-removebg.avif'
   alt: 'Cupholder model'
 tags: ['plastic', '3DP', 'repair']
 ---
