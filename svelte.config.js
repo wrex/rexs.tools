@@ -1,7 +1,7 @@
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 import preprocess from 'svelte-preprocess';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import importAssets from 'svelte-preprocess-import-assets';
 
 /** @type {import('@sveltejs/kit').Config} */
