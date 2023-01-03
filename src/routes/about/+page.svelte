@@ -1,9 +1,12 @@
 <script>
   import Kanji from "$lib/components/Kanji.svelte";
+  import {siteDescription, siteImage} from '$lib/config';
 </script>
 
 <svelte:head>
 	<title>About</title>
+  <meta data-key="description" name="description" content={siteDescription}>
+  <meta property="og:image" content={siteImage}>
 </svelte:head>
 
 
