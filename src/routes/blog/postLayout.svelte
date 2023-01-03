@@ -5,6 +5,7 @@
   export let date;
   /** @type {string} */
   export let description;
+  export let image;
 
   /** @type {string[]}*/
   export let tags = [];
@@ -20,6 +21,8 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta name="twitter:description" content={description} />
+  <meta property="og:image" content={image.url}>
+  <meta property="twitter:image" content={image.url}>
 </svelte:head>
   
 <article class="blog-article flow">

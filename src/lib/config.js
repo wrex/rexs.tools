@@ -4,6 +4,7 @@ export const siteDescription =
 export const siteURL = 'https://rexs.tools';
 export const ghLink = 'https://github.com/wrex/rexs.tools';
 export const siteAuthor = 'Rex Walters';
+export const siteImage = '/icon.svg';
 
 // Controls how many posts are shown per page on the main blog index pages
 export const postsPerPage = 10;

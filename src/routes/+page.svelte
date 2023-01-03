@@ -1,9 +1,11 @@
 <script>
-  import {siteTitle} from '$lib/config';
+  import {siteTitle, siteDescription, siteImage} from '$lib/config';
 </script>
 
 <svelte:head>
   <title>{siteTitle}</title>
+  <meta name="description" content={siteDescription}>
+  <meta property="og:image" content={siteImage}>
 </svelte:head>
 
 <h1>Rex's Tools</h1>
