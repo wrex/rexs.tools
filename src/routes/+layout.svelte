@@ -5,19 +5,20 @@
 
   import Nav from './Nav.svelte';
   import Footer from './Footer.svelte';
+  
+  import { fade } from 'svelte/transition'
 
-  // prerender everything by default (in this top level layout)
-  // turn this off on individual routes by settting prerender to false
-  export const prerender = true;
+  export let data;
 </script>
 
-<!-- <Nav current={current} /> -->
 <header>
   <Nav />
 </header>
 
-<main class="container">
+{#key data.currentRoute}
+<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }} class="container">
   <slot />
 </main>
+{/key}
 
 <Footer />
