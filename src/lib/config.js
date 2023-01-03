@@ -15,10 +15,6 @@ export const navItems = [
 		route: '/blog'
 	},
 	{
-		title: 'Tags',
-		route: '/tags'
-	},
-	{
 		title: 'Articles',
 		route: '/articles'
 	},

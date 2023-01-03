@@ -11,6 +11,16 @@
 
   import TagPill from "$lib/components/TagPill.svelte";
 </script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta data-key="description" name="description" content="{description}">
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content={title} />
+	<meta name="twitter:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta name="twitter:description" content={description} />
+</svelte:head>
   
 <article class="blog-article flow">
   <h1>{title}</h1>

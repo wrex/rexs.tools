@@ -4,6 +4,10 @@
   import TagPill from "$lib/components/TagPill.svelte";
 </script>
 
+<svelte:head>
+  <title>Tags</title>
+</svelte:head>
+
 <section class="flow">
 <h1>All tags</h1>
   <div class="card-grid">

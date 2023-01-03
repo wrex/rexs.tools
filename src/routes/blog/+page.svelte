@@ -1,8 +1,16 @@
 <script>
   export let data;
 
+  import {siteDescription} from '$lib/config';
+
   import TagPill from "$lib/components/TagPill.svelte";
 </script>
+
+<svelte:head>
+	<title>Blog posts</title>
+	<meta data-key="description" name="description" content={siteDescription}>
+</svelte:head>
+
   
 <section class="flow">
   <h1>Blog posts</h1>

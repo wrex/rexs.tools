@@ -1,3 +1,11 @@
+<script>
+  import {siteTitle} from '$lib/config';
+</script>
+
+<svelte:head>
+  <title>{siteTitle}</title>
+</svelte:head>
+
 <h1>Rex's Tools</h1>
   <section class="hero flow">
     <!-- svelte-preprocess-import-assets-ignore -->

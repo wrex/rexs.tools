@@ -1,6 +1,5 @@
 
 <script>
-  import '../app.postcss';
   import "$lib/styles/global.css";
 
   import Nav from './Nav.svelte';
