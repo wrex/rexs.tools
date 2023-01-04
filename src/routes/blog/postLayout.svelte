@@ -31,11 +31,8 @@
   <div class="tag-bar">
     <ul class="tags">
       {#each tags as tag}
-        <li class="tag">
           <TagPill tagName={tag} large />
-        </li>
       {/each}
-
     </ul>
     <date class="datestamp">{new Date(date).toDateString()}</date>
   </div>
