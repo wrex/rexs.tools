@@ -16,6 +16,8 @@ tags:
 
    import sashiHold from "./sashigane-holding.png";
    import sashiCross from "./sashigane-cross-section.jpeg";
+   import Kanete from "./kanete.jpeg";
+   import Profiles from "./profiles.jpeg";
 </script>
 
 This is part three in a series of posts:
@@ -30,7 +32,7 @@ This is part three in a series of posts:
 
 ## Physical design
 
-A sashigane is constructed as a single piece of forged metal, but measurements
+A _sashigane_ is constructed as a single piece of forged metal, but measurements
 are made with five different parts:
 
 1. The long arm or _nagate_ (<Kanji client:load furigana="ながて"
@@ -59,14 +61,21 @@ The _sashigane_ has several design characteristics that aren't immediately
 obvious.
 
 First is that it's _intentionally flexible_. It's normally held with the long
-arm held in the left hand, far from the short arm:
+arm in the left hand, with your hand positioned a fair distance from the short arm:
 
 <Figure src={sashiHold} caption="Holding the sashigane" />
 
 Bending the long arm this way makes it easy to register along the edge of a
-board you are marking. Note that you want to grab the end of the long arm to
-give as much registration surface as possible for accuracy (and to make the
-bending easy).
+board you are marking. You want to grab the _end_ of the long arm, rather than
+up close to the _tsumate_ to give as much registration surface as possible for
+accuracy (and to make the bending easy). If you grab it up close, it's harder to
+keep it square.
+
+The corner, or _kanete_ <Kanji client:load furigana="かねて" 
+romaji="kanete">(矩手)</Kanji> is thicker than the rest of the tool to ensure
+it remains square:
+
+<Figure src={Kanete} caption="Corner thickened so it won't bend and lose accuracy" />
 
 Each arm is exactly ５分 or very nearly 15mm wide (a little more than 1/2"). The
 cross section is intentionally designed to raise the edges above the surface
@@ -79,4 +88,10 @@ Even the little hollow (marked 「えぐり」 in the diagram) is cleverly
 designed: in addition to providing a comfortable spot for your thumb and fingers
 to grasp the tool, you can feel when the two edges along the sides of the
 arc register flat on the surface (line contact provides better tactile feedback than area
-contact would).
+contact would). Modern _sashigane_ most commonly just bevel the edges and leave
+the center flat, but old ones came in many different shapes:
+
+<Figure src={Profiles} caption="Historical sashigane profiles" />
+
+[The next post in this series](/blog/sashigane-4) discusses exactly how and why the scale on the
+bottom of the traditional _sashigane_ uses a different scale on the bottom side.

@@ -13,6 +13,7 @@ tags:
 
 <script>
   import Figure from "$lib/components/Figure.svelte";
+  import YouTube from 'svelte-youtube';
   
   // images
   import Assembly from "./cupholder-assembly.jpeg";
@@ -78,13 +79,4 @@ Notes:
 
 Here's a short video of the final results:
 
-<div class="yt-container">
-  <iframe
-    class="yt-embedded"
-    src="https://www.youtube.com/embed/rH7g6PRv0-0"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+<YouTube videoId="rH7g6PRv0-0" />

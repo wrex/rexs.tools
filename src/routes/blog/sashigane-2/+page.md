@@ -12,6 +12,9 @@ tags:
 
 <script>
   import Kanji from "$lib/components/Kanji.svelte";
+  import Figure from "$lib/components/Figure.svelte";
+
+  import NotSun from "./IMG_0757-removebg.png";
 </script>
 
 This is part two in a series of posts:
@@ -36,6 +39,11 @@ measurements, but I know for certain that these traditional units varied over
 time as well as between the eastern and western parts of the country (much less
 China). As the old saw states, that's the great thing about standards: there are
 so many to choose from!
+
+The measurement system I describe is called _shakkanhou_ <Kanji client:load
+furigana="しゃっかんほう" romaji="shakkanhou">(尺貫法)</Kanji>. The system came
+from China originally, though the standard unit lengths doubtless changed many
+times over the centuries and miles of travel.
 
 For building construction, the most important traditional linear units are:
 
@@ -73,12 +81,36 @@ regularly in Japan (as anyone who has rented an apartment can attest).
 - Two tatami mats side by side, or six square shaku, is an areal unit called a
   _tsubo_ (<Kanji client:load furigana="つぼ" romaji="tsubo">坪</Kanji>).
 
+## These aren't the units you are looking for
+
 Today, _sashigane_ can be purchased with either traditional _shaku_ based units
 (<Kanji client:load furigana="しゃっくかんほう" romaji="shakkanhou">尺貫法</Kanji>)
-or metric units, and many have the same units on both sides of the
+or metric units, but many have the same units on both sides of the
 square (sadly) -- you must ask specially for _sashigane_ with _urame_ or
-_kakume_ scales on the bottom side. This is the subject of the next post in the
-series.
+_kakume_ scales on the bottom side (to be explained in subsequent articles).
 
-The remainder of the series will only discuss _shaku_ based _sashigane_, but
-the principles are the same, regardless.
+While 尺貫法 _sashigane_ can be easily acquired in Japan ([_Shinwa
+Sokutei_](https://www.shinwasokutei.co.jp/) is one major manufacturer) the
+system was apparently outlawed during or shortly after the Meiji Restoration. As
+is their wont, the progressive politicians of the time passed a law (circa 1868)
+that only metric based units were permitted going forward.
+
+To this day, _shaku_ and _sun_ based measuring tools always have this mysterious
+mark at various locations: "/33m":
+
+<Figure src={NotSun} caption="Mysterious '/33m' marks" />
+
+For the longest time, the author had no idea what those marks meant. They are there to
+work around the law mandating metric units! 1/33 = 0.0303. So 1/33<sup>rd</sup>
+of a meter is 0.0303m or 30.3mm, which just happens to be the length of one
+_sun_.
+
+> "These are not the old, illegal, _sun_ based measurements you were looking
+> for, Mr. Inspector-san, sir: these are 1/33 meter units!"
+
+The remainder of the series will only discuss _shaku_ based _sashigane_, where
+１尺 is exactly 303mm (as most modern _sashigane_ are marked) but at least be
+aware that there are regional and historical variations in the absolute lengths.
+The principles remain the same regardless.
+
+Next up: [the physical design of the _sashigane_](/blog/sashigane-3/)

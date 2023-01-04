@@ -22,6 +22,7 @@ tags:
   import FiveTen from "./five-ten.png";
   import Chuukou from "./chuukou.png";
   import ChuukouParts from "./chuukou-parts.png";
+  import Kaeshi from "./kaeshi.png";
 </script>
 
 This is part seven in a series of posts:
@@ -39,7 +40,8 @@ This is part seven in a series of posts:
 Before going full-nerd and explaining all this dry geometry stuff, let's give a
 preview of where we are heading.
 
-Here's a model of the corner of a "simple" temple roof:
+Here's the kind of model mentioned in the last post that I'd like to construct.
+It models the corner of a "simple" temple roof:
 
 <Figure src={Model} caption="Where we are headed: a 'simple' joinery model" />
 
@@ -57,9 +59,9 @@ single _sashigane_ and the geometry tricks explained in this series.
 
 ## Fundamentals
 
-We've already discussed that Japanese carpenters (<Kanji client:load
-furigana="だいく" romaji="daiku">大工</Kanji>) always use _slopes_ (<Kanji
-client:load furigana="こうばい" romaji="koubai">勾配</Kanji>) to describe
+To review: We've already discussed that Japanese carpenters (<Kanji client:load
+furigana="だいく" romaji="daiku">大工</Kanji>) always use _slopes_ <Kanji
+client:load furigana="こうばい" romaji="koubai">(勾配)</Kanji> to describe
 angles, not degrees or radians. A slope is a rise over a run, and it's helpful
 to know the names of the parts:
 
@@ -74,12 +76,13 @@ client:load furigana="げん" romaji="genn">弦</Kanji> which means "chord" or
 In other words, and more practically, the _gen_ is a taught line between the
 start of the run and the top of the rise!
 
-I may be a little old for a padawan, but all of that gives me shivers!
+I may be a little old to still be a padawan early in my journey, but the
+foreshadowing from all of that gives me shivers!
 
 ### Laying out <del>angles</del> <ins>slopes</ins> with a _sashigane_
 
-Let's say someone asked you to draw a line with a slope of ５寸 _koubai_. To
-review, the convention is with a rise, or _ko,_ of １０寸 which is equivalent to １尺.
+Let's say someone asked you to draw a line with a slope of ５寸 _koubai_ or a
+slope of 5/10.
 
 The most direct way would be to draw a horizontal line of some fixed, but convenient length,
 say １０寸. Then draw a vertical line from the right end that's exactly half that
@@ -91,10 +94,11 @@ length (５寸). Then draw a "taught line" between the
 But that's way too much work.
 
 The more practical method that any <Kanji client:load furigana="だいくさん"
-romaji="daikusan">大工さん</Kanji> (carpenter) worth his salt would use is to draw a horizontal
-line of _any_ length, then line up his _sashigane_ so the mark on one arm
-read exactly half of what was on the other arm (say 6 and 3 rather than 10 and
-5), then strike his line:
+romaji="daikusan">大工さん</Kanji> (carpenter) worth his salt would use is to hold
+is _sashigane_ up to a straight line of _any_ length. He'd tilt the tool to
+align the mark on one arm to read exactly half of what was on the other arm (say
+6 and 3 rather than 10 and 5). Then he'd strike his line (along the long arm of
+the _sashigane_, sliding and extending as necessary):
 
 <Figure src={ThreeSix} caption="5 sun koubai using 3 and 6" />
 
@@ -106,11 +110,17 @@ different, but the _slope_ (and angle) will be identical:
 
 **This is important!**
 
-It's not as obvious as it seems, either. Notice that in the original diagram,
-the run, or _ko_, was 10. But in the last diagram, we use the _ko_ dimension to
-strike the hypotenuse, and the _kou_ is no longer a vertical rise. This can seem
-confusing at first, but just remember the slopes remain the same, but the
-lengths differ.
+This is not as obvious as it seems. It seems easy if you simply read and look
+at the diagrams. But doing it in practice requires, well, _practice._
+
+Notice that in the original diagram, the run, or _ko_, was 10. But
+we used the _ko_ dimension on the long arm to strike the angle. Also, the _kou_ is **no
+longer a _vertical_ line**, it's now the same length, but tilted off vertical.
+
+This is inevitably confusing at first. Just remember that the slopes remain the
+same, but the lengths differ. Also remember that the _sashigane_ will always
+describe _two_ slopes, the _hirakoubai_ that's less than 45° and the
+_kaeshikoubai_ that's greater.
 
 ### The _chuukou_
 
@@ -124,6 +134,8 @@ This line is called the _chuukou_ (<Kanji client:load furigana="ちゅうこう"
 romaji="chuukou">中勾</Kanji>, pronounced "chew koh"). It divides the larger
 triangle into smaller parts.
 
+More importantly, it describes the _kaeshikoubai_ slope (relative to the horizontal).
+
 Because the sum of the angles in any triangle always adds up to 180°, and both
 the overall triangle and smaller triangles contain 90° corners, the
 angle in the lower right of the smaller triangle formed by the _chuukou_ is
@@ -132,19 +144,35 @@ are also the same:
 
 <Figure src={ChuukouParts} caption="The triangles formed by the chuukou" />
 
-The angles labled "a" are both the same, as are the angles labled "b".
+The angles labeled `a` are both the same, as are the angles labeled `b`.
+Further, `a + b = 90`.
 
 The _gen_ is also broken into two parts, called the "long _gen_" or _chougen_ (<Kanji
 client:load furigana="ちょうげん" romaji="chougen">長玄</Kanji>) and the "short
 _gen_" or _tangen_ (<Kanji client:load furigana="たんげん" 
 romaji="tangen">短玄</Kanji>).
 
-Each of these smaller triangles can also be broken into two smaller triangles in
-the same way (fractal triangles!). There are a few more names for the next
-smaller triangle parts, but, thankfully, the fractal deconstruction and naming
-only continues for one more level (and we don't need to name everything yet).
+Further, once you've struck a line that describes the slope of that _gen_ (using
+3/6, 5/10, 4.134/8.268, or _whatever_ in that same ratio) you can now slide the
+_sashigane_ anywhere along the that line without changing the slopes: angle `a`
+and `b` will always remain the same.
 
-We will need at least one more post to name all the parts before we can get to
+If, for example, you slid the _sashigane_ until the corner reached the top of
+the _kou_ (rise), you'd end up describing four total triangles (fractal
+triangles!):
+
+<Figure src={Kaeshi} caption="Lot's of triangles, just two slopes" />
+
+The short arm (_tsumate_) of the _sashigane_ still describes the same slope as
+the _chuukou_.
+
+**All four** of these triangles (large yellow, purple, red, and small yellow)
+are exactly the same shape and contain just the same two slopes `a` and `b`, but in
+different orientations.
+
+The lengths of the sides differ, but the _slopes_ are the same.
+
+We will need at one more post to discuss one more critical slope before we can get to
 how all this is applied. There is some pretty neat mathematical magic coming up.
 
 Stay tuned!

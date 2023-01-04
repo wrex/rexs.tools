@@ -20,6 +20,7 @@ tags:
   import Sill from "./sill-plate.jpeg";
   import Tray from "./splayed-tray.jpeg";
   import Stool from "./splayed-stool.jpeg";
+  import HozoAna from "./hozoana.jpeg";
 </script>
 
 This is part six in a series of posts:
@@ -37,12 +38,17 @@ This is part six in a series of posts:
 There are countless uses for a _sashigane_, but this post lists a few of the
 more common ones.
 
+**NOTE:** All of these techniques are demonstrated in [the video at the bottom of the
+first post in this series](http://localhost:5173/blog/sashigane-1#overview-of-basic-applications).
+
 ### 1. Timbers from logs
 
-One of the simplest uses of a _sashigane_ is to determine the largest square sided
-timber you can extract from a round log. Simply use the _urame_ graduations to
-measure the diameter of the log. That measurement is the "real" _sun_ measurement
-(_hyoume_) of each side:
+One of the simplest uses is to determine the largest square sided timber you can
+extract from a round log.
+
+Simply use the _urame_ graduations to measure the diameter of the log. That
+measurement is the _hyoume_ measurement of each side (the real, normal
+measurement in _sun_):
 
 <Figure src={timberLog} caption="Timber from log" />
 
@@ -60,7 +66,11 @@ graduations (_urame_):
 
 <Figure src={Octagon} caption="Octagon layout" />
 
-(Why this works is left as an exercise for the reader!)
+(Why this works isn't immediately obvious! [This article on geometrical
+construction](http://tgbasics.weebly.com/how-to-construct-an-octagon-in-a-square.html)
+might help you to visualize what's going on. In a nutshell, the distance from
+any corner of the original square to the center is the same distance as from
+that same corner to the far corner of the octagon.)
 
 ### 3. Measuring circumferences
 
@@ -74,6 +84,15 @@ Since the circumference of a circle is just &pi; times the diameter, measuring
 the diameter using _marume_ graduations gives you the circumference directly (it's
 much easier to measure the diameter of a circle with a ruler than it is to
 measure the circumference!).
+
+### 4. Measuring depth
+
+One end of the _sashigane_ usually has a few _sun_ marked off beginning at the
+end of the arm instead of from the corner. One can use this to measure the depth
+of mortices (<Kanji client:load furigana="ほぞあな" 
+romaji="hozoana">ホゾ穴</Kanji>) and other features.
+
+<Figure src={HozoAna} caption="Hozoana (mortice) and other depth measurements" />
 
 ### 4. Sill-plate or threshold layout
 
@@ -157,100 +176,117 @@ This is a very handy technique for many different situations, and will be
 familiar to many different tradesmen (not just carpenters, but tile layers,
 stone masons, etc.).
 
-<p>
-  <mark>TODO: Make a video showing this layout process</mark>
-</p>
+Again, this technique is well illustrated in [the video at the bottom of the
+first post in this
+series](http://localhost:5173/blog/sashigane-1#overview-of-basic-applications).
 
-## Traditional vs ツウバイ ("two by") construction
+## Ancient vs. modern construction
 
-In the old days, raw material was "cheap" if you valued the time and effort to
-obtain it at zero. Oddly shaped trees and logs were everywhere, and "only" (!!) cost you
-the time and effort to cut and transport them.
+One might wonder about my passion for these "antiquated" layout techniques.
+After all, we have calculators, laser levels, and the like at our fingertips
+today.
 
-Work and experienced, skilled workers were also cheap (or at least omnipresent,
-so they weren't of particular concern).
+Why bother with these antiquated techniques if more modern methods are available?
 
-On the other hand, high quality, flat, straight, and stable material was almost
-impossibly expensive to obtain (and making your own required far more effort
-than merely cutting down and hauling).
+### Cost of materials vs. work
 
-Modern 2&times;4 construction has somewhat turned this on its head. Relatively
-straight, kiln dried, surfaced-four-sides lumber can be acquired and even
-dropped off on your doorstep at shockingly low cost (relatively speaking).
-Knowledgeable and competent carpenters and other tradesmen, on the other hand,
+In the old days, raw material was cheap (if you valued the time and effort to
+obtain it at near zero). Oddly shaped trees and logs were everywhere. They "only" (!!)
+cost you the time and effort to cut and transport them, but time and effort were
+considered a reasonable tradeoff.
+
+_Work_ was cheap, and experienced, skilled workers were plentiful.
+
+_Finished_ material, on the other hand was prohibitively expensive. High
+quality, flat, straight, and stable material was almost impossible to
+obtain. Finishing your own material also required far more effort than merely
+cutting and hauling.
+
+Modern 「ツウバイ」 (2&times;4) construction has somewhat turned this on its
+head.
+
+Relatively straight, kiln dried, surfaced-four-sides lumber can be acquired and
+even delivered to a worksite relatively cheaply.
+
+Knowledgeable and experienced carpenters and other tradesmen, on the other hand,
 are increasingly scarce and expensive.
 
-Because the workers are so expensive, we think nothing of spending huge sums of
-money on tools and machines that let them work more quickly. The ancients had to
-make do with much more modest tooling (but accomplished high-quality work
-amazingly quickly nonetheless).
+Because workers are so expensive, modern professionals don't hesitate to spend huge
+sums of money on tools and machines that let them work more quickly.
 
-Modern construction practices take advantage of the "flat and straight" nature
-of our materials. It's common practice to preserve the "factory edge" of a piece
+The ancients had to make do with much more modest tooling (but accomplished
+high-quality work amazingly quickly nonetheless). Battery powered tools, heavy
+machinery, laser levels, and the like weren't available for love nor money.
+
+Modern construction practices somewhat depend on the "flat and straight" nature
+of finished materials. It's common practice to preserve the "factory edge" of a piece
 of plywood, for example, to ensure things remain square and true as they are
 constructed.
 
-Ancient craftsman, though, had to depend on their tools to keep things straight
-and true. They depended on physical and mathematical principles to ensure their
-creations were true and square, even if their materials weren't.
+### Hobbyist budgets, ancient techniques
+
+But "cheap" is a relative term! Finished materials and quality tools are quite
+reasonably priced in large quantities for professionals, but a hobbyist only
+needs small quantities and can only afford much more modest tools.
+
+A hobbyist wants to make something out of that stack of firewood that's
+free for the taking. They don't want to spend a relative fortune on finished material.
+
+A hobbyist like myself also considers his time in the shop as "free". He won't
+hesitate undertaking a job that might take hours, days, or even weeks to
+complete. It's time spent for the joy of it.
+
+Ancient craftsman depended on their tools and basic mathematical principles to
+ensure their creations were true and square, even if their materials weren't.
 
 They knew for certain that a silk cord stretched between two points created a
 straight line. They also knew that water seeks it's own level, that a weight
-hung from a cord creates a true vertical, and that a triangle with sides 3
-units, 4 units, and 5 units long creates a right triangle.
+hung from a cord describes a true vertical line, and that sides
+that are 3 units, 4 units, and 5 units long create a right triangle.
 
-The most important layout tools in their arsenal were the three mentioned at the
-beginning of this post: the _sashigane_, the _sumitsubo_ (inkpot and line), and the
-_mizuito_ (water line).
+The most important layout tools in their arsenal were the three mentioned in [the
+first post of this series](/blog/sashigane-1): the _sashigane_, the _sumitsubo_
+(inkpot and line), and the _mizuito_ (water line).
 
-The most complex of these -- by far -- was the _sashigane_. This was doubtless a
-highly prized posession, and it became the reference for virtually everythihg
-they built. They learned techniques to verify and, if necessary, adjust the
-squareness of this reference (a subject for another blog post).
+For hobbyists like myself, these traditional techniques employing these tools
+are incredibly valuable. They allow us to create beautiful things without
+spending a fortune on material, and mostly just require that we invest our _time_
+-- something we want to do anyway!
 
-Traditional Japanese layout generally depends on idealized horizontal and
-vertical lines. They knew their material was rarely constant width or straight,
-so they would strike an ink line down the "center" of each face on their
-material.
+_That_ is why I'm so passionate about these techniques.
 
-That inked line would represent the ideal (if imaginary) line corresponding to
-a line on their drawing.
+## Upcoming _kikujutsu_ projects
 
-In other words, traditional Japanese layout mostly looks like stick figures. The
-widths of boards are mostly ignored (as are arcs and bows). A board might be so
-crooked that the ink like down the "center" might only make a mark for a short
-distance at each end, missing the middle of the board entirely!
+So far, we've only just scratched the surface of what a _sashigane_ can do. As
+mentioned in the beginning, even the astonishingly complex joints and compound
+angles required to make a temple or castle can be drawn using nothing more than
+the humble sashigane.
 
-For hobbyists like myself, the traditional techniques are particularly
-valuable. My time isn't costly: I _enjoy_ doing this work. Traditional
-techniques allow me to use material that a pro wouldn't begin to consider.
+If you can draw it, and you have the skills with saws, planes, and chisels, you
+can make the joint.
 
-What was old is new again.
+The Japanese art of layout and measurement is called _kikujutsu_ (<Kanji client:load
+furigana="きくじゅつ" romaji="kikujutsu">規矩術</Kanji>). I'll continue
+to write about the subject as I continue my own studies.
 
-## Going further
-
-We've only just scratched the surface of what a _sashigane_ can do. As mentioned
-in the beginning, even the astonishingly complex joints and compound angles
-required to make a temple or castle can be drawn using nothing more than the
-humble sashigane.
-
-If you can draw it, and you can cut to a line, you can make the joint.
-
-This study of layout and measurement is called _kikujutsu_ (<Kanji client:load
-furigana="きくじゅつ" romaji="kikujutsu">規矩術</Kanji>) in Japanese. I'll be
-devoting much of this blog to the subject as I continue my own studies.
-
-I've two specfic projects in mind to document the process in forthcoming
+I've several projects in mind to document the process in forthcoming
 sections.
 
-The first is a sort of scoop or tray with four splayed sides. Believe it or not,
-all of the compound angles required can be easily drawn using nothing more than
-a _sashigane_:
+Eventually, I hope to make a small model of the corner of a traditional Japanese
+roof (like you might see at a temple or on a castle).
 
-<Figure src={Tray} caption="Splay-sided, or battered tray" />
-
-Next I plan to construct a simple splay-legged stool:
+Before that, I will almost certainly construct a relatively simple splay-legged stool:
 
 <Figure src={Stool} caption="Splay-legged stool" />
 
-Stay tuned!
+But first, I plan to build something simpler yet: a sort of scoop or tray with
+four "battered" (or "splayed") sides:
+
+<Figure src={Tray} caption="A splay-sided, or battered tray" />
+
+Believe it or not, all of the compound angles required for any of these projects
+can be easily drawn using nothing more than a _sashigane_:
+
+But first we need to cover a [few more geometric concepts and
+terms](/blog/sashigane-7) in the next section before we can get back to
+practical examples.
