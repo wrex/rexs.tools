@@ -4,6 +4,8 @@
   import {siteDescription} from '$lib/config';
 
   import TagPill from "$lib/components/TagPill.svelte";
+  import TagCloud from "$lib/components/TagCloud.svelte";
+  const tagCounts = data.tagCounts;
 </script>
 
 <svelte:head>
@@ -14,6 +16,9 @@
   
 <section class="flow">
   <h1>Blog posts</h1>
+  <aside>
+    <TagCloud {tagCounts} />
+  </aside>
   <div class="card-grid">
     {#each data.posts as post}
       <article class="blog-card">
