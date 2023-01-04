@@ -29,7 +29,9 @@
           <ul class="tags">
             {#each post.meta.tags as tag}
               <li>
-                <TagPill tagName={tag} />
+                <a href={`/tags/${tag}`}>
+                  <TagPill tagName={tag} />
+                </a>
               </li>
             {/each}
           </ul>
