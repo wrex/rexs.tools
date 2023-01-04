@@ -254,8 +254,6 @@ figure {
 figure img,
 figure picture {
 	object-fit: contain;
-	width: 100%;
-	height: min-content;
 }
 
 figcaption {
