@@ -14,11 +14,11 @@
 <!-- <select bind:value="{$theme}"> -->
 <div class="toggle" on:click={toggleType} on:keypress={toggleType}>
   {#if $furiganaType === "kana"}
-  <span transition:fade
+  <span in:fade
     class = {$furiganaType === "kana" ? "selected" : "unselected"}
     >あ</span>
   {:else}
-  <span transition:fade
+  <span in:fade
     class = {$furiganaType === "romaji" ? "selected" : "unselected"}
     >A</span>
   {/if}
