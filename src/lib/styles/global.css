@@ -325,3 +325,9 @@ figcaption {
 .tag[data-tagType='plastic'] {
 	background-color: var(--red-9);
 }
+
+/* embedded youtube videos */
+.video {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+}

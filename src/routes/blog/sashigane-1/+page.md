@@ -13,7 +13,6 @@ tags:
 <script>
   import Kanji from "$lib/components/Kanji.svelte";
   import Figure from "$lib/components/Figure.svelte";
-  import YouTube from 'svelte-youtube';
 
   import Sashigane from "./sashigane-removebg.png";
   import HimejiJou from "./redd-f-wPMvPMD9KBI-unsplash.jpeg";
@@ -74,7 +73,7 @@ out primarily with three extremely modest tools:
   I don't know for certain, but I strongly suspect that carpenters in ancient
   Japan used water with stretched _mizuito_ cords to mark out true
   horizontal and vertical references at the job site. I wonder if they used
-  [water levels](https://en.wikipedia.org/wiki/Water_level_(device)) to find
+  <a href="https://en.wikipedia.org/wiki/Water_level_(device)">water levels</a> to find
   horizontal, and perhaps dropped droplets of water or ink to find vertical.
   They could then stretched _mizuito_ cords between two identified points to
   mark true horizontal and vertical lines (laser levels have spoiled me).
@@ -96,7 +95,7 @@ many layout taks. Here's an outstanding overview of basic uses for the tool. Thi
 isn't my work, someone else made this. The English closed-captioning is quite
 good, and it provides an excellent overview of the tool:
 
-<YouTube videoId="6egeYJNHjOQ" />
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/6egeYJNHjOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 We will be covering everything discussed in that video in subsequent posts.
 
