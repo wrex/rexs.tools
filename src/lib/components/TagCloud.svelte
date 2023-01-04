@@ -2,6 +2,8 @@
   /** @type {Object.<string,number>}*/
   export let tagCounts = {};
 
+  const sortedTags = Object.keys(tagCounts).sort();
+
   /**
    * countString -- append count for tag in parens 
    * @param {string} tag
@@ -14,7 +16,7 @@
 </script>
 
 <ul class="tagcloud">
-  {#each Object.keys(tagCounts) as tag}
+  {#each sortedTags as tag}
     <li>
       <a href={`/tags/${tag}/`}>
         <TagPill 
