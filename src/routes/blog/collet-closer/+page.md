@@ -23,7 +23,7 @@ tags:
 
 I've got a 10" 1947 Montgomery Wards (Logan) metal lathe. Like many, I enjoy
 the convenience and precision of collets. A four-jaw chuck is much more tedious to align,
-and none of my scroll chucks are provide as much precision.
+and none of my scroll chucks provide as much precision.
 
 Until recently, I regularly used three different collet systems: 3C, 5C, and ER-32.
 
