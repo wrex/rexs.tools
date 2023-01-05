@@ -5,7 +5,6 @@
   import { currentPage } from "$lib/stores/currentPage";
 
   $: isCurrentPage = href === "/" ? false : $currentPage.startsWith(href);
-  $: console.log(`${$currentPage} ${href}`);
 </script>
 
 <a
