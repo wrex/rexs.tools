@@ -11,6 +11,7 @@
   export let tags = [];
 
   import TagPill from "$lib/components/TagPill.svelte";
+  import {currentPage} from "$lib/stores/currentPage";
 </script>
 
 <svelte:head>
@@ -26,7 +27,7 @@
 </svelte:head>
   
 <article class="blog-article flow">
-  <h1>{@html title}</h1>
+  <h1 class="blog-title"><a aria-hidden="true" tabindex="-1" href={$currentPage}><span class="icon icon-link"></span></a>{@html title}</h1>
   <p class="description">{@html description}</p>
   <div class="tag-bar">
     <ul class="tags">
@@ -40,3 +41,7 @@
       <slot />
     </div>
 </article>
+
+<style>
+
+</style>

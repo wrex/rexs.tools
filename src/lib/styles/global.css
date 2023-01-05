@@ -275,7 +275,7 @@ figcaption {
 }
 
 /* autolink headings */
-:where(h2, h3, h4, h5, h6) .icon-link {
+:where(h1.blog-title, h2, h3, h4, h5, h6) .icon-link {
 	position: relative;
 
 	&::before {
@@ -288,7 +288,7 @@ figcaption {
 	}
 }
 
-:where(h2, h3, h4, h5, h6):hover .icon-link::before {
+:where(h1.blog-title, h2, h3, h4, h5, h6):hover .icon-link::before {
 	opacity: 1;
 }
 
