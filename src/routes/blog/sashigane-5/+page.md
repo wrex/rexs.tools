@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (5)'
+title: '<em>Kou</em>, <em>ko</em>, <em>gen</em>'
 date: 2022-12-11
-description: 'Mysteries of the right triangle'
+description: '<em>Slopes,</em> and the mysteries of the right triangle. Part 5 in a series.'
 image:
   url: '/images/koukogen.avif'
   alt: 'Kou, ko, gen triangle'

@@ -13,3 +13,9 @@
 	<img src={src.fallback.src} {alt} loading="lazy" />
 	<!-- https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading#images_and_iframes -->
 </picture>
+
+<style>
+	img {
+		margin: auto;
+	}
+</style>

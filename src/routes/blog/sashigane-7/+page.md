@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (7)'
+title: '<em>Hirakoubai</em> and <em>kaeshikoubai</em>'
 date: 2022-12-28
-description: 'Right triangle magic'
+description: 'Right triangle magic: how to layout common slopes. Part 7 in a series.'
 image:
   url: '/images/chuukou-parts.avif'
   alt: 'Parts of the chuukou'
@@ -166,13 +166,19 @@ triangles!):
 The short arm (_tsumate_) of the _sashigane_ still describes the same slope as
 the _chuukou_.
 
-**All four** of these triangles (large yellow, purple, red, and small yellow)
-are exactly the same shape and contain just the same two slopes `a` and `b`, but in
+There are four triangles shown: the large yellow triangle (outlined by the
+_sashigane_), the purple triangle, and the two smaller yellow triangles.
+
+**All four** of these triangles have exactly the same shape. All of them contain
+the same two _hirakoubai_ and _kaeshikoubai_ slopes (`a` and `b`) but in
 different orientations.
 
 The lengths of the sides differ, but the _slopes_ are the same.
 
 We will need at one more post to discuss one more critical slope before we can get to
 how all this is applied. There is some pretty neat mathematical magic coming up.
+
+But we've already covered enough to layout some simple constructions. The next
+post will describe one such application.
 
 Stay tuned!

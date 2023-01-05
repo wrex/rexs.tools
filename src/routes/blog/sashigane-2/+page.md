@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (2)'
+title: '<em>Shakkanhou</em> &mdash; traditional Japanese units'
 date: 2022-12-08
-description: 'Traditional measurement units'
+description: 'Traditional measurement units. Part 2 in a series.'
 image:
   url: '/images/IMG_0755-removebg.avif'
   alt: 'Sashigane'

@@ -2,30 +2,17 @@
   import Logo from "$lib/components/Logo.svelte";
   import ThemeToggleButton from "$lib/components/ThemeToggleButton.svelte";
   import FuriToggle from "$lib/components/FuriToggle.svelte";
+  import NavItem from "$lib/components/NavItem.svelte";
 
-  import { page } from '$app/stores';
   import {navItems} from '$lib/config';
-
-  /**
-   * inSection -- true if currently on a page within a section
-   * @param {string} navTitle
-   */
-  const inSection = ( navTitle ) => {
-    const currentSection = $page.route.id || "";
-    return currentSection.toLowerCase().includes(navTitle.toLowerCase());
-  }
-
 </script>
 
-<nav>
+<nav class="main-nav">
   <a href="/" class="logo"><Logo /></a>
   <ul class="nav-links">
     {#each navItems as nav }
       <li>
-        <a
-        href={nav.route}
-        aria-selected={inSection(nav.title)}>{nav.title}</a
-        >
+        <NavItem href={nav.route}>{nav.title}</NavItem>
       </li>
     {/each}
   </ul>
@@ -37,7 +24,7 @@
 </nav>
 
 <style>
-  nav {
+  .main-nav {
     --nav-inline-padding: var(--size-8);
     display: grid;
     z-index: 999;
@@ -79,18 +66,18 @@
     justify-content: center;
   }
 
-  .nav-links a[aria-selected="true"] {
+  .nav-links :global(.active) {
     color: var(--brand);
   }
 
-  .nav-links a {
+  .nav-links :global(a) {
     text-decoration: none;
     color: var(--text-2);
     cursor: pointer;
     font-family: var(--font-sans);
   }
 
-  .nav-links a:hover {
+  .nav-links :global(a):hover {
     color: var(--brand-em);
   }
 
@@ -108,7 +95,7 @@
 
   /* iPad size devices */
   @media (min-width: 480px) {
-    nav {
+    .main-nav {
       font-size: var(--font-size-3);
       grid-template-columns: 1fr repeat(6, 6rem) 1fr;
       grid-template-areas: "logo logo  nlink  nlink  nlink  nlink  toggle toggle";
@@ -135,7 +122,7 @@
 
   /* Desktop */
   @media (min-width: 1024px) {
-    nav {
+    .main-nav {
       font-size: var(--font-size-5);
       grid-template-columns: 1fr repeat(6, var(--size-11)) 1fr;
     }

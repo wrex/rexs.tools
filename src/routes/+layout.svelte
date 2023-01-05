@@ -1,13 +1,14 @@
 
 <script>
   import "$lib/styles/global.css";
-
-  import Nav from './Nav.svelte';
-  import Footer from './Footer.svelte';
+  import {currentPage} from "$lib/stores/currentPage";
+  import Nav from '$lib/components/Nav.svelte';
+  import Footer from '../lib/components/Footer.svelte';
   
   import { fade } from 'svelte/transition'
 
   export let data;
+  $: currentPage.set(data.currentRoute)
 </script>
 
 <header>

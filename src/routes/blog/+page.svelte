@@ -45,9 +45,9 @@
           </date>
         </div>
         <h2>
-          <a href={post.route}>{post.meta.title}</a>
+          <a href={post.route}>{@html post.meta.title}</a>
         </h2>
-        <p class="description">{post.meta.description}</p>
+        <p class="description">{@html post.meta.description}</p>
       </article> 
     {/each}
   </div>

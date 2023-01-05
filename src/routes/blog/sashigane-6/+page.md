@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (6)'
+title: 'Simple uses for a <em>sashigane</em>'
 date: 2022-12-12
-description: 'Basic uses for a sashigane'
+description: 'Some of the most common applications. Part 6 in a series.'
 image:
   url: '/images/timber-from-log.avif'
   alt: 'Laying out a square timber from a log'

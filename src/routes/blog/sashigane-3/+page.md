@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (3)'
+title: 'Sashigane &mdash; physical design'
 date: 2022-12-09
-description: 'Physical design of the sashigane'
+description: 'Physical characteristics of the sashigane. Part 3 in a series.'
 image:
   url: '/images/sashigane-holding.avif'
   alt: 'Hand holding a sashigane'

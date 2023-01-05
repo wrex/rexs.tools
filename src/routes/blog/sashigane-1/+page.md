@@ -1,7 +1,7 @@
 ---
-title: 'Sashigane (1)'
+title: 'The sashigane'
 date: 2022-12-07
-description: 'More than a square: an incredible calculating device.'
+description: 'More than a square: an incredible calculating device. Part 1 in a series.'
 image:
   url: '/images/sashigane-removebg.avif'
   alt: 'Sashigane'

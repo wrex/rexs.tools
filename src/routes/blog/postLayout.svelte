@@ -26,8 +26,8 @@
 </svelte:head>
   
 <article class="blog-article flow">
-  <h1>{title}</h1>
-  <p class="description">{description}</p>
+  <h1>{@html title}</h1>
+  <p class="description">{@html description}</p>
   <div class="tag-bar">
     <ul class="tags">
       {#each tags as tag}
