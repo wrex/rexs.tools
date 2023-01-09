@@ -1,5 +1,5 @@
 ---
-title: 'Collet closer pt. 1'
+title: 'Collet closer'
 date: 2022-12-04
 description: 'Making a lever-actuated collet closer'
 image:
