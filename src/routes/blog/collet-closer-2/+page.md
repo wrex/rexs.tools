@@ -173,4 +173,9 @@ for blind holes). This would be easiest with a spindle nose adapter instead of
 the MT3 base as Jim suggested (then I can just screw it onto the nose instead of
 drawing something into the tapered portion of the spindle).
 
+Finally, here's a very short video of the drawbar with the lathe under power
+(seems less scary than the lever-closer):
+
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/ptMf3eixtZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 More soon!
