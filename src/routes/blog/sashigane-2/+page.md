@@ -56,8 +56,15 @@ For building construction, the most important traditional linear units are:
 
 - ６尺 makes one _ken_ (&nbsp;<Kanji client:load furigana="けん" romaji="ken">間</Kanji>&nbsp;)
   or the length of a sleeping human body (with some room to spare — especially in
-  ancient Japan!). This is also the standard length of a tatami mat (with regional
-  variations).
+  ancient Japan!). This is also pretty close to the standard length of a tatami
+  mat.
+
+  (To be pedantic, there are two "standard" sizes of tatami mats: the eastern
+  region uses <Kanji client:load furigana="いなかま" romaji="inakama">田舎間 </Kanji>
+  mats that are roughly 176 cm &times 88 cm, while the western region
+  uses <Kanji client:load furigana="きょうま" romaji="kyouma">京間</Kanji> mats that are
+  roughly 190 cm &times 95 cm. Both differ from 6 尺&times;3 尺 which is
+  181.8 cm &times; 90.9 cm.)
 
 - １尺 is comprised of 10 _sun_ (pronounced "soon", <Kanji client:load
   furigana="すん" romaji="sun">寸</Kanji>&nbsp;). I find it interesting that western carpenters divided a
