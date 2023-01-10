@@ -1,4 +1,6 @@
 <script>
+
+ /** @type { import("$lib/types").PostData} */ 
   export let data;
 
   import {siteDescription} from '$lib/config';
