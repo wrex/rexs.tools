@@ -13,7 +13,7 @@
     <!-- svelte-preprocess-import-assets-ignore -->
     <img
       class="heroImage"
-      src="/images/wrench-600.png"
+      src="/images/wrench-600.avif"
       alt="A hand holding a wrench"
     />
     <div class="heroText flow">
