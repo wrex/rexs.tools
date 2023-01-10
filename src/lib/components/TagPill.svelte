@@ -18,9 +18,11 @@
   const classList = large ? "tag large" : "tag";
 </script>
 
-<button
+<!-- This should probably be a button, but for reasons I don't understand, that
+introduces ugly vertical spacing. -->
+<div
   class={classList}
   data-tagType={tagType(tagName)}
 >
   {tagName}
-</button>
+</div>
