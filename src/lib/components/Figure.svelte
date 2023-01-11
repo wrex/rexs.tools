@@ -1,5 +1,5 @@
 <script>
-  /** @type {object} */
+	/** @type { import("$lib/types").ImageSource} */
   export let src;
   /** @type {string} */
   export let caption;

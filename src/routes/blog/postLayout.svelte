@@ -5,6 +5,7 @@
   export let date;
   /** @type {string} */
   export let description;
+  /** @type {{url: string, alt: string}} */
   export let image;
 
   /** @type {string[]}*/

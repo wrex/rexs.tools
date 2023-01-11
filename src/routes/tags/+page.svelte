@@ -1,5 +1,5 @@
 <script>
-  /** @type { import("$lib/types").PostData } */
+  /** @type { import("./$types").PageData } */
   export let data;
 
   import BlogCard from "$lib/components/BlogCard.svelte";

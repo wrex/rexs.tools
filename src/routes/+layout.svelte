@@ -7,6 +7,7 @@
   
   import { fade } from 'svelte/transition'
 
+  /** @type {import("./$types").LayoutData}*/
   export let data;
   $: currentPage.set(data.currentRoute)
 </script>

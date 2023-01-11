@@ -1,5 +1,8 @@
 <script>
+	/** @type {import("$lib/types").ImageSource} */
 	export let src;
+	
+	/** @type string */
 	export let alt;
 </script>
 

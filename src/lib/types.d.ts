@@ -16,3 +16,12 @@ export type PostData = {
 	posts: Post[];
 	tagCounts: { [key: string]: number };
 };
+
+type FormatSources = {
+	[format: string]: HTMLImageElement[];
+};
+
+export type ImageSource = {
+	sources: FormatSources;
+	fallback: HTMLImageElement;
+};

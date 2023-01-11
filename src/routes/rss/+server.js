@@ -5,7 +5,9 @@ export const prerender = true;
 
 export const GET = async () => {
 	const allPosts = await fetchMarkdownPosts();
-	const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+	const sortedPosts = allPosts.sort(
+		(a, b) => new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime()
+	);
 
 	const body = render(sortedPosts);
 	const options = {
@@ -18,6 +20,11 @@ export const GET = async () => {
 	return new Response(body, options);
 };
 
+/**
+ * render the xml output
+ * @param {import("$lib/types").Post[]} posts
+ * @returns {string}
+ */
 const render = (posts) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
@@ -30,7 +37,7 @@ ${posts
 		(post) => `<item>
 <guid isPermaLink="true">${siteURL}blog/${post.route}</guid>
 <title>${post.meta.title}</title>
-<link>${siteURL}/blog/${post.path}</link>
+<link>${siteURL}/blog/${post.route}</link>
 <description>${post.meta.title}</description>
 <pubDate>${new Date(post.meta.date).toUTCString()}</pubDate>
 </item>`
