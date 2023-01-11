@@ -14,10 +14,10 @@ tags:
   import Figure from "$lib/components/Figure.svelte";
 
   import JimsCam from "../collet-closer/collet-closer-alt.jpeg";
-  import DrawbarInside from "./IMG_0771.jpg";
-  import DrawbarOutside from "./IMG_0770.jpg";
-  import WithMT3 from "./IMG_0768.jpg";
-  import WithID from "./IMG_0767.jpg";
+  import DrawbarInside from "./IMG_0771.jpg?w=600;1200";
+  import DrawbarOutside from "./IMG_0770.jpg?w=600;1200";
+  import WithMT3 from "./IMG_0768.jpg?w=600;1200";
+  import WithID from "./IMG_0767.jpg?w=600;1200";
 </script>
 
 This is the 2nd in a series on collets and collet closers:
