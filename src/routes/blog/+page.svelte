@@ -1,12 +1,12 @@
 <script>
-
  /** @type { import("./$types").PageData} */ 
   export let data;
 
   import {siteDescription} from '$lib/config';
 
   import TagCloud from "$lib/components/TagCloud.svelte";
-  import BlogCard from '$lib/components/BlogCard.svelte';
+  import CardGrid from '$lib/components/CardGrid.svelte';
+
   const tagCounts = data.tagCounts;
 </script>
 
@@ -21,9 +21,6 @@
   <aside>
     <TagCloud {tagCounts} />
   </aside>
-  <div class="card-grid">
-    {#each data.posts as post}
-      <BlogCard post={post} />
-    {/each}
-  </div>
+  <CardGrid items={data.posts} />
 </section>
+

@@ -12,4 +12,3 @@ This is the source for https://rexs.tools
 - Search
 - Layout for articles (docsy like)
 - Sticky nav bar?
-- add pagination

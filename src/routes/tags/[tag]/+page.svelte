@@ -2,7 +2,7 @@
   /** @type {import("./$types").PageData} */
   export let data;
 
-  import BlogCard from "$lib/components/BlogCard.svelte";
+  import CardGrid from "$lib/components/CardGrid.svelte";
 </script>
 
 <svelte:head>
@@ -11,9 +11,5 @@
 
 <section class="flow">
 <h1>Tag: <em>{data.tag}</em></h1>
-  <div class="card-grid">
-    {#each data.posts as post}
-      <BlogCard post={post} />
-    {/each}
-  </div>
+<CardGrid items={data.posts} />
 </section>

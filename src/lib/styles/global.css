@@ -23,6 +23,7 @@
 
 body {
 	color: var(--text-1);
+	background-color: var(--surface-1);
 	font-family: var(--font-serif);
 	font-size: var(--font-size-2);
 	font-weight: var(--font-weight-4);
@@ -329,4 +330,42 @@ figcaption {
 .video {
 	aspect-ratio: 16 / 9;
 	width: 100%;
+}
+
+/* Pagination nav */
+.paginationNav .pagination-nav {
+	display: flex;
+	justify-content: center;
+	background: var(--surface-2);
+	border-radius: 3px;
+	box-shadow: var(--shadow-2);
+}
+.paginationNav .option {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s all ease-out;
+	user-select: none;
+	color: var(--text-1);
+}
+.paginationNav .option svg path {
+	fill: var(--text-1);
+}
+.paginationNav .option:first-child {
+	border-radius: 3px 0 0 3px;
+}
+.paginationNav .option:last-child {
+	border-radius: 0 3px 3px 0;
+}
+.paginationNav .option.number,
+.paginationNav .option.ellipsis {
+	padding: 10px 15px;
+}
+.paginationNav .option:hover {
+	background-color: var(--surface-1);
+	cursor: pointer;
+}
+.paginationNav .option.active {
+	color: var(--brand);
 }
