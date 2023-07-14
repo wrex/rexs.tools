@@ -33,7 +33,9 @@ probably won't be allowed to touch, but my plan is to build a machine tool every
 year until I've made him an entire 1/12 scale machine shop. By that point, he'll
 probably be almost a teenager and will hopefully enjoy playing with them.
 
-I bought the castings (actually a full kit including raw stock) from [PM research](https://www.pmmodelengines.com):
+I bought the castings (actually a full kit including raw stock) from [PM
+research](https://www.pmmodelengines.com). Here's what it will look like when
+complete (though I expect to paint mine something other than gray):
 
 [![PM Research Engine Lathe](/images/model-lathe.avif)](https://www.pmmodelengines.com/shop/machine-tools/machine-models/engine-lathe-kit/)
 
@@ -42,7 +44,7 @@ the lathe (sans a working lathe, vertical mill, and assorted tooling):
 
 <Figure src={Kit} caption="PM Research Engine Lathe Kit" />
 
-This will hopefully be a fairly straightforward build, a I'm pretty much
+This will hopefully be a fairly straightforward build, as I'm pretty much
 following [Joe Pieczynski's](https://www.youtube.com/@joepie221) [_outstanding_
 build
 series](https://www.youtube.com/playlist?list=PL4wikbEbcE3IEC_AHLgbe3Jg3pmfTQ9hS)
@@ -51,7 +53,7 @@ differences in available tooling.
 
 In particular, I decided to follow Joe's excellent suggestion to start with the
 smallest stuff to build confidence. When I finally get to some of the larger (!)
-castings and full assemblies it will be like desert.
+castings and full assemblies it will be like dessert.
 
 Here's the first part I completed, the old-fashioned rocker style toolpost:
 
