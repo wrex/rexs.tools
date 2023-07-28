@@ -79,7 +79,7 @@ the stock on every pass.
 
 Here's an example of the tool in action:
 
-<iframe src="https://www.youtube.com/embed/_Sd5ujFa4aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="420" height="236" src="https://www.youtube.com/embed/_Sd5ujFa4aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Some notes about the video and the tool shown:
 
@@ -88,7 +88,7 @@ Some notes about the video and the tool shown:
   than _cutting_). It was simply much too slow!
 
 - I also was fumbling a bit, handholding my phone to record the action. Much of
-  the jerkiness is because of these first too points. Still, I'm taking a reasonably
+  the jerkiness is because of these first two points. Still, I'm taking a reasonably
   aggressive cut.
 
 - It's not obvious, but I could have continued swinging the handle left as far
@@ -225,6 +225,11 @@ you might have cut with other tools (or just creating generous fillets at an
 inside shoulder). Just remember that you can't face! Always feed into the OD of
 the stock or traverse the carriage along it, never feed into a face.
 
-## Cutting concave radii into the side
+## Comments and questions
 
-(To be updated.)
+My blog very consciously doesn't support comments or questions, but if you'd
+like to discuss this further, please see [this thread on the Hobby Machinist
+forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
+
+I expect I'll be updating this post in the future as I make more pucks and
+experiment with different use cases.
