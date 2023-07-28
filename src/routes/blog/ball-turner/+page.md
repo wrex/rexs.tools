@@ -83,13 +83,18 @@ Here's an example of the tool in action:
 
 Some notes about the video and the tool shown:
 
+- That is _steel_ in case it isn't obvious, not aluminum. Albeit leadloy (12L14)
+  which is pretty forgiving to turn, but I've seen some pretty janky ball cutter
+  designs that aren't rigid enough to cut steel.
+
 - This was my very first attempt at using the tool. Out of an abundance of
   caution, I had the spindle speed extremely slow (like I was forming rather
   than _cutting_). It was simply much too slow!
 
 - I also was fumbling a bit, handholding my phone to record the action. Much of
   the jerkiness is because of these first two points. Still, I'm taking a reasonably
-  aggressive cut.
+  aggressive cut. With your hands free, it's _extremely_ pleasant and actually
+  fun to turn a ball. There isn't even a hint of chatter or deflection.
 
 - It's not obvious, but I could have continued swinging the handle left as far
   as I want to go (until the ball drops off the end). There is no need to cut
