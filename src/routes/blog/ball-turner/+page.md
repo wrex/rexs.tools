@@ -53,7 +53,7 @@ The key characteristic of the design is that it uses a tangential cutter with
 zero rake and zero relief. Many people will swear up and down that such a tool
 won't cut, but I'm here to tell you it works fantastically well.
 
-Zero back rake is no big deal. It's pretty common when cutting harder materials
+No top rake is no big deal. It's pretty common when cutting harder materials
 (Jim is pretty sure the design will work just fine with a carbide cutter even on
 super hard alloys like inconel).
 
@@ -73,9 +73,9 @@ with the long dimension. It could _not_ be a more rigid setup. There is
 virtually no chance of chatter, and you can make surprisingly aggressive cuts
 without any problem.
 
-About the only limitation of zero relieve is that you **CANNOT** face the stock
-or feed directly into a faced end of stock, you **must** feed into the _side_ of
-the stock on every pass.
+About the only limitation of zero relieve is that you **CANNOT** face stock by
+feeding out, nor feed directly into a faced end of stock, you **must** feed into the _side_ of
+the stock on every pass (keep the carriage locked and just feed in on the cross-slide).
 
 Here's an example of the tool in action:
 
@@ -102,13 +102,14 @@ Some notes about the video and the tool shown:
 
 - This was an early attempt at Jim's design, and on my little 10" lathe, I
   couldn't cut any ball diameters larger than about 3/4". I've since milled down
-  the outboard portion of the platform, letting me cut balls all the way up to
-  a little more than 1" diameter with ease.
+  the outboard portion of the platform, letting me cut balls
+  up to just over 1" diameter with ease.
 
 - This is _not_ an adjustable tool, it only cuts fixed radii. But it's quite
   easy to make additional pucks with the cutter positioned for whatever radius
   you desire (up to the distance between the top of the puck and the top of the
   cutter).
+
 - Not shown (yet) is that the tool can also cut _concave_ radii into the side of
   the stock. It's not possible (without modification) to cut bowls into the
   _end_ of a part, but that's a less common need anyway.
@@ -116,14 +117,22 @@ Some notes about the video and the tool shown:
 - In addition to cutting balls, you can also create quite accurate inside and
   outside fillets on cylindrical features.
 
+- It's convenient to set the swing radius to nominal stock sizes. That way, when
+  the outer band of darker un-cut material _just_ disappears, you'll know the
+  pivot is right under the center of the ball that's now perfectly to size. For
+  oddball sizes, you'll need to mic the ball to know when you've fed in sufficiently.
+
 ## 3D model and drawings
 
 I've made both a [3D model](https://a360.co/3qgbLsa) available for viewing and
 download as well as a <a href={Drawings}>set of dimensioned drawings for my
 lathe</a>.
 
-The dimensions are for my lathe specifically, but I made the model fully
-parametric if you use Fusion360 for modeling.
+The dimensions are for my lathe specifically, but the model is fully
+parametric if you use Fusion360 for modeling. You can just enter the dimensions
+for your lathe and desired radius and the model should update automatically
+(Modify -> Change Parameters in Fusion360). Just let me know if I've screwed
+something up.
 
 ## About the cutter
 
@@ -134,13 +143,14 @@ keep it between 1/8" diameter and 5/16" diameter. Too small, and you risk it
 snapping due to accidents. Too large, and you limit the maximum sized ball you
 can turn.
 
-You can also by pre-hardened HSS blanks, drill rod, or whatever, and just cut it
-into the lengths you need.
+You can also buy pre-hardened HSS blanks, drill rod, or whatever, and just cut it
+into the lengths you need. You just want something hard with a nice ground and
+polished surface on the OD.
 
-The easiest way to cut hardened stuff is by scoring the OD with a cut-off wheel
+The easiest way to cut hardened stuff to rough length is by scoring the OD with a cut-off wheel
 in a Dremel tool or angle grinder, holding it vertically in a vise near the
 score, covering the top with a rag to hold the part, then whacking it with a
-hammer. It will snap right at the weakest point.
+hammer. It will snap right at the weakest point. Then grind the top perfectly flat.
 
 To grind the cutting edge, you just need to hold it perpendicularly to a grinder
 (belt sander, bench grinder, slow-speed grinder, whatever). You must continue
@@ -153,16 +163,16 @@ periphery of the wheel. The slight hollow produced actually provides a bit of
 top rake! Just be sure to position the high part of the grind away from the
 center of the puck when you adjust the cutter height.
 
-The cutter is must be exactly at center height to cut a precise radius. For a
+The cutter must be exactly at center height to cut a precise radius. For a
 convex ball, you drill and ream a hole about 0.001" larger in diameter than the
 cutter into the top of the puck. If the desired cutting radius is _R_ and the
-cutter radius is _c_, you position the hole _R_+_c_ away from the center of the
+cutter radius is _c_, you position the hole _R_ + _c_ away from the center of the
 puck for a convex radius (that cuts on the _inside_ of the cutter, with the
-pivot point under the work) or _R+-\_c_ for concave radii with the pivot point
+pivot point under the work) or _R_ - _c_ for concave radii with the pivot point
 between the operator and the work.
 
 If the cutter is slightly below center it's no big deal (the diameter of the
-sphere will just be a little off). but if it's above center even a tiny bit, the
+sphere will just be a little off), but if it's above center even a tiny bit, the
 tool will just rub and won't cut.
 
 There are many ways to position on center, but probably the easiest is to just put
@@ -182,6 +192,11 @@ got a reference for center height. Adjust the cutter until it just touches the
 arm of the height gauge (you can also use a depth micrometer registering on top
 of the gauge pin).
 
+Or do what I do, and zero an indicator at top dead center of a gauge pin in a
+collet in the spindle, then roll a pin on top of the cutter that's half the
+diameter of the one in the spindle. Adjust the height of the cutter until the
+indicator reads zero again when you roll past TDC of the smaller pin.
+
 ## Set screws
 
 You really want _flat_ set screws, not the common ones with a cup point. Cup
@@ -194,7 +209,7 @@ but in general, fine thread pitches will let you lock things more securely. It's
 a good idea to use UNF pitches (10-32, 1/4-28, etc.) for holding tasks.
 
 You can, of course, use simple cap screws instead of set screws as long as they
-don't interfered with anything (like the swinging handle).
+don't interfere with anything (like the swinging handle).
 
 ## Cutting a ball on the end of a rod
 
@@ -208,12 +223,14 @@ I prefer holding the work with collets rather than in a chuck for two reasons:
 2. Collets let you hold the work much closer to the end of the spindle,
    increasing rigidity.
 
-You don't even need to face the stock before beginning.
+You don't even need to face the stock before beginning. I position the compound
+with the handle directly toward me or a little to the left before installing the
+tee base of the cutter. You just want the slot running roughly left to right.
 
-Just put a rod into a collet, swing the handle to position the cutter toward the
-tailstock, feed in the cross-slide until the center of the
+Put some nominally sized stock into a collet, swing the handle to position the
+cutter toward the tailstock, feed in the cross-slide until the center of the
 puck is roughly under the bar, then move the carriage until the cutter just
-bumps the end of the stock.
+bumps the end of the stock (as shown below).
 
 <Figure src={Positioning} caption="Positioning the carriage axially" />
 
@@ -221,20 +238,23 @@ Now retract the cross-slide, move the carriage a smidge more to the left (enough
 to clean up the end of the stock), and then start swinging the handle left and
 right as you slowly start feeding in the cross-slide.
 
+Because you ultimate turn off the entire end of the shaft, it actually suffices to
+position the carriage by eye initially.
+
 Note that you can plunge right into the side of the stock to form the "neck"
-behind the ball. You don't need to pre-cut the "neck" as shown in the photo.
+behind the ball. You don't need to pre-cut the neck (as shown in the photo).
 
 Note that because the tool has such a wide "nose" radius and the depth of cut is
-controlled by feel, it's pretty great at "blending" into another feature that
-you might have cut with other tools (or just creating generous fillets at an
-inside shoulder). Just remember that you can't face! Always feed into the OD of
+controlled by feel, it's pretty great at blending into another feature that
+you might have cut with other tools. It also creates generous fillets at an
+inside shoulder. Just remember that you can't face! Always feed _into_ the OD of
 the stock or traverse the carriage along it, never feed into a face.
 
 ## Comments and questions
 
-My blog very consciously doesn't support comments or questions, but if you'd
+My blog very intentionally doesn't support comments or questions, but if you'd
 like to discuss this further, please see [this thread on the Hobby Machinist
 forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
 
-I expect I'll be updating this post in the future as I make more pucks and
+I plan to update this post in the future as I make more pucks and
 experiment with different use cases.
