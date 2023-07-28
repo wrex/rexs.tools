@@ -77,7 +77,7 @@ the stock on every pass.
 
 Here's an example of the tool in action:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_Sd5ujFa4aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/_Sd5ujFa4aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Some notes about the video and the tool shown:
 
