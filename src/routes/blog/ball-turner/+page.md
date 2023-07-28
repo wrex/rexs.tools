@@ -19,6 +19,8 @@ tags:
   import Drawings from "./drawings.pdf";
 </script>
 
+![Ball turner model](/images/ball-turner.avif)
+
 I've been meaning to make a ball turner forever, and every time I've seen the
 topic come up on [hobby machinist](https://hobby-machinist.com) or any of the various
 mailing lists I'm on, my friend Jim S. inevitably pipes up with his design that
