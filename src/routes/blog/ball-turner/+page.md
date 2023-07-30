@@ -16,7 +16,6 @@ tags:
   import SphereCube from "./jims-spheres-in-cube.jpeg";
   import CaptiveRing from "./jims-captive-ring.png";
   import Positioning from "./positioning.jpg";
-  import Drawings from "./drawings.pdf";
 </script>
 
 ![Ball turner model](/images/ball-turner.avif)
@@ -46,6 +45,25 @@ latter, as well as all sorts of other parts.
 
 Anyway, I finally got around to making one of his ball turners for myself, and I
 see why he's so enamored of the design. It works fantastically well!
+
+## Ball turner 3D model, drawings, and discussion
+
+I've made both a [3D model](https://a360.co/458gdYQ) available for viewing and
+download as well as a <a href="/files/ball-turner-final-dwg-v2.pdf">set of dimensioned drawings for my
+lathe</a>.
+
+For anyone using modeling with something other than Fusion360, here are [the
+step files](/files/ball-turner-final-v6.step) for the design.
+
+The dimensions are for my lathe specifically, but the model is fully
+parametric if you use Fusion360 for modeling. You can just enter the dimensions
+for your lathe and desired radius and the model should update automatically
+(Modify -> Change Parameters in Fusion360). Just let me know if I've screwed
+something up.
+
+My blog very intentionally doesn't support comments or questions, but if you'd
+like to discuss this further, please see [this thread on the Hobby Machinist
+forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
 
 ## The design
 
@@ -121,18 +139,6 @@ Some notes about the video and the tool shown:
   the outer band of darker un-cut material _just_ disappears, you'll know the
   pivot is right under the center of the ball that's now perfectly to size. For
   oddball sizes, you'll need to mic the ball to know when you've fed in sufficiently.
-
-## 3D model and drawings
-
-I've made both a [3D model](https://a360.co/3qgbLsa) available for viewing and
-download as well as a <a href={Drawings}>set of dimensioned drawings for my
-lathe</a>.
-
-The dimensions are for my lathe specifically, but the model is fully
-parametric if you use Fusion360 for modeling. You can just enter the dimensions
-for your lathe and desired radius and the model should update automatically
-(Modify -> Change Parameters in Fusion360). Just let me know if I've screwed
-something up.
 
 ## About the cutter
 
@@ -250,11 +256,7 @@ you might have cut with other tools. It also creates generous fillets at an
 inside shoulder. Just remember that you can't face! Always feed _into_ the OD of
 the stock or traverse the carriage along it, never feed into a face.
 
-## Comments and questions
+## Future
 
-My blog very intentionally doesn't support comments or questions, but if you'd
-like to discuss this further, please see [this thread on the Hobby Machinist
-forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
-
-I plan to update this post in the future as I make more pucks and
-experiment with different use cases.
+I'm in the middle of building to the drawings. I'll post a separate
+"construction notes" article when I'm finished.
