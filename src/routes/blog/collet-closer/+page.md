@@ -1,6 +1,6 @@
 ---
 title: 'Collet closer'
-date: 2022-12-04
+date: '2022-12-04'
 description: 'Making a lever-actuated collet closer'
 image:
   url: '/images/collet-closer-removebg.avif'

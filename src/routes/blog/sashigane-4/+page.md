@@ -1,6 +1,6 @@
 ---
 title: '<em>Hyoume</em> and <em>urame</em>'
-date: 2022-12-10
+date: '2022-12-10'
 description: 'About the different scales on the top and bottom of a <em>sashigane</em>. Part 4 in a series.'
 image:
   url: '/images/sashigane-graduations.avif'

@@ -1,6 +1,6 @@
 ---
 title: 'Sashigane &mdash; physical design'
-date: 2022-12-09
+date: '2022-12-09'
 description: 'Physical characteristics of the sashigane. Part 3 in a series.'
 image:
   url: '/images/sashigane-holding.avif'

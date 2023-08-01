@@ -49,11 +49,9 @@ see why he's so enamored of the design. It works fantastically well!
 ## Ball turner 3D model, drawings, and discussion
 
 I've made both a [3D model](https://a360.co/458gdYQ) available for viewing and
-download as well as a <a href="/files/ball-turner-final-dwg-v2.pdf">set of dimensioned drawings for my
-lathe</a>.
+download as well as a [set of dimensioned drawings for my lathe](/files/ball-turner-final-dwg-v8.pdf).
 
-For anyone using modeling with something other than Fusion360, here are [the
-step files](/files/ball-turner-final-v6.step) for the design.
+For anyone using modeling with something other than Fusion360, here are [the step files](/files/ball-turner-final-v10.step) for the design.
 
 The dimensions are for my lathe specifically, but the model is fully
 parametric if you use Fusion360 for modeling. You can just enter the dimensions
@@ -244,19 +242,14 @@ Now retract the cross-slide, move the carriage a smidge more to the left (enough
 to clean up the end of the stock), and then start swinging the handle left and
 right as you slowly start feeding in the cross-slide.
 
-Because you ultimate turn off the entire end of the shaft, it actually suffices to
+Because you ultimately turn off the entire end of the shaft, it actually suffices to
 position the carriage by eye initially.
 
 Note that you can plunge right into the side of the stock to form the "neck"
-behind the ball. You don't need to pre-cut the neck (as shown in the photo).
+behind the ball. You don't need to pre-cut the neck (as I did unnecessarily in the photo).
 
 Note that because the tool has such a wide "nose" radius and the depth of cut is
 controlled by feel, it's pretty great at blending into another feature that
 you might have cut with other tools. It also creates generous fillets at an
 inside shoulder. Just remember that you can't face! Always feed _into_ the OD of
 the stock or traverse the carriage along it, never feed into a face.
-
-## Future
-
-I'm in the middle of building to the drawings. I'll post a separate
-"construction notes" article when I'm finished.

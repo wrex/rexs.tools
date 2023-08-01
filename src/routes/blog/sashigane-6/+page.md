@@ -1,6 +1,6 @@
 ---
 title: 'Simple uses for a <em>sashigane</em>'
-date: 2022-12-12
+date: '2022-12-12'
 description: 'Some of the most common applications. Part 6 in a series.'
 image:
   url: '/images/timber-from-log.avif'

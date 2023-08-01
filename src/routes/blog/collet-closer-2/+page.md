@@ -1,6 +1,6 @@
 ---
 title: 'Collet drawbar'
-date: 2023-01-08
+date: '2023-01-08'
 description: 'Making a "ghetto" drawbar. Part 2 of a series.'
 image:
   url: '/images/ghetto-drawbar.avif'

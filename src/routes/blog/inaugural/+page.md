@@ -1,7 +1,7 @@
 ---
 title: 'The site is live!'
 description: 'Inaugural post'
-date: 2022-12-02
+date: '2022-12-02'
 image:
   url: '/images/burst-kUqqaRjJuw0-unsplash.avif'
   alt: 'Typing on a laptop'

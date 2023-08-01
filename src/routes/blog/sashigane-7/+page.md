@@ -1,6 +1,6 @@
 ---
 title: '<em>Hirakoubai</em> and <em>kaeshikoubai</em>'
-date: 2022-12-28
+date: '2022-12-28'
 description: 'Right triangle magic: how to layout common slopes. Part 7 in a series.'
 image:
   url: '/images/chuukou-parts.avif'

@@ -1,6 +1,6 @@
 ---
 title: 'Repairing a cupholder'
-date: 2022-12-09
+date: '2022-12-09'
 description: 'Replacing a car cupholder part.'
 image:
   url: '/images/cupholder-removebg.avif'
