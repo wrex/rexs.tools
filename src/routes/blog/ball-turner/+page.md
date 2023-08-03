@@ -3,7 +3,7 @@ title: 'Jim S. Ball Turner'
 date: '2023-07-26'
 description: 'A simple tangential cutter ball turner design'
 image:
-  url: '/images/ball-turner.avif'
+  url: '/images/ball-turner-model.avif'
   alt: '3D model of ball turner'
 tags:
   - 'metal'
@@ -48,15 +48,15 @@ see why he's so enamored of the design. It works fantastically well!
 
 ## Ball turner 3D model, drawings, and discussion
 
-I've made both a [3D model](https://a360.co/458gdYQ) available for viewing and
-download as well as a [set of dimensioned drawings for my lathe](/files/ball-turner-final-dwg-v8.pdf).
+I've made a [3D model](https://a360.co/458gdYQ) available for viewing and
+download as well as a [set of dimensioned drawings for my lathe](/files/ball-turner-final-dwg-v16.pdf).
 
-For anyone using modeling with something other than Fusion360, here are [the step files](/files/ball-turner-final-v10.step) for the design.
+For anyone using modeling software other than Fusion360, here are [the step files](/files/ball-turner-final-v16.step) for the design.
 
 The dimensions are for my lathe specifically, but the model is fully
-parametric if you use Fusion360 for modeling. You can just enter the dimensions
-for your lathe and desired radius and the model should update automatically
-(Modify -> Change Parameters in Fusion360). Just let me know if I've screwed
+parametric (if you use Fusion360). You can just enter the dimensions
+for your lathe, etc., and the model should update automatically
+(Modify -> Change Parameters). Just let me know if I've screwed
 something up.
 
 My blog very intentionally doesn't support comments or questions, but if you'd
@@ -128,15 +128,17 @@ Some notes about the video and the tool shown:
 
 - Not shown (yet) is that the tool can also cut _concave_ radii into the side of
   the stock. It's not possible (without modification) to cut bowls into the
-  _end_ of a part, but that's a less common need anyway.
-
-- In addition to cutting balls, you can also create quite accurate inside and
-  outside fillets on cylindrical features.
+  _end_ of a part, but that's a less common need anyway. That is, in addition to
+  cutting balls, you can also create quite accurate concave and convex fillets
+  on cylindrical features. [Remember that you can only feed in on the cross
+  slide and swivel the cutter outward, toward the tailstock. You cannot move the
+  cutter left, toward the spindle --- it will not cut.]
 
 - It's convenient to set the swing radius to nominal stock sizes. That way, when
   the outer band of darker un-cut material _just_ disappears, you'll know the
-  pivot is right under the center of the ball that's now perfectly to size. For
-  oddball sizes, you'll need to mic the ball to know when you've fed in sufficiently.
+  pivot is right under the center of a ball that's now perfectly to size. For
+  oddball sizes, first turn a cylinder of the correct diameter with a turning
+  tool and mark the surface with dykem or a sharpie so you can track your progress.
 
 ## About the cutter
 
@@ -147,16 +149,18 @@ keep it between 1/8" diameter and 5/16" diameter. Too small, and you risk it
 snapping due to accidents. Too large, and you limit the maximum sized ball you
 can turn.
 
-You can also buy pre-hardened HSS blanks, drill rod, or whatever, and just cut it
-into the lengths you need. You just want something hard with a nice ground and
-polished surface on the OD.
+You can also buy pre-hardened HSS blanks, drill rod, or whatever, cut into the
+lengths you need. You just want something hard with a nice ground and polished
+surface on the OD. You then grind and polish the top surface perfectly flat
+(forming a sharp cutting edge all the way around).
 
-The easiest way to cut hardened stuff to rough length is by scoring the OD with a cut-off wheel
-in a Dremel tool or angle grinder, holding it vertically in a vise near the
-score, covering the top with a rag to hold the part, then whacking it with a
-hammer. It will snap right at the weakest point. Then grind the top perfectly flat.
+The easiest way to cut hardened stuff to rough length is by scoring the OD with
+a cut-off wheel in a Dremel tool or angle grinder, then holding it vertically in a
+vise near the score. Cover the top with a rag to hold the part, then whack
+it with a hammer. It will snap right at the weakest point. Finally, grind the top
+perfectly flat and (optionally) polish on a stone.
 
-To grind the cutting edge, you just need to hold it perpendicularly to a grinder
+You just need to hold the tool perpendicularly to a grinder to form the flat
 (belt sander, bench grinder, slow-speed grinder, whatever). You must continue
 grinding until you have a perfectly flat face and smooth circular edge all the
 way around (with no trace of the earlier scoring).
@@ -201,19 +205,20 @@ collet in the spindle, then roll a pin on top of the cutter that's half the
 diameter of the one in the spindle. Adjust the height of the cutter until the
 indicator reads zero again when you roll past TDC of the smaller pin.
 
-## Set screws
+## Screws
 
-You really want _flat_ set screws, not the common ones with a cup point. Cup
+I initially used set screws for the tee slot, but regular socket head cap screws
+work fine as long as they don't interfere with the swivel handle.
+
+You really want _flat_ ends, though, not the common cup points on set screws. Cup
 points will mar up the bottom of your compound. They are unlikely to damage the
-much harder cutters, but it's still a good idea to face off the cup points if
-that's all you have on hand.
+much harder cutters, but it's still a good idea to face off the cup points even
+for the cutter set screw.
 
-The diameter an thread pitch of the set screws really aren't all that important,
-but in general, fine thread pitches will let you lock things more securely. It's
-a good idea to use UNF pitches (10-32, 1/4-28, etc.) for holding tasks.
-
-You can, of course, use simple cap screws instead of set screws as long as they
-don't interfere with anything (like the swinging handle).
+The diameter and thread pitch of the screws really aren't all that important.
+Use whatever you have on hand, but in general, fine thread pitches will let you
+lock things more securely. It's a good idea to use UNF pitches (10-32, 1/4-28,
+etc.) for holding tasks.
 
 ## Cutting a ball on the end of a rod
 
@@ -227,9 +232,10 @@ I prefer holding the work with collets rather than in a chuck for two reasons:
 2. Collets let you hold the work much closer to the end of the spindle,
    increasing rigidity.
 
-You don't even need to face the stock before beginning. I position the compound
-with the handle directly toward me or a little to the left before installing the
-tee base of the cutter. You just want the slot running roughly left to right.
+You don't even need to face the stock before beginning. Just position the compound
+with the handle directly toward the operator or a little to the left before installing the
+tee base of the cutter. You just want the slot running roughly left to right
+(and maybe a little forward).
 
 Put some nominally sized stock into a collet, swing the handle to position the
 cutter toward the tailstock, feed in the cross-slide until the center of the
@@ -242,14 +248,17 @@ Now retract the cross-slide, move the carriage a smidge more to the left (enough
 to clean up the end of the stock), and then start swinging the handle left and
 right as you slowly start feeding in the cross-slide.
 
-Because you ultimately turn off the entire end of the shaft, it actually suffices to
+Because you ultimately turn off the entire end of the shaft, it suffices to
 position the carriage by eye initially.
 
-Note that you can plunge right into the side of the stock to form the "neck"
+Note that you can also plunge right into the side of the stock to form the "neck"
 behind the ball. You don't need to pre-cut the neck (as I did unnecessarily in the photo).
 
 Note that because the tool has such a wide "nose" radius and the depth of cut is
 controlled by feel, it's pretty great at blending into another feature that
-you might have cut with other tools. It also creates generous fillets at an
-inside shoulder. Just remember that you can't face! Always feed _into_ the OD of
-the stock or traverse the carriage along it, never feed into a face.
+you might have cut with other tools.
+
+It can also create generous fillets at an inside shoulder.
+
+Again, remember that you can't face! Always feed _into_ the OD of
+the stock and lock the carriage, never feed into a face.
