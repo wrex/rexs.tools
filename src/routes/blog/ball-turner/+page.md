@@ -18,7 +18,7 @@ tags:
   import Positioning from "./positioning.jpg";
 </script>
 
-![Ball turner model](/images/ball-turner.avif)
+![Ball turner model](/images/ball-turner-model.avif)
 
 1. Introducing Jim's ball turner [this post]
 2. The build, part 1: [tee slot base](/blog/ball-turner-build-1)
@@ -30,6 +30,8 @@ topic come up on [hobby machinist](https://hobby-machinist.com) or any of the va
 mailing lists I'm on, my friend Jim S. inevitably pipes up with his design that
 he swears is the simplest possible. Yet everyone always seems to end up making
 something much more complicated!
+
+## About the designer
 
 Jim is an old pro and has done some amazing work. For fun he's turned a 3/8"
 solid sphere inside a 5/8" sphere, inside a 7/8" sphere, inside a 1" cube. Each
@@ -67,6 +69,17 @@ something up.
 My blog very intentionally doesn't support comments or questions, but if you'd
 like to discuss this further, please see [this thread on the Hobby Machinist
 forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
+
+## Safety warning
+
+I can't be held responsible if you somehow manage to hurt yourself making one of
+these things. Machine tools can be dangerous if you don't know how to use them
+safely. Heck, any tool can be dangerous.
+
+Learn how to use your machines safely elsewhere before attempting to make one of
+these. I've tried to only present tried and tested techniques, and I'm unaware
+of any operations that are particularly dangerous, but your safety is _your_
+responsibility, not mine.
 
 ## The design
 
@@ -266,4 +279,5 @@ you might have cut with other tools.
 It can also create generous fillets at an inside shoulder.
 
 Again, remember that you can't face! Always feed _into_ the OD of
-the stock and lock the carriage, never feed into a face.
+the stock and lock the carriage. Never move the carriage left into a face while
+using the ball turner.
