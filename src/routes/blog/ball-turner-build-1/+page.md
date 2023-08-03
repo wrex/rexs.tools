@@ -24,6 +24,9 @@ tags:
   import IncrL from "./incr-left.png";
   import FindFront from "./edgefind-front.png";
   import AbsXYzero from "./abs-xy-zero.png";
+  import LedgesMilled from "./ledges-milled.png";
+  import PlatformMilled from "./platform-milled.png";
+  import FourThreaded from "./four-threaded.png";
 </script>
 
 This is a companion article to [the original post](/blog/ball-turner) detailing
@@ -109,16 +112,19 @@ your lathe will differ.
 That's a long but pretty complete list. You **don't** _need_ all of these tools
 to make such a simple part, but these are what I used in the process.
 
-## Process
+## Preparation
 
 Ensure the mill head is trammed such that the spindle is perfectly perpendicular
 to the table, and the fixed jaw of the vise is indicated parallel to the X axis.
 
-First, bandsaw a length of 1/2" thick cold rolled steel to rough size (slightly
-oversize in length and width). Pretty much any metal you have on hand will work,
-but steel is better than something soft like aluminum.
+Bandsaw the rough stock from a length of 1/2" thick cold rolled steel to rough
+size (cut out the rough stock slightly oversize in length and width, maybe 1/8"
+in each direction).
 
-### Milling the bar to width and length
+Pretty much any metal you have on hand will work, but steel is better than
+something soft like aluminum.
+
+## Mill the bar to width and length
 
 Stand the part up on edge in the vise, then mill the edge on top with the end of
 your cutter until it is cleans up and is perfectly parallel to the table (i.e.
@@ -183,7 +189,7 @@ until the DRO reads X=0.0000.
 At this point, the rough stock is milled to the exact length and width required.
 The next step is to mill the ledges and platform for the puck.
 
-### Locating the middle
+## Locate the middle
 
 First we must locate the middle of the bar with an edge finder:
 
@@ -202,7 +208,7 @@ over the right edge and in the middle of the bar.
 
 <Figure src={AbsXYzero} caption="X=0.0000 / Y = 0.0000 (abs)" />
 
-### Milling the ledges and platform
+## Mill the ledges and platform
 
 Let's mill the front ledge first. Feed in in Y until the DRO reads 0.7500 (the
 diameter of my cutter). At this point, the edge of the cutter is over the center
@@ -219,15 +225,170 @@ to a depth of 0.194".
 Now unlock the table and retract until the DRO reads Y=-0.4745. Lock the table
 again and mill away the back edge.
 
-Finally, mill away the "platform" on the left.
+<Figure src={LedgesMilled} caption="Front and back edges milled" />
 
-Go back to absolute mode momentarily. X=0 has the cutter directly over the right
-edge. We want the right edge of the cutter 3.0000" to the left of that zero
-reference, so move the table right until it reads -3.3750" (3" plus half the
+Now we want to mill away the "platform" on the left.
+
+Go back to absolute mode momentarily.
+
+We want the right edge of the cutter 3.0000" from the right edge,
+so move the table right until it reads -3.3750" (3" plus half the
 cutter diameter). Back to incremental, and zero X. Now mill away the raised
 section the left of that point.
 
-Deburr all the edges and test the fit in your compound, making adjustments if necessary
+<Figure src={PlatformMilled} caption="Platform milled, ready for holes" />
+
+Before drilling and tappping any holes, you'll want to test the
+fit in your compound, making adjustments if necessary.
+
+One thing that trips up many beginners (and experts) is removing a part from a
+vise too soon, and losing all those reference points you so carefully programmed
+into the DRO.
+
+So before removing the part, we need to set some stops to re-locate the part
+back in the vice. The fixed jaw of the vise locates in Y. The tops of the
+parallels locate Z. But nothing currently locates X, so before removing the
+part, be sure to set a stop in X.
+
+---
+
+### Expert tip
+
+A handy locating stop for X (especially if you haven't already
+bought or made something that clamps to your vise or the table) is the spindle
+itself! Simply remove any cutter, lower the quill, bump the side of the spindle
+up against the part, then zero X in incremental mode. Now you can safely remove
+the part without losing your reference.
+
+---
+
+Once you've safely removed the part, deburr all the edges, then test the fit in
+your compound slot. It should slide easily with the ledge taking up almost the
+entire width of the slot.
+
+Return the part to the vise, being sure to bump it up against the stop (or
+spindle) and tapping it down against the parallels.
+
+If you need to make any adjustments to the dimensions, do it now. If you need to
+remove any material off the sides, though, be sure to remove an equal amount
+from each side.
+
+## Drill and tap the holes
+
+All holes are through holes, so this is easy.
+
+Replace the roughing end mill with a Jacobs chuck
+to hold the drills and taps.
+
+Locating the holes is trivial with the DRO already set. The process is exactly the same as
+before.
+
+<Figure src={Holes} caption="Hole locations in the base" />
+
+First, drill and tap the four 1/4-28 holes.
+
+Position the table to the left front hole: X=2.250 Y=0.237 (absolute). Use a
+spotting drill to create a little divot exactly on location.
+
+---
+
+### A word about spot drilling
+
+The divot from a spotting drill ensures that the longer and flimsier twist drill
+will drill a hole in the correct location. Without a spot, a drill can and
+_will_, bend and skate slightly on a flat surface, causing you to drill out of
+position and off angle.
+
+Spotting drills are stubby and stout, and they don't have long spiral flutes
+like a twist drill, so they are much sturdier and won't bend.
+
+You want the angle of the spot to be at least as wide or wider than the tip of
+your drill (most are 135°). This ensures the tip of the drill skates down to the
+bottom of the spot. If you use a center drill, ensure you just barely peck the
+angled tip into the work --- you've drilled too far if you get to the
+cylindrical portion.
+
+Spotting is particularly important with long, small diameter drills, but it's
+wise to make spotting a habit.
+
+---
+
+It's fastest to minimize the number of tool changes, so spot all four
+locations without changing tools: next spot at X=2.250/Y=-0.237, then X=0.750/Y=-0.237, then finally
+X=0.750/Y=0.237.
+
+After spotting all four locations, change to the #3 drill and drill all the way
+through at each spot location.
+
+You can avoid long stringy chips by "pecking" or pulsing the pressure on the
+quill handle. You don't actually need to lift the drill, just remove the
+downward pressure periodically to break the chip. With practice, this also
+becomes habit. Cutting oil will prolong the life of your cutting edge between
+sharpening, but is somewhat optional on just a few small holes like this.
+
+Next, use the chamfering tool to create a small chamfer around the top of all four
+holes. This looks nicer and removes any burr pulled up by the drill bit.
+
+Lastly, power tap 1/4-28 at all four locations. I only tap under power (vs. hand
+tapping) when it's a through hole bigger than, say, #6 screw size (blind holes
+are just too dangerous).
+
+To power tap, place the tap in the Jacobs chuck and tighten it securely. Apply
+some tapping fluid, set the spindle to a slow speed, and position a finger
+over the STOP button. Now the lower the quill until the tap engages the hole and
+starts to pull itself in. Hit STOP well before it reaches the end flutes of the tap
+(the spindle will coast for a bit after you hit stop). Finally, hit the reverse
+button to back out of the hole.
+
+One subtlety with backing out: you want to apply slight downward pressure on the
+quill with your right hand as it's backing out. Otherwise, it tends to pull up
+the top thread when it snaps out of the hole, and screws can be hard to start.
+
+<Figure src={FourThreaded} caption="Four holes bored and tapped" />
+
+### Cutting the pivot hole for the puck
+
+The large hole on the left is similar, but it references from the left edge of
+the part.
+
+In absolute mode, move to X=-4.635 (spindle over the left edge of the part),
+Y=0.0000 (the middle of the part).
+
+Go to incremental mode, zero X, then move the table left 0.813". That's a lot
+easier and less error prone than adding 0.813 to -4.635!
+
+Spot and drill again at this location. Use a drill just a few thou smaller than
+your reamer size. Since I used a 0.376" reamer, I drilled with a letter U drill
+(0.368" diameter).
+
+**Be sure to create a generous chamfer at the top of the hole for the puck.**
+Otherwise the puck won't seat well because of the fillet at the base of the
+boss (from the lathe tool nose radius when we make the puck).
+
+Finally, ream the hole with the reamer. Use plenty of cutting fluid and slow
+down the spindle speed to about 1/3 of the normal cutting speed for that size drill.
+
+It's best to ream the hole for the puck 0.0005" to 0.001" larger than the turned
+diameter of the boss on your pucks. If you don't have a set of under/over
+reamers for nominal dimensions, be sure to turn the diameter of your puck bosses
+about 0.001" _less_ than the size of whatever reamer you have available.
+
+Honestly, a good sharp 3/8" drill probably suffices without reaming. Typically,
+though, drills cut slightly oversized and not entirely round holes.
+
+Whatever size hole you end up with, you can always adjust the size of the boss
+on the puck with the lathe until it just fits without any slop.
+
+### Conclusion
+
+At this point, the tee slot base is complete. You can remove the part from the
+vise, deburr all the edges (all corners and especially the holes on the bottom where the drill
+broke through).
+
+You should end up with a tee base that slides easily in _your_ compound and
+looks something very similar to the top part here:
+
+<Figure src={Completed} caption="Completed parts" />
 
 Note that unlike a normal toolpost, the screws don't compress the "ledge" of the
 compound. This base is _not_ a tee nut. The screws force the top of the base
@@ -246,90 +407,3 @@ swivel handle clears the clamping parts).
 The tee slot on your compound is intended to
 handle fairly significant forces (say from an extended boring bar) though --
 personally, I feel this is a theoretical rather than a practical concern.
-
-### Drilling and tapping the holes
-
-All holes are through holes. Replace the roughing end mill with a Jacobs chuck
-to hold drills and taps.
-
-Locating the holes is easy with a DRO. The process is exactly the same as
-before.
-
-<Figure src={Holes} caption="Hole locations in the base" />
-
-First, I drilled and tapped the four 1/4-28 holes.
-
-Back to absolute mode. Position the table to the left front hole: X=2.250
-Y=0.237. Use the spotting drill to create a little divot exactly on location.
-The divot ensures the longer and flimsier twist drill will drill the hole in the
-right location (without a spot, it can, and will, skate away slightly and drill out of
-position and off angle).
-
-You want the angle of the spot to be at least as wide or wider than the tip of
-your drill (most are 135°). This ensures the tip of the drill skates down to the
-bottom of the spot. If you use a center drill, ensure you just barely peck the
-angled tip into the work --- you've drilled too far if you get to the
-cylindrical portion.
-
-It's fastest if you minimize the number of tool changes, so spot all four
-locations: next X=2.250/Y=-0.237, then X=0.750/Y=-0.237, then finally
-X=0.750/Y=0.237.
-
-Now change to the #3 drill and drill all the way through at all four locations.
-You can avoid long stringy chips by "pecking" or pulsing the pressure on the
-quill handle. You don't actually need to lift the drill, just remove the
-downward pressure periodically to break the chip.
-
-Next, use the chamfering tool to create small chamfer around the top of all four
-holes. This looks nicer and removes any burr pulled up by the drill bit.
-
-Lastly, power tap 1/4-28 at all four locations. I only tap under power when it's a through
-hole bigger than, say, #6 screw size (blind holes are just too dangerous).
-
-I put the tap in the Jacobs chuck, apply some tapping fluid, set the spindle to
-a slow speed, position my left forefinger over the STOP button, the lower the
-quill until the tap engages the hole and starts to pull itself in. I hit STOP
-well before it reaches the end of the tap (it will coast for a bit after you hit
-it). Finally, I'll hit the reverse power button to back out of the hole.
-
-One subtlety with backing out: you want to apply slight downward pressure on the
-quill with your right hand as it's backing out. Otherwise, it tends to pull up
-the top thread when it snaps out of the hole, and screws can be hard to start.
-
-The large hole on the left is similar, but it references from the left edge of
-the part.
-
-In absolute mode, move to X=-4.635 (the left edge), Y=0. Got to incremental
-mode, zero X, then move the table left 0.813". That's a lot easier and less
-error prone than adding 0.813 to -4.635!
-
-Spot and drill again at this location. Use a drill just a few thou smaller than
-the reamer size. Since I used a 0.376" reamer, I drilled with a letter U drill
-(0.368" diameter).
-
-**Be sure to create a generous chamfer at the top of the hole for the puck.**
-Otherwise the puck won't seat well because of the fillet at the base of the
-boss from the lathe tool nose radius.
-
-Finally, ream the hole with the reamer. Use plenty of cutting fluid and slow
-down the spindle speed to about 1/3 of the normal cutting speed for a drill.
-
-It's best to _ream_ the hole for the puck 0.0005" to 0.001" larger than the turned
-diameter of the boss on your pucks. If you don't have a set of under/over
-reamers for nominal dimensions, be sure to turn the diameter of your puck bosses
-about 0.001" _less_ than the size of whatever reamer you have available.
-
-Honestly, a good sharp 3/8" drill probably suffices without reaming. Typically, drills cut
-slightly oversized and not entirely round holes, but you can adjust the size of
-the boss on the puck until it just fits without any slop.
-
-### Conclusion
-
-At this point, all the features are complete. You can remove the part from the
-vise, deburr all the edges (all corners and especially the holes on the bottom where the drill
-broke through).
-
-You should end up with a tee base that slides easily in _your_ compound and
-looks something very similar to the top part here:
-
-<Figure src={Completed} caption="Completed parts" />
