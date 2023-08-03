@@ -1,5 +1,4 @@
 ---
-draft: true
 title: 'Ball Turner Build: 1'
 date: '2023-08-01'
 description: 'Intro and milling the tee slot base'
@@ -33,10 +32,9 @@ This is a companion article to [the original post](/blog/ball-turner) detailing
 the construction process.
 
 1. [Introducing Jim's ball turner](/blog/ball-turner)
-2. The build, part 1: making the tee slot base. [This post]
-3. The build, part 2: [making the swivel puck
-   assembly](/blog/ball-turner-build-2)
-4. The build, part 3: [making the cutters](/blog/ball-turner-build-3)
+2. The build, part 1: tee slot base [this post]
+3. The build, part 2: [swivel puck assembly: lathe work](/blog/ball-turner-build-2)
+<!-- 4. The build, part 3: [swivel puck assembly: mill work](/blog/ball-turner-build-3) -->
 
 ## 3D model and CAD drawings
 

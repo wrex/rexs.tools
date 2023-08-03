@@ -20,6 +20,11 @@ tags:
 
 ![Ball turner model](/images/ball-turner.avif)
 
+1. Introducing Jim's ball turner [this post]
+2. The build, part 1: [tee slot base](/blog/ball-turner-build-1)
+3. The build, part 2: [swivel puck assembly: lathe work](/blog/ball-turner-build-2)
+<!-- 4. The build, part 3: [swivel puck assembly: mill work](/blog/ball-turner-build-3) -->
+
 I've been meaning to make a ball turner forever, and every time I've seen the
 topic come up on [hobby machinist](https://hobby-machinist.com) or any of the various
 mailing lists I'm on, my friend Jim S. inevitably pipes up with his design that
