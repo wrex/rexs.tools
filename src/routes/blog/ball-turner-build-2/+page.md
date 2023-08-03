@@ -1,7 +1,7 @@
 ---
 title: 'Ball Turner Build: 2'
 date: '2023-08-02'
-description: 'Making the swivel pucks'
+description: 'Making the swivel puck: lathe work'
 image:
   url: '/images/turner-and-pucks.avif'
   alt: 'Assembled ball turner and extra pucks'
