@@ -405,3 +405,7 @@ swivel handle clears the clamping parts).
 The tee slot on your compound is intended to
 handle fairly significant forces (say from an extended boring bar) though --
 personally, I feel this is a theoretical rather than a practical concern.
+
+---
+
+Next: [Making the puck (lathe work)](/blog/ball-turner-build-2)

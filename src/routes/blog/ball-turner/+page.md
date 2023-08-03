@@ -281,3 +281,7 @@ It can also create generous fillets at an inside shoulder.
 Again, remember that you can't face! Always feed _into_ the OD of
 the stock and lock the carriage. Never move the carriage left into a face while
 using the ball turner.
+
+---
+
+Next: [Building the tee base](/blog/ball-turner-build-1)

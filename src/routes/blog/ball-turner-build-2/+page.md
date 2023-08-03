@@ -227,4 +227,6 @@ puck to ensure it's concentric with the boss. This isn't strictly necessary, but
 it looks better and eliminates a potential source of error if you use the
 periphery to locate the center (axis of rotation) in future machining steps.
 
-Next up: mill work for the puck. (STAY TUNED)
+---
+
+Next: Making the puck (mill work) [_COMING SOON_)
