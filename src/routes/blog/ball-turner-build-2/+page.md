@@ -47,6 +47,27 @@ My blog very intentionally doesn't support comments or questions, but if you'd
 like to discuss this further, please see [this thread on the Hobby Machinist
 forum](https://www.hobby-machinist.com/threads/jims-truly-simple-ball-turning-tool.107341/).
 
+## Tools I used
+
+- lathe
+- left-hand turning tool (I also use it for facing). I think all hobbyists
+  should learn to hand grind HSS tools, but insert tooling also works.
+- set of gauge pins from 0.061" to 0.500" (minus) diameter
+- 1" micrometer
+- small pair of digital calipers
+- 3-jaw self-centering chuck
+- 3/8" collet that fits in my lathe spindle (I have to use 3C collets with an
+  adapter)
+- Jacobs chuck and adapter to fit into tailstock
+- 142 degree spotting drill
+- #25 drill (tap drill size for 10-24 screws)
+- 10-24 plug tap
+- 10-24 bottoming tap (for cutting the last few threads at the bottom of the
+  hole)
+- Chamfering/deburring tool to deburr hole prior to tapping
+- spring loaded tap guide/follower
+- tap wrench
+
 ## Making puck blanks
 
 I originally thought I'd make two holes in the top of each puck: one for cutting
