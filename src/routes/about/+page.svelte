@@ -94,6 +94,12 @@
 	<p>
 		I'm not much for social media, but I can be reached at <a href="mailto:rw@pobox.com"
 			>rw@pobox.com</a
-		>.
+		>. I'm also <a href="https://twitter.com/wrexrrw">@wrexrrw</a> on X (née Twitter).
+	</p>
+	<p>
+		I am occasionally active on the Hobby Machinist forum, and can be found under <a
+			href="https://www.hobby-machinist.com/members/rex-walters.37828/">my own name</a
+		>. That's probably the best way to reach me if you wish to discuss anything on this site with
+		me.
 	</p>
 </section>
